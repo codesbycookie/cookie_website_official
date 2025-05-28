@@ -1,0 +1,105 @@
+/* Hero Section */
+.hero-container {
+  background-color: #212121;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-nav a {
+  color: #FFFFFF;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.quote-btn {
+  background-color: #FFFFFF;
+  color: #212121;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 60px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.explore-btn, .contact-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-btn {
+  background-color: #FFFFFF;
+  color: #212121;
+}
+
+.contact-btn {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.hero-img{
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1312px;
+  height: 738px;
+  margin-left: 80px;
+  margin-bottom: 80px;
+}
+
+
+/* section - 2 */
+
+/* .secion-2{
+  background-color: #FFFFFF;
+  color: #212121;
+  height: 100vh;
+}
+
+.part-a-heading{
+  height: 159px;
+  width: 616px;
+  font-size: 44px;
+}
+
+.part-a-p{
+  height: 87px;
+  font-size: 12px;
+} */

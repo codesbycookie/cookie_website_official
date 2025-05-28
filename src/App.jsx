@@ -1,23 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import Header from './components/Navbar/Header';
+import Hero from './pages/Hero/Hero';
+import Footer from './components/Footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-<div className="h-screen flex flex-row justify-center items-center bg-white">
-  <div className="text-center">
-    <h1 className="text-5xl font-bold mb-4">
-      Cookie website development started...
-    </h1>
-    <h3 className="text-5xl font-bold text-[#c18b13]">
-      Experience every byte.
-    </h3>
-  </div>
-</div>
-
+    <div className="app">
+      <Header />
+      <main>
+        <Hero />
+       
+      </main>
+      <Footer/>
+    </div>
   );
 }
 
