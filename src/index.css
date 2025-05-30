@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
-
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
 
 
 @theme {
@@ -41,6 +41,7 @@
     --text-muted: #aaaaaa;
     --text-accent: #86602c;
     --text-inverted: #ffffff;
+
 }
 
 
