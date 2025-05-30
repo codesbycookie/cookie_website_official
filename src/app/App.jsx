@@ -1,4 +1,4 @@
-import Hero from "../pages/Hero/Hero";
+import Hero from "../pages/Home/Home";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import Footer from "../pages/Components/Footer/Footer";
@@ -9,7 +9,6 @@ function App() {
     <Router>
       <Navbar />
       <AppRoutes />
-      <AssistiveBall/>
       <Footer />
     </Router>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Hero from "../pages/Hero/Hero";
+import Home from "../pages/Home/Home";
 
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Hero />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   );
 }
