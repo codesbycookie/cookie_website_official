@@ -60,10 +60,13 @@ const Section3 = () => {
           {steps.map((step, index) => (
             <div key={index} className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} items-start`}>
               {/* Spacer for mobile */}
-              <div className="md:hidden w-8 h-8"></div>
+              <div className="md:hidden w-8 h-8">
+                <img src="/imgs/cookie_white.png" alt="logo" height/>
+              </div>
               
               {/* Content Box */}
               <div className={`bg-black p-6 md:w-1/2 ${index % 2 === 0 ? 'md:mr-auto md:ml-8' : 'md:ml-auto md:mr-8'}`}>
+                <img src="/imgs/cookie_white.png" alt="logo" className="w-16 h-16" />
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{step.title}</h3>
                 <p className="text-base md:text-lg text-white">{step.description}</p>
               </div>
