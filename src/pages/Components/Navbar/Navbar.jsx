@@ -16,7 +16,7 @@ export default function Navbar() {
         <a href="/about-us" className="mx-3 text-xl">
           About
         </a>
-        <a href="" className="mx-3 text-xl">
+        <a href="/service" className="mx-3 text-xl">
           Services
         </a>
         <a href="/portfolio" className="mx-3 text-xl">
