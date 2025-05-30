@@ -10,16 +10,16 @@ export default function Navbar() {
         </a>
       </div>
       <div className="navbar-center text-white">
-        <a href="" className="mx-3">
+        <a href="" className="mx-3 text-xl">
           Home
         </a>
-        <a href="" className="mx-3">
+        <a href="" className="mx-3 text-xl">
           About
         </a>
-        <a href="" className="mx-3">
+        <a href="" className="mx-3 text-xl">
           Services
         </a>
-        <a href="" className="mx-3">
+        <a href="" className="mx-3 text-xl">
           Portfolio
         </a>
       </div>
