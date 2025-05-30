@@ -27,7 +27,7 @@ const Section3 = () => {
   };
 
   return (
-    <div className="bg-white text-black font-sans">
+    <div className="bg-black text-white font-sans">
       {/* Title Section */}
       <div className="max-w-6xl mx-auto py-12 px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-12 tracking-tight">
