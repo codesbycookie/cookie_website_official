@@ -13,7 +13,7 @@ export default function Navbar() {
         <a href="" className="mx-3 text-xl">
           Home
         </a>
-        <a href="" className="mx-3 text-xl">
+        <a href="/about-us" className="mx-3 text-xl">
           About
         </a>
         <a href="" className="mx-3 text-xl">

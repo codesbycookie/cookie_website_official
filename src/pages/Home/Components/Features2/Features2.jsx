@@ -11,7 +11,7 @@ export default function Features2() {
             </div>
             <div className="grid grid-cols-3 p-20">
                 <LongFeatureCard/>
-                                <LongFeatureCard/>
+                <LongFeatureCard/>
                 <LongFeatureCard/>
 
             </div>
