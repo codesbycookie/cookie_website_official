@@ -1,5 +1,54 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+
+
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 976px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+
+    --color-light-cream: #c18b43;
+    --color-white: #f2f7f7;
+    --color-black: #212121;
+    --color-dark-cream: #86602c;
+    --color-muted: #aaaaaa;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 12px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+
+    --border-radius-sm: 4px;
+    --border-radius-md: 6px;
+    --border-radius-lg: 8px;
+
+    --bg-primary: #ffffff;
+    --bg-secondary: #f2f2f2;
+    --bg-dark: #212121;
+    --bg-light: #fafafa;
+    --bg-accent: #c18b43;
+
+    --text-primary: #212121;
+    --text-secondary: #666666;
+    --text-muted: #aaaaaa;
+    --text-accent: #86602c;
+    --text-inverted: #ffffff;
+}
+
 
 body {
     font-family: "Mona Sans", sans-serif;
+}
+
+html {
+    background-color: white;
+    color: black
 }
