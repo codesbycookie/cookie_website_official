@@ -92,7 +92,7 @@ const Section2 = () => {
         <p className="text-lg sm:text-xl text-gray-600 mb-6">How It All Baked Up</p>
         <div className="border-t border-gray-300 w-20 mx-auto mb-8"></div>
 
-        {/* Animation Wrapper */}
+ 
         <div className="relative h-72 sm:h-80 md:h-96 mb-8 flex justify-center items-center overflow-hidden">
           <div
             className={`absolute bg-black text-white p-6 sm:p-8 rounded-xl shadow-lg flex flex-col justify-center items-center text-center w-full max-w-md sm:max-w-lg md:max-w-xl min-h-60 sm:min-h-72 md:min-h-80 ${getCardAnimationClass()}`}
@@ -108,7 +108,6 @@ const Section2 = () => {
           </div>
         </div>
 
-        {/* Navigation */}
         <div className="flex justify-center items-center gap-4">
           <button
             onClick={() => navigateChapter('prev')}
