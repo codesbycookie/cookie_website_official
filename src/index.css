@@ -1,7 +1,5 @@
 @import "tailwindcss";
 @plugin "daisyui";
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
-
 
 @theme {
     --breakpoint-*: initial;
@@ -42,6 +40,8 @@
     --text-accent: #86602c;
     --text-inverted: #ffffff;
 
+    --font-mona-sans: "Mona Sans", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
 }
 
 
