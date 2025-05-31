@@ -29,6 +29,9 @@ export default function Navbar() {
             <a href="/portfolio" className="text-white text-xl hover:text-dark-cream transition">
               Portfolio
             </a>
+            <a href="/contact-us" className="text-white text-xl hover:text-dark-cream transition">
+              Contact Us
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
