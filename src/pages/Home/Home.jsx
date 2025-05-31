@@ -8,9 +8,7 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      
       <Features2/>
-            <Features />
 
     </>
   );

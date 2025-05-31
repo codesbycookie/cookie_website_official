@@ -16,7 +16,7 @@ export default function Features() {
          </div>
         <div className="mt-20 flex flex-row">
           <FeatureCard title={'Web Design'} content={"Bespoke web solutions tailored to elevate your brand's online presence."}/>
-                  <FeatureCard title={'App Development'} content={"Innovative mobile applications designed to engage and retain your audience."}/>
+          <FeatureCard title={'App Development'} content={"Innovative mobile applications designed to engage and retain your audience."}/>
 
         </div>
        </div>
