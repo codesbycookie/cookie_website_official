@@ -16,7 +16,7 @@ export default function Section1() {
         <div className="pt-10 md:pt-20 flex flex-col justify-center items-center">
           <h1 className='font-hahmlet font-semibold text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight'>
             Cooked with,
-            <span style={{ color: '#C18B43' }}>code</span><br />
+            <span style={{ color: '#C18B43' }}>rk</span><br />
             served with 
             <span style={{ color: '#C18B43' }}>care</span>
           </h1>
