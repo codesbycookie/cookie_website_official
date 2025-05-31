@@ -28,6 +28,9 @@
     --spacing-md: 16px;
     --spacing-lg: 24px;
 
+    --spacing-section-lg: 100px;
+    --spacing-section-sm: 40px;
+
     --border-radius-sm: 4px;
     --border-radius-md: 6px;
     --border-radius-lg: 8px;

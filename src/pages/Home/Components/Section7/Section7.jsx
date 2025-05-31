@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Section7() {
   return (
-    <section className="bg-black text-white py-25 text-center px-4">
+    <section className="bg-black text-white py-25 text-center md:px-section-lg px-section-sm">
       <h2 className="text-2xl md:text-3xl font-semibold mb-4">
         Medium length CTA heading goes here
       </h2>

@@ -3,7 +3,7 @@ import React from 'react';
 export default function Section1() {
   return (
     <div className="bg-black text-white">
-      <div className="container mx-auto px-4 py-20">
+      <div className="mx-auto px-section-sm md:px-section-lg  py-20">
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className="font-hahmlet font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-screen-lg">
             Medium length hero heading goes here

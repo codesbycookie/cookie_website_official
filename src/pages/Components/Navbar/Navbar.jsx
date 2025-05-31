@@ -1,16 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CookieBtn from "../CookieBtn/CookieBtn";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
 
   return (
-    <div className="sticky top-0 z-5 bg-black px-5 py-5">
+    <div
+      className={`sticky z-5 transition-all duration-300 ${
+        scrolled
+          ? "bg-black/70 backdrop-blur-lg top-4 shadow-lg mx-auto px-6 py-4 rounded-2xl w-8/10"
+          : "bg-black px-5 py-5 top-0"
+      }`}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a className="text-white text-2xl font-bold">
+            <a className="text-white text-2xl font-bold cursor-pointer">
               Cookie Inc <span className="text-dark-cream">.</span>
             </a>
           </div>
@@ -50,7 +67,7 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Desktop CTA Button - Hidden on mobile */}
+          {/* Desktop CTA Button */}
           <div className="hidden md:block">
             <CookieBtn name={"Get a Quote"} />
           </div>
@@ -80,3 +97,4 @@ export default function Navbar() {
     </div>
   );
 }
+

@@ -4,7 +4,7 @@ import FeatureCard from "../FeatureCard/FeatureCard";
 export default function Section2() {
   return (
     <div className="bg-white text-black">
-      <div className="max-w-screen-xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="max-w-screen md:px-section-lg px-section-sm py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left Text Section */}
         <div className="flex flex-col justify-center order-2 md:order-1">
           <div className="max-w-xl">
@@ -33,7 +33,7 @@ export default function Section2() {
           <img
             src="/imgs/placeholder.png"
             alt="Feature Illustration"
-            className="w-full max-w-md h-auto object-contain"
+            className="w-full h-8/10 object-contain"
           />
         </div>
       </div>
