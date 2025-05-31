@@ -1,6 +1,6 @@
 export default function Section1() {
   return (
-    <div className='bg-black text-white'>
+    <div className='bg-black text-white h-screen'>
       <style>{`
         @keyframes scroll {
           0% { transform: translateX(0); }
