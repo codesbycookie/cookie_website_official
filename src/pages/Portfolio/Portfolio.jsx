@@ -2,8 +2,6 @@ import Section1 from "./Components/Section1";
 import Section2 from "./Components/Section2";
 import Section3 from "./Components/Section3";
 
-
-
 export default function AboutUs() {
   return (
     <>
@@ -11,7 +9,6 @@ export default function AboutUs() {
       <Section2/>
       <Section3/>
       <Section2/>
-      
     </>
   );
 }

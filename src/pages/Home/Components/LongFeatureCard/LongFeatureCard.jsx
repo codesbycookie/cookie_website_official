@@ -2,20 +2,25 @@ import React from "react";
 
 export default function LongFeatureCard() {
   return (
-    <div className="card bg-black">
-      <figure className="px-10 pt-10">
+    <div className="card bg-black border-none rounded-xl  hover:shadow-lg transition-shadow duration-300">
+      <figure className="px-6 pt-6">
         <img
           src="/imgs/placeholder.png"
-          className="rounded-xl h-75 w-150 object-cover"
+          alt="Feature"
+          className="rounded-xl w-full h-52 sm:h-64 object-cover"
         />
       </figure>
-      <div className="card-body items-center text-center mt-10">
-        <h2 className="card-title font-normal font-hahmlet text-3xl">Long heading is what you see here in this feature section</h2>
-        <p className='mt-5 text-lg font-light'>
+      <div className="card-body items-center text-center text-white">
+        <h2 className="card-title font-hahmlet text-2xl sm:text-3xl font-medium">
+          Long heading is what you see here in this feature section
+        </h2>
+        <p className="mt-4 text-base sm:text-lg font-light">
           Our digital marketing services are designed to engage and convert.
         </p>
-        <div className="card-actions mt-10">
-            <a href="#">Learn More &nbsp;{'>'}</a>
+        <div className="card-actions mt-6">
+          <a href="#" className=" hover:underline">
+            Learn More &nbsp; {'>'}
+          </a>
         </div>
       </div>
     </div>
