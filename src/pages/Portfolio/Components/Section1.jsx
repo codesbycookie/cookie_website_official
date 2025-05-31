@@ -18,7 +18,7 @@ export default function Section1() {
             Cooked with,
             <span style={{ color: '#C18B43' }}>code</span><br />
             served with 
-            <span style={{ color: '#C18B43' }}>care</span>
+            <span style={{ color: '#C18B43' }}> care</span>
           </h1>
           <p className='text-center mt-8 sm:mt-12 md:mt-16 lg:mt-20 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto'>
             Not just a cookie-cutter work — It’s our custom creations.
