@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='h-full px-20 py-30 bg-black text-white'>
+    <div className='h-full px-14 py-18 bg-black text-white'>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-around items-center gap-15">
       {/* Col-1 */}
         <div className='flex flex-col gap-8'>
