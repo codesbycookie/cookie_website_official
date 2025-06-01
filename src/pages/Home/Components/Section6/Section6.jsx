@@ -1,7 +1,56 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+
+export function ThreeDCardDemo() {
+  return (
+    <CardContainer className="inter-var">
+      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
+        <CardItem
+          translateZ="50"
+          className="text-xl font-bold text-neutral-600 dark:text-white"
+        >
+          Make things float in air
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="60"
+          className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
+        >
+          Hover over this card to unleash the power of CSS perspective
+        </CardItem>
+        <CardItem translateZ="100" className="w-full mt-4">
+          <img
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            height="1000"
+            width="1000"
+            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
+        </CardItem>
+        {/* <div className="flex justify-between items-center mt-20">
+          <CardItem
+            translateZ={20}
+            as="a"
+            href="https://twitter.com/mannupaaji"
+            target="__blank"
+            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
+            Try now →
+          </CardItem>
+          <CardItem
+            translateZ={20}
+            as="button"
+            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+            Sign up
+          </CardItem>
+        </div> */}
+      </CardBody>
+    </CardContainer>
+  );
+}
 
 const reviews = [
   {
@@ -50,9 +99,7 @@ const ReviewCard = ({ img, name, username, body }) => {
     <figure
       className={cn(
         "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-        // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
@@ -92,18 +139,54 @@ export function MarqueeDemo() {
 export default function Section6() {
   return (
     <section className="py-16 bg-white text-center">
-              <h2 className="text-2xl font-semibold my-20">Customer Testimonials</h2>
+      <h2 className="text-2xl font-semibold my-20">Customer Testimonials</h2>
 
       <MarqueeDemo />
       <h2 className="text-2xl font-semibold my-20">Project Showcase</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 w-8/10 mx-auto">
         {[1, 2, 3].map((item) => (
-          <div
-            key={item}
-            className="h-40 bg-gray-200 rounded flex items-center justify-center"
-          >
-            <span className="text-gray-500">Image Placeholder</span>
-          </div>
+          <CardContainer className="inter-var">
+            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
+              <CardItem
+                translateZ="50"
+                className="text-xl font-bold text-neutral-600 dark:text-white"
+              >
+                Make things float in air
+              </CardItem>
+              <CardItem
+                as="p"
+                translateZ="60"
+                className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
+              >
+                Hover over this card to unleash the power of CSS perspective
+              </CardItem>
+              <CardItem translateZ="100" className="w-full mt-4">
+                <img
+                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  height="1000"
+                  width="1000"
+                  className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                  alt="thumbnail"
+                />
+              </CardItem>
+              {/* <div className="flex justify-between items-center mt-20">
+          <CardItem
+            translateZ={20}
+            as="a"
+            href="https://twitter.com/mannupaaji"
+            target="__blank"
+            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
+            Try now →
+          </CardItem>
+          <CardItem
+            translateZ={20}
+            as="button"
+            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+            Sign up
+          </CardItem>
+        </div> */}
+            </CardBody>
+          </CardContainer>
         ))}
       </div>
     </section>

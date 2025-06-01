@@ -1,9 +1,25 @@
 import React from "react";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+
+
+
+export function ScrollBasedVelocityDemo() {
+  return (
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+      <VelocityScroll numRows={1} defaultVelocity={2}>
+        Experience Every Byte <span className="text-light-cream">.</span>
+      </VelocityScroll>
+    </div>
+  );
+}
+
 
 export default function Section7() {
   return (
-    <section className="bg-black text-white py-25 text-center md:px-section-lg px-section-sm">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+    <section className="bg-black text-white text-center ">
+      <ScrollBasedVelocityDemo/>
+      <div className="md:px-section-lg  py-25 px-section-sm">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">
         Medium length CTA heading goes here
       </h2>
       <p className="mb-6 text-gray-300">
@@ -17,6 +33,9 @@ export default function Section7() {
           Contact
         </button>
       </div>
+      </div>
+            <ScrollBasedVelocityDemo/>
+
     </section>
   );
 }

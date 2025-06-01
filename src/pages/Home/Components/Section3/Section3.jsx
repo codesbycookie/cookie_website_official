@@ -1,5 +1,5 @@
 import React from "react";
-import LongFeatureCard from "../LongFeatureCard/LongFeatureCard";
+import LongFeatureCard, { CardHoverEffectDemo } from "../LongFeatureCard/LongFeatureCard";
 
 export default function Section3() {
   return (
@@ -10,10 +10,8 @@ export default function Section3() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6 sm:px-10 md:px-20 mt-16">
-        <LongFeatureCard />
-        <LongFeatureCard />
-        <LongFeatureCard />
+      <div className="px-6 sm:px-10 md:px-20 mt-16">
+        <CardHoverEffectDemo/>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`sticky z-5 transition-all duration-300 ${
+      className={`sticky z-50 transition-all duration-300 ${
         scrolled
           ? "bg-black/70 backdrop-blur-lg top-4 shadow-lg mx-auto px-6 py-4 rounded-2xl w-8/10"
           : "bg-black px-5 py-5 top-0"
@@ -27,13 +27,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a className="text-white text-2xl font-bold cursor-pointer">
-              Cookie Inc <span className="text-dark-cream">.</span>
+            <a className="text-white lg:text-2xl text-lg font-bold cursor-pointer inline-flex">
+              Cookie Inc <span className="text-light-cream ms-2">.</span>
             </a>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden xl:flex items-center space-x-8">
             <a href="/" className="text-white text-xl hover:text-dark-cream transition">
               Home
             </a>
@@ -52,7 +52,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="xl:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white focus:outline-none"
@@ -68,7 +68,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden xl:block">
             <CookieBtn name={"Get a Quote"} />
           </div>
         </div>

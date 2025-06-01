@@ -66,6 +66,8 @@ html {
     color: black
 }
 
+
+
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);
@@ -126,8 +128,20 @@ html {
         }
 
     }
+  --animate-orbit: orbit calc(var(--duration)*1s) linear infinite
 
-}
+;
+  @keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));
+
+        }
+  100% {
+    transform: rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg));
+
+        }
+
+    }}
 
 :root {
     --radius: 0.625rem;
