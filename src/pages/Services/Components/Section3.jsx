@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Section3 = () => {
+  const [activeStep, setActiveStep] = useState(null);
+
   const steps = [
     {
       title: "Design The Blueprint",
@@ -25,7 +28,45 @@ const Section3 = () => {
   ];
 
   return (
-    <div className="bg-black text-white py-16 px-4 sm:px-6">
+    <div className="bg-black text-white py-16 px-4 sm:px-6 relative overflow-hidden">
+      {/* Floating cookies when hovering */}
+      <AnimatePresence>
+        {activeStep !== null && (
+          <motion.div
+            className="absolute top-0 left-0 w-full h-full pointer-events-none z-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.5 }}
+            exit={{ opacity: 0 }}
+          >
+            {[...Array(5)].map((_, i) => (
+              <motion.img
+                key={i}
+                src="/imgs/cookie_white.png"
+                className="absolute w-10 h-10"
+                initial={{
+                  x: Math.random() * window.innerWidth,
+                  y: Math.random() * window.innerHeight,
+                  scale: 0,
+                  rotate: 0,
+                }}
+                animate={{
+                  x: [Math.random() * window.innerWidth, Math.random() * window.innerWidth],
+                  y: [Math.random() * window.innerHeight, Math.random() * window.innerHeight],
+                  scale: [0, 1, 0.8],
+                  rotate: [0, 360],
+                }}
+                transition={{
+                  duration: 15 + Math.random() * 10,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  ease: "linear",
+                }}
+              />
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Title */}
       <div className="text-center mb-16 max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold">Making Of A Masterpiece</h1>
@@ -36,7 +77,7 @@ const Section3 = () => {
 
       {/* Timeline */}
       <div className="relative max-w-6xl mx-auto">
-        {/* Vertical Line with Images - Hidden on mobile */}
+        {/* Vertical line with markers */}
         <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full">
           <div className="w-0.5 h-full bg-gray-600 mx-auto"></div>
           {steps.map((_, index) => (
@@ -55,13 +96,15 @@ const Section3 = () => {
         </div>
 
         {/* Steps */}
-        <div className="space-y-12 md:space-y-24">
+        <div className="space-y-12 md:space-y-24 relative z-10">
           {steps.map((step, index) => (
             <div 
               key={index} 
               className={`relative flex flex-col ${index % 2 === 0 ? 'md:items-end' : 'md:items-start'}`}
+              onMouseEnter={() => setActiveStep(index)}
+              onMouseLeave={() => setActiveStep(null)}
             >
-              {/* Mobile Cookie Indicator */}
+              {/* Mobile Indicator */}
               <div className="md:hidden flex justify-center mb-4">
                 <img 
                   src="/imgs/cookie_white.png" 
@@ -69,10 +112,10 @@ const Section3 = () => {
                   className="w-8 h-8 bg-black p-1 rounded-full border-2"
                 />
               </div>
-              
+
               {/* Content Box */}
               <div className={`bg-black p-6 md:p-8 rounded-lg border border-white-800 md:w-[45%] 
-                ${index % 2 === 0 ? 'md:mr-4' : 'md:ml-4'}`}>
+                ${index % 2 === 0 ? 'md:mr-4' : 'md:ml-4'} relative z-10`}>
                 <div className="flex items-center mb-4">
                   <img 
                     src="/imgs/cookie_white.png" 
