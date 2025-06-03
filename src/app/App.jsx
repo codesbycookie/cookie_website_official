@@ -9,7 +9,7 @@ import AssistiveBall from '../pages/Components/AssistiveBall/AssistiveBall'
 function App() {
   return (
     <Router className='cursor-none'>
-<Pointer className="text-light-cream fixed z-[9999] pointer-events-none" />
+<Pointer className="text-light-cream fixed z-9999 pointer-events-none" />
       <Navbar />
       <AppRoutes />
       <Footer />

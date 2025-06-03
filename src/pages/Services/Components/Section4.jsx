@@ -1,4 +1,15 @@
 import React from 'react';
+import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
+
+export function NeonGradientCardDemo() {
+  return (
+    <NeonGradientCard className="max-w-sm items-center justify-center text-center">
+      <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+        Neon Gradient Card
+      </span>
+    </NeonGradientCard>
+  );
+}
 
 const Section4 = () => {
   const services = [
@@ -10,6 +21,15 @@ const Section4 = () => {
         "Meet Your Needs."
       ]
     },
+    {
+  title: "ERP Systems",
+  description: [
+    "Streamlining Business Processes",
+    "With Tailored ERP Solutions",
+    "That Scale With Growth."
+  ]
+}
+,
     {
       title: "UI/UX Design",
       description: [
@@ -56,24 +76,41 @@ const Section4 = () => {
         </p>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
           {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-            >
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                {service.title}
-              </h2>
-              <div className="space-y-2 text-gray-700">
-                {service.description.map((line, i) => (
-                  <p key={i} className="text-lg leading-relaxed">
-                    {line}
-                  </p>
-                ))}
-              </div>
-            </div>
+<NeonGradientCard key={index}>
+  <h2 className="text-2xl font-bold text-gray-900 mb-6">
+    {service.title}
+  </h2>
+  <div className="space-y-2 text-gray-700 w-full flex flex-col">
+    {service.description.map((line, i) => (
+      <p
+        key={i}
+        className="text-lg leading-relaxed text-center flex items-start gap-3 px-5"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#c18b13"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-move-right"
+        >
+          <path d="M18 8L22 12L18 16" />
+          <path d="M2 12H22" />
+        </svg>
+        {line}
+      </p>
+    ))}
+  </div>
+</NeonGradientCard>
+
           ))}
+
         </div>
       </div>
     </div>

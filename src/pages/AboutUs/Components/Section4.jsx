@@ -1,4 +1,6 @@
 import React from 'react';
+import { HyperText } from "@/components/magicui/hyper-text";
+import { FlipText } from "@/components/magicui/flip-text";
 
 const Section4 = () => {
   return (
@@ -6,13 +8,13 @@ const Section4 = () => {
       <div className="max-w-4xl mx-auto text-center">
 
         <div className="mb-4 md:mb-6">
-            <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight md:leading-snug">
+            <HyperText>
                  We Know What It Means To Start From Zero
-             </h2> 
+            </HyperText>
         </div>
         
         <p className="text-lg md:text-xl font-medium text-gray-600">
-            ~ Built By Founders, For Founders ~
+            <FlipText>~ Built By Founders, For Founders ~</FlipText>
          </p>
          
       </div>

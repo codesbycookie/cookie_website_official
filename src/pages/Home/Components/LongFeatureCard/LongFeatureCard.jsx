@@ -25,7 +25,7 @@ export const projects = [
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="mx-auto px-8 z-10">
+    <div className="mx-auto px-8 z-1">
       <HoverEffect items={projects} />
     </div>
   );

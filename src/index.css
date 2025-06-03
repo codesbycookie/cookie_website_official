@@ -14,7 +14,7 @@
 
     --color-light-cream: #c18b43;
     --color-white: #f2f7f7;
-    --color-black: #121212;
+    --color-black: #0a0a0a;
     --color-dark-cream: #86602c;
     --color-muted: #aaaaaa;
 
@@ -65,8 +65,6 @@ html {
     background-color: white;
     color: black
 }
-
-
 
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);
@@ -138,6 +136,47 @@ html {
         }
   100% {
     transform: rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg));
+
+        }
+
+    }
+  --animate-aurora: aurora 8s ease-in-out infinite alternate;
+  @keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+
+        }
+  25% {
+    background-position: 50% 100%;
+    transform: rotate(5deg) scale(1.1);
+
+        }
+  50% {
+    background-position: 100% 50%;
+    transform: rotate(-3deg) scale(0.95);
+
+        }
+  75% {
+    background-position: 50% 0%;
+    transform: rotate(3deg) scale(1.05);
+
+        }
+  100% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+
+        }
+
+    }
+  --animate-background-position-spin: background-position-spin 3000ms infinite alternate;
+  @keyframes background-position-spin {
+  0% {
+    background-position: top center;
+
+        }
+  100% {
+    background-position: bottom center;
 
         }
 

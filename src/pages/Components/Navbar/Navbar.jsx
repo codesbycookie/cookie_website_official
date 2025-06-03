@@ -17,9 +17,9 @@ export default function Navbar() {
 
   return (
     <div
-      className={`sticky z-50 transition-all duration-300 ${
+      className={`sticky z-45 transition-all duration-300 ${
         scrolled
-          ? "bg-black/70 backdrop-blur-lg top-4 shadow-lg mx-auto px-6 py-4 rounded-2xl w-8/10"
+          ? "bg-black/60 backdrop-blur-lg top-4 shadow-lg mx-auto px-6 py-4 rounded-2xl w-7/10"
           : "bg-black px-5 py-5 top-0"
       }`}
     >

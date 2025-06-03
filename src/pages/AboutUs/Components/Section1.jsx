@@ -1,3 +1,15 @@
+import { AuroraText } from "@/components/magicui/aurora-text";
+
+export function AuroraTextDemo() {
+  return (
+    <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
+      Ship <AuroraText>beautiful</AuroraText>
+    </h1>
+  );
+}
+
+
+
 export default function Section1() {
   return (
     <div className='bg-black text-white'>
@@ -5,7 +17,7 @@ export default function Section1() {
         <div className="pt-10 md:pt-20 flex flex-col justify-center items-center">
           <h1 className='font-hahmlet font-semibold text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight'>
             We're the makers behind <br />
-            <span style={{ color: '#C18B43' }}>the magic</span>
+            <AuroraText>the magic</AuroraText>
           </h1>
           <p className='text-center mt-8 sm:mt-12 md:mt-16 lg:mt-20 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto'>
             A bunch of creative minds stirring pixels, code, and caffeine to bring brands to life. Welcome to the COOKIE kitchen.

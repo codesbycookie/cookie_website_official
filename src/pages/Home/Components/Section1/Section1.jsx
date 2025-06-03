@@ -1,5 +1,6 @@
 import React from "react";
 import { TextAnimate } from "@/components/magicui/text-animate";
+import { GlobeDemo } from "../Globe/Globe";
 
 
 
@@ -13,17 +14,10 @@ export function TextAnimateDemo9() {
 
 export default function Section1() {
   return (
-    <div className="bg-black text-white h-screen flex items-center justify-center">
+    <div className="bg-black text-white h-full flex items-center justify-center">
       <div className="mx-auto px-section-sm md:px-section-lg py-20">
         <div className="flex flex-col justify-center items-center text-center">
-          <TextAnimate
-            animation="blurIn"
-            className={
-              "font-hahmlet mb-10 font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-w-screen-lg"
-            }
-          >
-            Confused Where to start your digital presence ? We've got you
-          </TextAnimate>
+          <GlobeDemo/>
           <p className="mt-10 text-lg sm:text-xl md:text-2xl max-w-3xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique. Duis cursus, mi quis
@@ -40,13 +34,7 @@ export default function Section1() {
             </button>
           </div>
 
-          {/* <div className="mt-10 w-full">
-            <img
-              src="/imgs/heroimg.png"
-              className="w-full h-auto rounded-none"
-              alt="Hero"
-            />
-          </div> */}
+
         </div>
       </div>
     </div>

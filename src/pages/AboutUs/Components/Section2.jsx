@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { StoryCard } from './StoryCard/StoryCard';
 
 const Section2 = () => {
   const chapters = [
@@ -87,60 +88,10 @@ const Section2 = () => {
 
   return (
     <div className="bg-white py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="max-w-5xl mx-auto text-center relative">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900">Cookie Verse</h1>
-        <p className="text-lg sm:text-xl text-gray-600 mb-6">How It All Baked Up</p>
-        <div className="border-t border-gray-300 w-20 mx-auto mb-8"></div>
-
- 
-        <div className="relative h-72 sm:h-80 md:h-96 mb-8 flex justify-center items-center overflow-hidden">
-          <div
-            className={`absolute bg-black text-white p-6 sm:p-8 rounded-xl shadow-lg flex flex-col justify-center items-center text-center w-full max-w-md sm:max-w-lg md:max-w-xl min-h-60 sm:min-h-72 md:min-h-80 ${getCardAnimationClass()}`}
-          >
-            <h2 className="text-xl sm:text-2xl font-bold">{chapters[currentChapter].number}</h2>
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-4">
-              {chapters[currentChapter].title}
-            </h3>
-            <p className="w-full max-w-full text-sm sm:text-base md:text-lg text-center">
-                 {chapters[currentChapter].content}
-            </p>
-
-          </div>
-        </div>
-
-        <div className="flex justify-center items-center gap-4">
-          <button
-            onClick={() => navigateChapter('prev')}
-            className="p-2 rounded-full hover:bg-gray-200 transition"
-            aria-label="Previous chapter"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          <div className="flex gap-2">
-            {chapters.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => handleDotClick(index)}
-                className={`w-3 h-3 rounded-full transition ${currentChapter === index ? 'bg-black' : 'bg-gray-300'}`}
-                aria-label={`Go to chapter ${index + 1}`}
-              />
-            ))}
-          </div>
-
-          <button
-            onClick={() => navigateChapter('next')}
-            className="p-2 rounded-full hover:bg-gray-200 transition"
-            aria-label="Next chapter"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
-      </div>
+      
+     <div className="flex justify-center">
+       <StoryCard/>
+     </div>
     </div>
   );
 };

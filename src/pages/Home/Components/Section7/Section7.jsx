@@ -3,10 +3,10 @@ import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
 
 
-export function ScrollBasedVelocityDemo() {
+export function ScrollBasedVelocityDemo({ is_reverse = false}) {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-      <VelocityScroll numRows={1} defaultVelocity={2}>
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden ">
+      <VelocityScroll numRows={1} defaultVelocity={2} reverse={is_reverse} className={''}>
         Experience Every Byte <span className="text-light-cream">.</span>
       </VelocityScroll>
     </div>
@@ -34,7 +34,7 @@ export default function Section7() {
         </button>
       </div>
       </div>
-            <ScrollBasedVelocityDemo/>
+            <ScrollBasedVelocityDemo is_reverse={true}/>
 
     </section>
   );
