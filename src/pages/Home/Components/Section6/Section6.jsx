@@ -4,6 +4,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import { AuroraText } from "@/components/magicui/aurora-text";
 
 export function ThreeDCardDemo() {
   return (
@@ -139,10 +140,31 @@ export function MarqueeDemo() {
 export default function Section6() {
   return (
     <section className="py-16 bg-white text-center">
-      <h2 className="text-2xl font-semibold my-20">Customer Testimonials</h2>
-
+      <AuroraText
+        className="text-5xl font-bold my-20"
+        colors={[
+          "#fff3c4", // pale gold for glow
+          "#c18b13",
+          "#86602c",
+          "#ffe29a",
+          "#e0b352",
+        ]}
+      >
+        Customer Testimonials
+      </AuroraText>
       <MarqueeDemo />
-      <h2 className="text-2xl font-semibold my-20">Project Showcase</h2>
+      <AuroraText
+        className="text-5xl font-bold my-20"
+        colors={[
+          "#fff3c4", // pale gold for glow
+          "#c18b13",
+          "#86602c",
+          "#ffe29a",
+          "#e0b352",
+        ]}
+      >
+        Project Showcase
+      </AuroraText>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 w-8/10 mx-auto">
         {[1, 2, 3].map((item) => (
           <CardContainer className="inter-var">

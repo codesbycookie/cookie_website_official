@@ -20,7 +20,7 @@ const steps = [
 
 export default function Section4() {
   return (
-    <div className="bg-white text-black py-16">
+    <div className="bg-black  text-white py-16">
       <div className="text-center md:px-section-lg px-section-sm">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold font-hahmlet max-w-4xl mx-auto">
           Our Seamless Process: From Concept to Completion in Just a Few Steps

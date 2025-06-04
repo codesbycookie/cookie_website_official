@@ -16,13 +16,14 @@ export default function Navbar() {
 
 
   return (
-    <div
-      className={`sticky z-45 transition-all duration-300 ${
-        scrolled
-          ? "bg-black/60 backdrop-blur-lg top-4 shadow-lg mx-auto px-6 py-4 rounded-2xl w-7/10"
-          : "bg-black px-5 py-5 top-0"
-      }`}
-    >
+<div
+  className={`fixed z-45 transition-all duration-300 ease-in-out ${
+    scrolled
+      ? "left-0 right-0 top-4 bg-black/60 backdrop-blur-lg shadow-lg mx-auto px-6 py-4 rounded-2xl w-[90%] md:w-[70%]"
+      : "top-0 bg-black px-5 py-5 w-full"
+  }`}
+>
+
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -75,7 +76,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4">
+          <div className="xl:hidden mt-4 pb-4 space-y-4">
             <a href="/" className="block text-white text-xl py-2 hover:text-dark-cream">
               Home
             </a>

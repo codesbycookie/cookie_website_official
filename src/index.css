@@ -53,8 +53,9 @@
 
 }
 
-body {
-    font-family: "Mona Sans", sans-serif;
+body, html, #root {
+    font-family: "Mona Sans", sans-serif !important;
+    overflow-x: hidden !important;
 }
 
 html, body, * {

@@ -90,6 +90,7 @@ function ParallaxText({
 export function VelocityScroll({
   defaultVelocity = 5,
   numRows = 2,
+  reverse = false, // <-- new prop
   children,
   className,
   ...props
@@ -100,12 +101,22 @@ export function VelocityScroll({
         "relative w-full text-4xl font-bold tracking-[-0.02em] md:text-7xl md:leading-[5rem]",
         className
       )}
-      {...props}>
-      {Array.from({ length: numRows }).map((_, i) => (
-        <ParallaxText key={i} baseVelocity={defaultVelocity * (i % 2 === 0 ? 1 : -1)}>
-          {children}
-        </ParallaxText>
-      ))}
+      {...props}
+    >
+      {Array.from({ length: numRows }).map((_, i) => {
+        const direction = reverse
+          ? -1 // all rows reversed
+          : i % 2 === 0
+            ? 1
+            : -1; // alternate rows by default
+
+        return (
+          <ParallaxText key={i} baseVelocity={defaultVelocity * direction}>
+            {children}
+          </ParallaxText>
+        );
+      })}
     </div>
   );
 }
+

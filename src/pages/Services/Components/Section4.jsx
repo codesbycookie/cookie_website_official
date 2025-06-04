@@ -78,7 +78,7 @@ const Section4 = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
           {services.map((service, index) => (
-<NeonGradientCard key={index}>
+<NeonGradientCard key={index} neonColors={{firstColor:'#c18b13', secondColor: '#ffffff' }}>
   <h2 className="text-2xl font-bold text-gray-900 mb-6">
     {service.title}
   </h2>

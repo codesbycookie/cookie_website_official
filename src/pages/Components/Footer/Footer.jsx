@@ -1,10 +1,23 @@
 import React from 'react'
 import { Instagram, Facebook, Linkedin, Twitter } from 'lucide-react'
 
+import { SpinningText } from "@/components/magicui/spinning-text";
+
+export function SpinningTextBasic() {
+  return <SpinningText className={'md:text-3xl text-lg tracking-widest font-bold text-light-cream'} radius={6}>Creativity • Care • Commitment •</SpinningText>;
+}
+
+
+
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-6 md:px-20 py-12">
+    <footer className="bg-black text-white px-6 md:px-20 py-12 relative">
       {/* Top Row */}
+
+<div className="absolute top-0 md:end-35 end-20">
+  <SpinningTextBasic/>
+</div>
+
       <div className="flex flex-col lg:flex-row justify-between gap-10">
 
         {/* Left: Logo + Email */}
