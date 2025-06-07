@@ -11,7 +11,6 @@ export default function AboutUs() {
       <Section2/>
       <Section3/>
       <Section4/>
-      
     </>
   );
 }

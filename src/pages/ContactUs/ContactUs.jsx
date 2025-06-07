@@ -112,10 +112,10 @@ const ContactUs = () => {
               </div>
               
               <div className="relative z-10 w-full text-center">
-                <div className="relative w-48 h-48 mx-auto mb-8">
+                <div className="relative w-44 h-44 mx-auto mb-8">
                   {/* Avatar */}
-                  <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-black shadow-sm">
-                    <img src="/imgs/cookie_logo_web.jpeg" alt="Profile" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-sm">
+                    <img src="/imgs/cookie_logo_web.jpeg" alt="Profile" className="w-full h-full object-contain" />
                   </div>
                   
                   {/* Floating skills */}
