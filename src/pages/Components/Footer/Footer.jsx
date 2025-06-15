@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="flex flex-col lg:flex-row justify-between gap-10">
 
         {/* Left: Logo + Email */}
-        <div className="flex-1 max-w-4/12">
+        <div className="flex-1 w-full">
           <div className="flex items-center mb-4">
             <img src="/imgs/cookie_white.png" alt="Cookie logo" className="h-8 w-8 mr-3" />
             <h2 className="text-2xl font-bold">Cookie Inc<span className="text-yellow-200">.</span></h2>
