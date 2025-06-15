@@ -43,7 +43,13 @@ export const Timeline = ({
               </div>
 
 
-<AuroraText className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-white whitespace-nowrap">
+<AuroraText className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-white whitespace-nowrap" colors={[
+          "#fff3c4", // pale gold for glow
+          "#c18b13",
+          "#86602c",
+          "#ffe29a",
+          "#e0b352",
+        ]}>
   {item.title}
 </AuroraText>
 
@@ -68,7 +74,7 @@ export const Timeline = ({
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full" />
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-light-cream via-dark-cream to-transparent from-[0%] via-[10%] rounded-full" />
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NumberTicker } from "@/components/magicui/number-ticker";
 
 const Section4 = () => {
   return (
@@ -7,7 +8,10 @@ const Section4 = () => {
       
         <div className="mb-4 md:mb-6">
             <h2 className="text-3xl md:text-5xl font-bold leading-tight md:leading-snug">
-                 15+ projects baked — and we’re just 
+                   <NumberTicker
+      value={100}
+      className="whitespace-pre-wrap me-3 font-medium tracking-tighter text-light-cream"
+    />+ projects baked — and we’re just 
                 getting started
              </h2> 
         </div>
@@ -18,7 +22,7 @@ const Section4 = () => {
          </p>
 
          <p className="text-lg md:text-xl font-bold" style={{ paddingTop: '60px' }}>
-            Let’s Bake Something Together →
+            Let’s Bake Something Together <span className="text-light-cream ms-3">→</span>
         </p>
 
          
