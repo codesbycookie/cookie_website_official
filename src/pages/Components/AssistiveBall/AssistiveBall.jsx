@@ -1,66 +1,73 @@
-import { useState } from "react";
-import { FaInstagram, FaLinkedin, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
+/* eslint-disable no-unused-vars */
+// AssistiveBall.jsx
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { FaFacebook, FaInstagram, FaWhatsapp, FaTimes } from 'react-icons/fa';
 
-export default function AssistiveBall() {
+const AssistiveBall = () => {
   const [open, setOpen] = useState(false);
 
-  const toggleMenu = () => setOpen(!open);
-
-  const icons = [
-    {
-      icon: <FaInstagram size={30} />, link: "https://instagram.com"
-    },
-    {
-      icon: <FaLinkedin size={30} />, link: "https://linkedin.com"
-    },
-    {
-      icon: <FaWhatsapp size={30} />, link: "https://wa.me/1234567890"
-    },
-    {
-      icon: <FaPhoneAlt size={30} />, link: "tel:+1234567890"
-    }
-  ];
-
-  // Determine if we're on the left or right side based on position class
-  const isRightSide = true; // Change this to false if placing on left side
+  const toggleMenu = () => setOpen(prev => !prev);
 
   return (
-    <div className={`fixed bottom-6 ${isRightSide ? "right-6" : "left-6"} z-50 max-w-full max-h-full`}>
-      <div className="relative w-16 h-16">
-        {/* Semi-Circular Menu Items (Left or Right arc depending on position) */}
-        {icons.map((item, index) => {
-          const angle = (90 / (icons.length - 1)) * index;
-          const radius = open ? 120 : 0;
-          const x = radius * Math.cos((angle * Math.PI) / 180);
-          const y = radius * Math.sin((angle * Math.PI) / 180);
+    <motion.div
+      drag
+      dragConstraints={{ left: 0, right: window.innerWidth - 60, top: 0, bottom: window.innerHeight - 60 }}
+      style={{
+        position: 'fixed',
+        bottom: 20,
+        right: 20,
+        zIndex: 1000,
+      }}
+    >
+      <div style={{ position: 'relative' }}>
+        {/* Social Media Menu */}
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            style={{
+              position: 'absolute',
+              bottom: 70,
+              right: 0,
+              backgroundColor: '#fff',
+              padding: 10,
+              borderRadius: 12,
+              boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 10,
+            }}
+          >
+            <a href="https://facebook.com" target="_blank"><FaFacebook size={24} color="#3b5998" /></a>
+            <a href="https://instagram.com" target="_blank"><FaInstagram size={24} color="#E4405F" /></a>
+            <a href="https://wa.me/1234567890" target="_blank"><FaWhatsapp size={24} color="#25D366" /></a>
+          </motion.div>
+        )}
 
-          const translateX = isRightSide ? -Math.abs(x) : Math.abs(x);
-
-          return (
-            <a
-              key={index}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`absolute w-10 h-10 flex items-center justify-center bg-white text-black rounded-full shadow transition-all duration-300`}
-              style={{
-                transform: `translate(${translateX}px, ${-y}px)`,
-                opacity: open ? 1 : 0
-              }}
-            >
-              {item.icon}
-            </a>
-          );
-        })}
-
-        {/* Main Ball Button */}
-        <button
+        {/* Assistive Button */}
+        <motion.div
           onClick={toggleMenu}
-          className={`w-12 h-12 bg-blue-600 rounded-full shadow-xl flex items-center justify-center text-white transition-transform duration-500 ${open ? "rotate-360" : "rotate-0"}`}
+          whileTap={{ scale: 0.9 }}
+          style={{
+            width: 60,
+            height: 60,
+            borderRadius: '50%',
+            backgroundColor: '#007bff',
+            color: 'white',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+            boxShadow: '0 4px 8px rgba(0,0,0,0.3)',
+          }}
         >
-          <img src="/imgs/cookie-hd.png" alt="" />
-        </button>
+          {open ? <FaTimes size={24} /> : '+'}
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
-}
+};
+
+export default AssistiveBall;

@@ -11,6 +11,7 @@ function App() {
     <Router className='cursor-none'>
 <Pointer className="text-light-cream fixed z-9999 pointer-events-none" />
       <Navbar />
+      <AssistiveBall/>
       <AppRoutes />
       <Footer />
     </Router>
