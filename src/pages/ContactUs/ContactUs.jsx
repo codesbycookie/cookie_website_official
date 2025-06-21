@@ -79,7 +79,7 @@ const ContactUs = () => {
   ];
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-white p-4 md:p-8" aria-label="Contact section">
+    <section className="min-h-screen flex flex-col justify-center items-center bg-[white] p-4 md:p-8" aria-label="Contact section">
       <div className="w-full max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -100,26 +100,26 @@ const ContactUs = () => {
         </div>
 
         {/* Main Card */}
-        <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+        <div className="bg-[#212121] rounded-xl shadow-lg border border-gray-200 overflow-hidden">
           <div className="flex flex-col md:flex-row">
             {/* Left side - Visual */}
-            <div className="w-full md:w-2/5 bg-gray-50 p-8 flex flex-col justify-center items-center relative border-r border-gray-200">
+            <div className="w-full md:w-2/5 bg-[#212121] p-8 flex flex-col justify-center items-center relative border-r border-gray-200">
               {/* Decorative elements */}
-              <div className="absolute inset-0 opacity-5">
+              {/* <div className="absolute inset-0 opacity-5">
                 <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-black"></div>
                 <div className="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-black"></div>
                 <div className="absolute top-1/2 right-20 w-24 h-24 rounded-full bg-black"></div>
-              </div>
+              </div> */}
               
               <div className="relative z-10 w-full text-center">
                 <div className="relative w-44 h-44 mx-auto mb-8">
                   {/* Avatar */}
-                  <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-sm">
-                    <img src="/imgs/cookie_logo_web.jpeg" alt="Profile" className="w-full h-full object-contain" />
+                  <div className="absolute inset-0 bg-[#212121] rounded-full flex items-center justify-center overflow-hidden shadow-sm">
+                    <img src="/imgs/cookie_logo_web.jpeg" alt="Profile" className=" object-contain" width={100} height={100}/>
                   </div>
                   
                   {/* Floating skills */}
-                  {skills.map((skill, idx) => {
+                   {skills.map((skill, idx) => {
                     const angle = (idx * 60) * (Math.PI / 180);
                     const radius = 110;
                     const x = radius * Math.cos(angle);
@@ -144,7 +144,7 @@ const ContactUs = () => {
                   })}
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-3 text-black">
+                <h3 className="text-2xl font-bold mb-3 text-white">
                   Step {step} of {steps.length}
                 </h3>
                 
@@ -153,7 +153,7 @@ const ContactUs = () => {
                   {steps.map((stepItem) => (
                     <div 
                       key={stepItem.id} 
-                      className={`w-3 h-1 rounded-full transition-all ${step >= stepItem.id ? 'bg-black w-6' : 'bg-gray-300'}`}
+                      className={`w-3 h-1 rounded-full transition-all ${step >= stepItem.id ? 'bg-white w-6' : 'bg-gray-300'}`}
                     ></div>
                   ))}
                 </div>
@@ -209,14 +209,14 @@ const ContactUs = () => {
                             <div className="w-10 h-10 rounded-full bg-gray-100 text-black flex items-center justify-center border border-gray-300">
                               {steps[0].icon}
                             </div>
-                            <h3 className="text-2xl font-bold text-black">Tell us about yourself</h3>
+                            <h3 className="text-2xl font-bold text-white">Tell us about yourself</h3>
                           </div>
-                          <p className="text-gray-600 ml-13">Let's get acquainted before we meet</p>
+                          <p className="text-light-cream ml-13">Let's get acquainted before we meet</p>
                         </div>
                         
                         <div className="space-y-5">
                           <div>
-                            <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-700">Your Full Name*</label>
+                            <label htmlFor="name" className="block text-sm font-medium mb-2 text-white">Your Full Name*</label>
                             <div className="relative">
                               <input
                                 type="text"
@@ -227,7 +227,7 @@ const ContactUs = () => {
                                 required
                                 aria-required="true"
                                 placeholder="John Doe"
-                                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black focus:border-black transition text-gray-800 pl-12"
+                                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black focus:border-black transition font-bold pl-12"
                                 autoFocus
                               />
                               <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
@@ -260,14 +260,14 @@ const ContactUs = () => {
                             <div className="w-10 h-10 rounded-full bg-gray-100 text-black flex items-center justify-center border border-gray-300">
                               {steps[1].icon}
                             </div>
-                            <h3 className="text-2xl font-bold text-black">How should we reach you?</h3>
+                            <h3 className="text-2xl font-bold text-white">How should we reach you?</h3>
                           </div>
-                          <p className="text-gray-600 ml-13">We'll use this to confirm your appointment</p>
+                          <p className="text-white ml-13">We'll use this to confirm your appointment</p>
                         </div>
                         
                         <div className="space-y-5">
                           <div>
-                            <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-700">Email Address*</label>
+                            <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-100">Email Address*</label>
                             <div className="relative">
                               <input
                                 type="email"
@@ -281,7 +281,7 @@ const ContactUs = () => {
                                 className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black focus:border-black transition text-gray-800 pl-12"
                                 autoFocus
                               />
-                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
+                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-700">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
@@ -290,7 +290,7 @@ const ContactUs = () => {
                           </div>
                           
                           <div>
-                            <label htmlFor="phone" className="block text-sm font-medium mb-2 text-gray-700">Phone Number*</label>
+                            <label htmlFor="phone" className="block text-sm font-medium mb-2 text-gray-100">Phone Number*</label>
                             <div className="relative">
                               <input
                                 type="tel"
@@ -534,7 +534,7 @@ const ContactUs = () => {
                     {step < steps.length ? (
                       <button
                         type="submit"
-                        className="px-8 py-3 bg-black text-white font-medium rounded-lg hover:bg-gray-800 transition border border-black disabled:opacity-50 flex items-center gap-2"
+                        className="px-8 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-400 transition border border-black  flex items-center gap-2"
                         disabled={!formData.name || (step === 2 && (!formData.email || !formData.phone)) || (step === 3 && !formData.date)}
                       >
                         Continue
