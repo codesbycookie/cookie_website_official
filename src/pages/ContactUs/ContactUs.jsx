@@ -70,16 +70,15 @@ const ContactUs = () => {
     }
   };
 
-  // Progress bar steps
+  // Progress bar steps (now only 3 steps since we combined 1 and 2)
   const steps = [
-    { id: 1, name: 'About You', icon: '👤' },
-    { id: 2, name: 'Contact Info', icon: '📱' },
-    { id: 3, name: 'Schedule', icon: '📅' },
-    { id: 4, name: 'Confirm', icon: '✅' }
+    { id: 1, name: 'Personal Info', icon: '👤' },
+    { id: 2, name: 'Schedule', icon: '📅' },
+    { id: 3, name: 'Confirm', icon: '✅' }
   ];
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-[white] p-4 md:p-8" aria-label="Contact section">
+    <section className="min-h-screen flex flex-col justify-center items-center bg-[white] p-4 md:p-8 lg:mt-20" aria-label="Contact section">
       <div className="w-full max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -104,13 +103,6 @@ const ContactUs = () => {
           <div className="flex flex-col md:flex-row">
             {/* Left side - Visual */}
             <div className="w-full md:w-2/5 bg-[#212121] p-8 flex flex-col justify-center items-center relative border-r border-gray-200">
-              {/* Decorative elements */}
-              {/* <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-black"></div>
-                <div className="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-black"></div>
-                <div className="absolute top-1/2 right-20 w-24 h-24 rounded-full bg-black"></div>
-              </div> */}
-              
               <div className="relative z-10 w-full text-center">
                 <div className="relative w-44 h-44 mx-auto mb-8">
                   {/* Avatar */}
@@ -119,7 +111,7 @@ const ContactUs = () => {
                   </div>
                   
                   {/* Floating skills */}
-                   {skills.map((skill, idx) => {
+                  {skills.map((skill, idx) => {
                     const angle = (idx * 60) * (Math.PI / 180);
                     const radius = 110;
                     const x = radius * Math.cos(angle);
@@ -199,9 +191,9 @@ const ContactUs = () => {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={step === 4 ? handleSubmit : (e) => { e.preventDefault(); nextStep(); }}>
+                <form onSubmit={step === 3 ? handleSubmit : (e) => { e.preventDefault(); nextStep(); }}>
                   <div className={`transition-all duration-300 ease-in-out ${animationDirection === 'forward' ? 'animate-fadeIn' : 'animate-fadeIn'}`}>
-                    {/* Step 1: Name */}
+                    {/* Step 1: Combined Personal Info */}
                     {step === 1 && (
                       <div className="space-y-8">
                         <div>
@@ -211,7 +203,7 @@ const ContactUs = () => {
                             </div>
                             <h3 className="text-2xl font-bold text-white">Tell us about yourself</h3>
                           </div>
-                          <p className="text-light-cream ml-13">Let's get acquainted before we meet</p>
+                          <p className="text-light-cream ml-13">We'll use this information to contact you about your appointment</p>
                         </div>
                         
                         <div className="space-y-5">
@@ -227,7 +219,7 @@ const ContactUs = () => {
                                 required
                                 aria-required="true"
                                 placeholder="John Doe"
-                                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black focus:border-black transition font-bold pl-12"
+                                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black focus:border-black transition font-semibold pl-12"
                                 autoFocus
                               />
                               <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
@@ -238,34 +230,6 @@ const ContactUs = () => {
                             </div>
                           </div>
                           
-                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                            <div className="flex items-start gap-3">
-                              <svg className="w-5 h-5 text-black mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                              </svg>
-                              <p className="text-sm text-gray-700">
-                                This helps us personalize your consultation experience. We value your privacy and will never share your information.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                    
-                    {/* Step 2: Contact Info */}
-                    {step === 2 && (
-                      <div className="space-y-8">
-                        <div>
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 rounded-full bg-gray-100 text-black flex items-center justify-center border border-gray-300">
-                              {steps[1].icon}
-                            </div>
-                            <h3 className="text-2xl font-bold text-white">How should we reach you?</h3>
-                          </div>
-                          <p className="text-white ml-13">We'll use this to confirm your appointment</p>
-                        </div>
-                        
-                        <div className="space-y-5">
                           <div>
                             <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-100">Email Address*</label>
                             <div className="relative">
@@ -279,7 +243,6 @@ const ContactUs = () => {
                                 aria-required="true"
                                 placeholder="john@example.com"
                                 className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black focus:border-black transition text-gray-800 pl-12"
-                                autoFocus
                               />
                               <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-700">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -317,7 +280,7 @@ const ContactUs = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                               </svg>
                               <p className="text-sm text-gray-700">
-                                Your contact information is secure with us. We'll only use it to communicate about your appointment.
+                                Your information is secure with us. We'll only use it to communicate about your appointment.
                               </p>
                             </div>
                           </div>
@@ -325,13 +288,13 @@ const ContactUs = () => {
                       </div>
                     )}
                     
-                    {/* Step 3: Appointment Details */}
-                    {step === 3 && (
+                    {/* Step 2: Appointment Details */}
+                    {step === 2 && (
                       <div className="space-y-8">
                         <div>
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-10 h-10 rounded-full bg-gray-100 text-black flex items-center justify-center border border-gray-300">
-                              {steps[2].icon}
+                              {steps[1].icon}
                             </div>
                             <h3 className="text-2xl font-bold text-black">Schedule your session</h3>
                           </div>
@@ -400,13 +363,13 @@ const ContactUs = () => {
                       </div>
                     )}
                     
-                    {/* Step 4: Review */}
-                    {step === 4 && (
+                    {/* Step 3: Review */}
+                    {step === 3 && (
                       <div className="space-y-8">
                         <div>
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-10 h-10 rounded-full bg-gray-100 text-black flex items-center justify-center border border-gray-300">
-                              {steps[3].icon}
+                              {steps[2].icon}
                             </div>
                             <h3 className="text-2xl font-bold text-black">Review your details</h3>
                           </div>
@@ -439,26 +402,6 @@ const ContactUs = () => {
                             <span className="font-medium text-black">{formData.name}</span>
                           </div>
                           
-                          <div className="flex justify-between pt-4 border-t border-gray-200">
-                            <div className="flex items-center gap-3">
-                              <div className="w-10 h-10 rounded-full bg-gray-100 text-black flex items-center justify-center border border-gray-300">
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                </svg>
-                              </div>
-                              <div>
-                                <h4 className="font-medium text-black">Contact Details</h4>
-                              </div>
-                            </div>
-                            <button 
-                              type="button"
-                              onClick={() => setStep(2)}
-                              className="text-sm text-black hover:underline"
-                            >
-                              Edit
-                            </button>
-                          </div>
-                          
                           <div className="flex justify-between">
                             <span className="text-gray-600">Email:</span>
                             <span className="font-medium text-black">{formData.email}</span>
@@ -482,7 +425,7 @@ const ContactUs = () => {
                             </div>
                             <button 
                               type="button"
-                              onClick={() => setStep(3)}
+                              onClick={() => setStep(2)}
                               className="text-sm text-black hover:underline"
                             >
                               Edit
@@ -535,7 +478,7 @@ const ContactUs = () => {
                       <button
                         type="submit"
                         className="px-8 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-400 transition border border-black  flex items-center gap-2"
-                        disabled={!formData.name || (step === 2 && (!formData.email || !formData.phone)) || (step === 3 && !formData.date)}
+                        disabled={!formData.name || !formData.email || !formData.phone || (step === 2 && !formData.date)}
                       >
                         Continue
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
