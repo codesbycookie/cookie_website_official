@@ -19,24 +19,23 @@ export function ScrollBasedVelocityDemo({ is_reverse = false }) {
   );
 }
 
-export default function Section7() {
+export default function Section7({content}) {
   return (
     <section className="bg-black text-white pb-10">
       <ScrollBasedVelocityDemo />
       <div className="md:px-section-lg py-25 px-section-sm text-center">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-          Medium length CTA heading goes here
+          {content.title}
         </h2>
         <p className="mb-6 text-gray-300">
-          Fusce at nisi eget dolor rhoncus facilisis. Mauris ante ligula,
-          facilisis sed ornare eu.
+          {content.description}
         </p>
         <div className="space-x-4">
           <button className="bg-white text-black font-medium px-6 py-2 rounded shadow">
-            Start
+            {content.first_button}
           </button>
           <button className="border border-white px-6 py-2 rounded text-white">
-            Contact
+            {content.second_button}
           </button>
         </div>
       </div>

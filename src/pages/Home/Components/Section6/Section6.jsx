@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
-
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
@@ -32,68 +30,14 @@ export function ThreeDCardDemo() {
             alt="thumbnail"
           />
         </CardItem>
-        {/* <div className="flex justify-between items-center mt-20">
-          <CardItem
-            translateZ={20}
-            as="a"
-            href="https://twitter.com/mannupaaji"
-            target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
-            Try now →
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-            Sign up
-          </CardItem>
-        </div> */}
+        
       </CardBody>
     </CardContainer>
   );
 }
 
-const reviews = [
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
-  },
-  {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
-  },
-  {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
-  },
-  {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
-  },
-];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+
 
 const ReviewCard = ({ img, name, username, body }) => {
   return (
@@ -118,7 +62,13 @@ const ReviewCard = ({ img, name, username, body }) => {
   );
 };
 
-export function MarqueeDemo() {
+export function MarqueeDemo({reviews}) {
+
+  
+const firstRow = reviews.slice(0, reviews.length / 2);
+const secondRow = reviews.slice(reviews.length / 2);
+
+
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
       <Marquee pauseOnHover className="[--duration:20s]">
@@ -137,37 +87,37 @@ export function MarqueeDemo() {
   );
 }
 
-export default function Section6() {
+export default function Section6({content}) {
   return (
     <section className="py-16 bg-white text-center">
-      <AuroraText
+        <AuroraText
         className="text-5xl font-bold my-20"
         colors={[
-          "#fff3c4", // pale gold for glow
+          "#fff3c4", 
           "#c18b13",
           "#86602c",
           "#ffe29a",
           "#e0b352",
         ]}
       >
-        Customer Testimonials
+        {content.title}
       </AuroraText>
-      <MarqueeDemo />
+      <MarqueeDemo reviews={content.reviews}/>
       <AuroraText
         className="text-5xl font-bold my-20"
         colors={[
-          "#fff3c4", // pale gold for glow
+          "#fff3c4", 
           "#c18b13",
           "#86602c",
           "#ffe29a",
           "#e0b352",
         ]}
       >
-        Project Showcase
+        {content.title2}
       </AuroraText>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 w-8/10 mx-auto">
-        {[1, 2, 3].map((item) => (
-          <CardContainer className="inter-var">
+        {content.projects.map((idx) => (
+          <CardContainer className="inter-var" key={idx}>
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
@@ -191,22 +141,6 @@ export default function Section6() {
                   alt="thumbnail"
                 />
               </CardItem>
-              {/* <div className="flex justify-between items-center mt-20">
-          <CardItem
-            translateZ={20}
-            as="a"
-            href="https://twitter.com/mannupaaji"
-            target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
-            Try now →
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-            Sign up
-          </CardItem>
-        </div> */}
             </CardBody>
           </CardContainer>
         ))}

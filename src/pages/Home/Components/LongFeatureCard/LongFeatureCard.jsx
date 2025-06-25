@@ -3,30 +3,12 @@ import React from "react";
 
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
-export const projects = [
-  {
-    title: "Stripe",
-    description:
-      "A technology company that builds economic infrastructure for the internet.",
-  },
-  {
-    title: "Netflix",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-  },
-  {
-    title: "Google",
-    subtitle: 'hidfdfd',
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-  },
 
-];
 
-export function CardHoverEffectDemo() {
+export function CardHoverEffectDemo({contents}) {
   return (
     <div className="mx-auto px-8 z-1">
-      <HoverEffect items={projects} />
+      <HoverEffect items={contents} />
     </div>
   );
 }

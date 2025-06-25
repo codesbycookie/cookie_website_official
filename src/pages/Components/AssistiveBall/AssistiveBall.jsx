@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-// AssistiveBall.jsx
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaFacebook, FaInstagram, FaWhatsapp, FaTimes } from 'react-icons/fa';
-
+import { FaFacebook, FaInstagram, FaWhatsapp, FaTimes, FaLinkedin, FaLinkedinIn } from 'react-icons/fa';
+import {social_links} from '../../../../utils/content'
 const AssistiveBall = () => {
   const [open, setOpen] = useState(false);
 
@@ -40,9 +40,9 @@ const AssistiveBall = () => {
               gap: 10,
             }}
           >
-            <a href="https://facebook.com" target="_blank"><FaFacebook size={24} color="#3b5998" /></a>
-            <a href="https://instagram.com" target="_blank"><FaInstagram size={24} color="#E4405F" /></a>
-            <a href="https://wa.me/1234567890" target="_blank"><FaWhatsapp size={24} color="#25D366" /></a>
+            <a href={social_links.linkedin} target="_blank"><FaLinkedinIn size={24} color="#3b5998" /></a>
+            <a href={social_links.instagram} target="_blank"><FaInstagram size={24} color="#E4405F" /></a>
+            <a href={social_links.whatsapp} target="_blank"><FaWhatsapp size={24} color="#25D366" /></a>
           </motion.div>
         )}
 

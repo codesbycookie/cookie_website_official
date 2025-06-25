@@ -6,10 +6,11 @@ import AppRoutes from "./AppRoutes";
 import Footer from "../pages/Components/Footer/Footer";
 import Navbar from "../pages/Components/Navbar/Navbar";
 import AssistiveBall from '../pages/Components/AssistiveBall/AssistiveBall'
+import CursorWithNamePrompt from "./CursorWithName";
 function App() {
   return (
     <Router className='cursor-none'>
-<Pointer className="text-light-cream fixed z-9999 pointer-events-none" />
+{/* <Pointer className="text-light-cream fixed z-9999 pointer-events-none" /> */}
       <Navbar />
       <AssistiveBall/>
       <AppRoutes />

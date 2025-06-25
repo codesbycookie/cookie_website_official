@@ -1,7 +1,7 @@
 import React from 'react';
 import { NumberTicker } from "@/components/magicui/number-ticker";
 
-const Section4 = () => {
+const Section3 = ({content}) => {
   return (
     <div className="bg-black text-white py-12 md:py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
@@ -9,20 +9,18 @@ const Section4 = () => {
         <div className="mb-4 md:mb-6">
             <h2 className="text-3xl md:text-5xl font-bold leading-tight md:leading-snug">
                    <NumberTicker
-      value={100}
+      value={content.count}
       className="whitespace-pre-wrap me-3 font-medium tracking-tighter text-light-cream"
-    />+ projects baked — and we’re just 
-                getting started
+    />{content.title}
              </h2> 
         </div>
         
 
         <p className="text-lg md:text-xl">
-            We’ve turned visions into visuals, clicks into clients, and briefs into brands
          </p>
 
          <p className="text-lg md:text-xl font-bold" style={{ paddingTop: '60px' }}>
-            Let’s Bake Something Together <span className="text-light-cream ms-3">→</span>
+            {content.button} <span className="text-light-cream ms-3">→</span>
         </p>
 
          
@@ -31,4 +29,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default Section3;

@@ -59,9 +59,9 @@ body, html, #root {
     overflow-x: hidden !important;
 }
 
-html, body, * {
+/* html, body, * {
   cursor: none !important;
-}
+} */
 
 html {
     background-color: white;

@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import dynamic from "next/dynamic";
+import { AuroraText } from "@/components/magicui/aurora-text";
 
 const World = dynamic(() => import("@/components/ui/globe.jsx").then((m) => m.World), {
   ssr: false,
@@ -406,7 +407,18 @@ return (
         className="px-4 md:px-8 text-center"
       >
         <h2 className="text-xl sm:text-2xl md:text-4xl font-hahmlet font-bold text-white">
-          We sell cookies worldwide, contact us to get your <span className="text-light-cream">cookie</span> now
+          We sell cookies worldwide, contact us to get your <AuroraText
+              className=""
+              colors={[
+                "#fff3c4",
+                "#c18b13",
+                "#86602c",
+                "#ffe29a",
+                "#e0b352",
+              ]}
+            >
+              cookies
+            </AuroraText> now
         </h2>
       </motion.div>
 

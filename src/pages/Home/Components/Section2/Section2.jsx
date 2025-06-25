@@ -2,9 +2,7 @@ import React from "react";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 import { IconCloud } from "@/components/magicui/icon-cloud";
-import { Icon } from 'lucide-react';
-
-
+import { Icon } from "lucide-react";
 
 const Icons = {
   gitHub: () => (
@@ -170,12 +168,12 @@ const slugs = [
 
 export function IconCloudDemo() {
   const images = slugs.map(
-    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   );
 
   return (
     <div className="relative flex size-full items-center justify-center overflow-hidden">
-      <IconCloud images={['/imgs/cookie_white.png',...images]} />
+      <IconCloud images={["/imgs/cookie_white.png", ...images]} />
     </div>
   );
 }
@@ -190,7 +188,7 @@ export function OrbitingCirclesDemo() {
         <Icons.googleDrive />
         <Icons.whatsapp />
       </OrbitingCircles>
-      <IconCloudDemo/>
+      <IconCloudDemo />
       <OrbitingCircles iconSize={30} radius={200} reverse speed={2}>
         <Icons.whatsapp />
         <Icons.notion />
@@ -200,36 +198,36 @@ export function OrbitingCirclesDemo() {
     </div>
   );
 }
-export default function Section2() {
+export default function Section2({content}) {
+
   return (
     <div className="bg-white text-black">
       <div className="max-w-screen md:px-section-lg px-section-sm py-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* Left Text Section */}
         <div className="flex flex-col justify-center order-2 lg:order-1">
           <div className="max-w-xl">
             <h3 className="font-hahmlet text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">
-              Long heading is what you see here in this feature section
+              {content.heading}
             </h3>
             <p className="mt-6 text-base sm:text-lg leading-relaxed">
-              At Cookie, we specialize in crafting stunning websites and apps that captivate users. Our expert team combines creativity and technology to deliver exceptional digital solutions.
+              {content.description}
             </p>
           </div>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-6">
-            <FeatureCard
-              title="Web Design"
-              content="Bespoke web solutions tailored to elevate your brand's online presence."
-            />
-            <FeatureCard
-              title="App Development"
-              content="Innovative mobile applications designed to engage and retain your audience."
-            />
+            {content.feature_cards.map((card, idx) => {
+              return (
+                <FeatureCard
+                  key={idx}
+                  title={card.title}
+                  content={card.content}
+                />
+              );
+            })}
           </div>
         </div>
 
-        {/* Right Image Section */}
         <div className="flex justify-center items-center order-1 lg:order-2">
-          <OrbitingCirclesDemo/>
+          <OrbitingCirclesDemo />
         </div>
       </div>
     </div>
