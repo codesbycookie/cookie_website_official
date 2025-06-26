@@ -5,7 +5,7 @@ export const homepage = {
   section1: {
     globe_description:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-    first_button: "Explore more",
+    first_button: "Explore",
     second_button: "Contact Us",
   },
   section2: {
