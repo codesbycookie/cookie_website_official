@@ -4,45 +4,44 @@ import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 export const homepage = {
   section1: {
     globe_description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-    first_button: "Explore",
-    second_button: "Contact Us",
+      "From modern websites to intelligent mobile apps, we help businesses scale with purpose-driven digital solutions.",
+    first_button: "Discover more",
+    second_button: "Start Your Project",
   },
   section2: {
-    heading: "Long heading is what you see here in this feature section",
+    heading: "Solutions Built for Business Growth",
     description:
-      "At Cookie, we specialize in crafting stunning websites and apps that captivate users. Our expert team combines creativity and technology to deliver exceptional digital solutions.",
+      "From modern websites to intelligent mobile apps, we help businesses scale with purpose-driven digital solutions.",
     feature_cards: [
       {
-        title: "Web Design",
+        title: "Web Development",
         content:
-          "Bespoke web solutions tailored to elevate your brand's online presence.",
+          "Tailored designs that connect your brand with your audience, professionally and effectively.",
       },
       {
         title: "App Development",
         content:
-          "Innovative mobile applications designed to engage and retain your audience.",
+          "Applications engineered to deliver seamless user experiences and drive measurable results.",
       },
     ],
   },
   section3: {
-    heading: "Long heading is what you see here in this feature section",
+    heading: "Discover additional services that elevate your digital journey beyond expectations.",
     cards: [
       {
-        title: "Stripe",
+        title: "Branding",
         description:
-          "A technology company that builds economic infrastructure for the internet.",
+          "Crafting unique brand identities that resonate with your audience and stand out in the market.",
       },
       {
-        title: "Netflix",
+        title: "Digital Marketing",
         description:
-          "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+          "Strategic marketing solutions that amplify your brand's reach and engagement across digital platforms.",
       },
       {
-        title: "Google",
-        subtitle: "hidfdfd",
+        title: "Tech Support",
         description:
-          "A multinational technology company that specializes in Internet-related services and products.",
+          "Help with deploying React, Node, Firebase, etc., and fixing bugs for student or client projects.",
       },
     ],
   },
@@ -52,21 +51,21 @@ export const homepage = {
     steps: [
       {
         title:
-          "Transforming Ideas into Digital Reality: Our Step-by-Step Approach",
-        desc: "We start with a consultation to understand your vision and goals.",
-        label: "Start",
+          "Transforming Ideas into Reality",
+        desc: "We start with understanding your vision and requirements to create a tailored solution.",
+        label: "Design",
       },
       {
         title:
-          "Design and Development: Crafting Your Unique Digital Experience",
-        desc: "Our team designs and develops tailored solutions that reflect your brand.",
-        label: "Build",
+          "Building with precision.",
+        desc: "we develop reliable applications that perform across devices and platforms.",
+        label: "Develop",
       },
       {
         title:
-          "Testing and Feedback: Ensuring Quality and Satisfaction in Every Step",
-        desc: "We conduct thorough testing and incorporate your feedback for optimal results.",
-        label: "Launch",
+          "On time. On point.",
+        desc: "We ensure your project is delivered on time, meeting all specifications and quality standards.",
+        label: "Deliver",
       },
     ],
   },
@@ -75,39 +74,39 @@ export const homepage = {
     title: "Customer Testimonials",
     reviews: [
       {
-        name: "Jack",
+        name: "Tharun ",
         username: "@jack",
-        body: "I've never seen anything like this before. It's amazing. I love it.",
+        body: "Most responsible replies and affordable price.",
         img: "https://avatar.vercel.sh/jack",
       },
       {
-        name: "Jill",
+        name: "Karthikeyan",
         username: "@jill",
         body: "I don't know what to say. I'm speechless. This is amazing.",
         img: "https://avatar.vercel.sh/jill",
       },
       {
-        name: "John",
+        name: "JothiLakshmi ",
         username: "@john",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        body: "Affordable price and quick response. I love it.",
         img: "https://avatar.vercel.sh/john",
       },
       {
-        name: "Jane",
+        name: "Srinivas P",
         username: "@jane",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        body: " good work and affordable price.",
         img: "https://avatar.vercel.sh/jane",
       },
       {
-        name: "Jenny",
+        name: "Vishnu Vardhan S",
         username: "@jenny",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        body: "Innovative ideas and great execution. Highly recommend!",
         img: "https://avatar.vercel.sh/jenny",
       },
       {
-        name: "James",
+        name: "S Lakshman",
         username: "@james",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        body: "It was interactive and engaging. I loved the way they handled my project.",
         img: "https://avatar.vercel.sh/james",
       },
     ],
@@ -115,11 +114,11 @@ export const homepage = {
     projects: [1, 2, 3],
   },
   section7: {
-    title: "Medium length CTA heading goes here",
+    title: "Shaping Ideas Into Immersive Realities",
     description:
-      "Fusce at nisi eget dolor rhoncus facilisis. Mauris ante ligula, facilisis sed ornare eu.",
-    first_button: "Start",
-    second_button: "Contact",
+      "We craft with care, build with precision, and deliver with purpose",
+    first_button: "Build With Us",
+    second_button: "Talk to Our Experts",
   },
   section8: {
     title: "Frequently Asked Questions",
@@ -165,14 +164,14 @@ export const homepage = {
           "We’re here even after your project goes live. From bug fixes to enhancements and performance monitoring, we ensure your product stays optimized and updated.",
       },
     ],
-    description: "Still have questions?",
+    description: "Still Confused? Have a Chat !",
     button: "Contact Us",
   },
 };
 
 export const aboutpage = {
   section1: {
-    title: ["We're the makers behind", "the magic"], 
+    title: ["The Team Turning Ideas into ", "Impact"], 
     subtitle: "A bunch of creative minds stirring pixels, code, and caffeine to bring brands to life. Welcome to the COOKIE kitchen.",
  img: '/imgs/placeholder.png'
   },section2: {
@@ -231,7 +230,7 @@ export const aboutpage = {
   }, section3: {
     title: "Who Are We ?",
     
-    tagline: `"A Tech-Powered Creative Studio. Powered By Engineers. Inspired By Designers"`,
+    tagline: "At Cookie, we don’t just build—we build right",
     items: [
   {
     title: "The Dawn of Innovation",
@@ -269,12 +268,12 @@ export const contactpage = {};
 
 export const servicespage = {
   section1: {
-    title: ["We Bring ", " designs to life", " And Ideas To Screens"],
+    title: ["Our Execution is ", " Beyond ", " your Expectation"],
     subtitle:
-      " Every idea begins on a blank screen. Through thoughtful design and meticulous development, we turn that emptiness into seamless, intuitive experiences. Every click, every scroll, every pixel — crafted with care.",
+      "Every Line with Purpose. Every Feature with Meaning.",
   },
   section2: {
-    title: "One Studio. Three Flavors Of Service.",
+    title: "Behind every great project is a team that cares about results, not just delivery",
     subtitle: "From Startups To Scale–Ups, We've Baked Packages For Every Kind Of Brand, Choose The Flavor That Fits Your Vision.",
   packages: [
     {
@@ -327,7 +326,7 @@ export const servicespage = {
         <div className='py-30'>
           <p
             className="mb-8 text-xs font-normal text-white-800 md:text-sm dark:text-white-200">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            We Dont just build, we build right. We start with understanding your vision and requirements to create a tailored solution.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -364,13 +363,11 @@ export const servicespage = {
         <div className='py-30'>
           <p
             className="mb-8 text-xs font-normal text-white-800 md:text-sm dark:text-white-200">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+            We believe in the power of design to transform ideas into reality.
           </p>
           <p
             className="mb-8 text-xs font-normal text-white-800 md:text-sm dark:text-white-200">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            Our design process is a blend of creativity and strategy, ensuring that every pixel serves a purpose.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -407,9 +404,13 @@ export const servicespage = {
         <div className='py-30'>
           <p
             className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
-            Deployed 5 new components on Aceternity today
+            We take pride in our development process, ensuring that every line of code is crafted with precision and care.
           </p>
-          <div className="mb-8">
+          <p
+            className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
+            Our team of skilled developers works tirelessly to bring your vision to life, using the latest technologies and best practices.
+          </p>
+          {/* <div className="mb-8">
             <div
               className="flex items-center gap-2 text-xs text-white-700 md:text-sm dark:text-white-300">
               ✅ Card grid component
@@ -430,7 +431,7 @@ export const servicespage = {
               className="flex items-center gap-2 text-xs text-white-700 md:text-sm dark:text-white-300">
               ✅ Salman Bhai Fan Club registrations open
             </div>
-          </div>
+          </div> */}
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -465,9 +466,15 @@ export const servicespage = {
         <div className='py-30'>
           <p
             className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
-            Deployed 5 new components on Aceternity today
+            On time. On point.
+
           </p>
-          <div className="mb-8">
+          <p
+            className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
+            We launch only when we’re confident the solution meets your expectations and our standards—ensuring quality, functionality, and lasting value.
+
+          </p>
+          {/* <div className="mb-8">
             <div
               className="flex items-center gap-2 text-xs text-white-700 md:text-sm dark:text-white-300">
               ✅ Card grid component
@@ -488,7 +495,7 @@ export const servicespage = {
               className="flex items-center gap-2 text-xs text-white-700 md:text-sm dark:text-white-300">
               ✅ Salman Bhai Fan Club registrations open
             </div>
-          </div>
+          </div> */}
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -522,15 +529,15 @@ export const servicespage = {
   }
   ,
   section4: {
-    title: "What's On The Menu ?",
-    subtitle: "A Full-Stack Of Creative Services Cooked With Care.",
+    title: "What's we Cook ?",
+    subtitle: "From Websites To Apps, We Bake It All.",
     services: [
     {
       title: "Web Development",
       description: [
         "Building Websites And Web",
         "Applications That Work Well And",
-        "Meet Your Needs.",
+        "Responsive for every Device.",
       ],
     },
     {
@@ -566,10 +573,10 @@ export const servicespage = {
       ],
     },
     {
-      title: "Logo Design",
+      title: "Branding",
       description: [
-        "Crafting Intuitive Interfaces",
-        "That Delight Users And",
+        "Building Strong Brands",
+        "Brands That Resonate With Your Audience",
         "Drive Engagement.",
       ],
     },
@@ -579,12 +586,12 @@ export const servicespage = {
 
 export const portfoliopage = {
   section1: {
-    title: ["Cooked with, ", "creativity", "served with", "care"],
-    subtitle: "Not just a cookie-cutter work — It’s our custom creations.",
+    title: ["Our portfolio isn’t a ", "Gallery ", "But Stories of", "Entrepreneurs"],
+    subtitle: "Not Just Pretty Pixels. Purposeful, Powerful Products",
   },
   section2: {
     content: {
-      title: "Our Work Speaks. And It Says Cookie",
+      title: "Beyond Templates. Fully Tailored Digital Craft.",
       tagline: [
         "Designs that click. Code that sticks.",
         "Marketing, that’s magic",
@@ -635,8 +642,8 @@ export const portfoliopage = {
     ],
   },
   section3: {
-    count: 100,
-    title: "+ projects baked — and we’re just getting started",
+    count: 20,
+    title: "+ projects cooked — and we’re just getting started",
     subtitle:
       "We’ve turned visions into visuals, clicks into clients, and briefs into brands",
     button: "Let’s Bake Something Together",
@@ -696,7 +703,7 @@ export const   navbar = {
         link:'/about-us',
         name: 'About'
       },      {
-        link:'/services',
+        link:'/service',
         name: 'Services'
       },       {
         link:'/portfolio',

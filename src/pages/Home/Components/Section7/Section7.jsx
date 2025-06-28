@@ -10,7 +10,7 @@ export function ScrollBasedVelocityDemo({ is_reverse = false }) {
         reverse={is_reverse}
         className={""}
       >
-        <span className="text-xl text-gray-500">
+        <span className="text-xl text-gray-500 opacity-50">
           {" "}
           Experience Every Byte <span className="text-light-cream">.</span>
         </span>
