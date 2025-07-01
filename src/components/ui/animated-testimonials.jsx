@@ -1,5 +1,6 @@
 "use client";;
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+import { TbArrowLeft, TbArrowRight } from "react-icons/tb";
+
 import { motion, AnimatePresence } from "motion/react";
 
 import { useEffect, useState } from "react";
@@ -134,13 +135,13 @@ export const AnimatedTestimonials = ({
             <button
               onClick={handlePrev}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
-              <IconArrowLeft
+              <TbArrowLeft
                 className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
             </button>
             <button
               onClick={handleNext}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
-              <IconArrowRight
+              <TbArrowRight
                 className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
             </button>
           </div>

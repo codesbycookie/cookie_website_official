@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import axios from 'axios';
+import { SparklesText } from "@/components/magicui/sparkles-text";
+import { BackgroundLines } from "@/components/ui/background-lines";
+import { Boxes } from '@/components/ui/background-boxes';
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import { motion } from "framer-motion";
+import LeftVisualSection from './Components/LeftVisualSection';
+import emailjs from 'emailjs-com'
 
 const skills = [
-  { name: 'Web Design', icon: '💻', color: 'bg-[#212121]/10 text-[#212121]' },
-  { name: 'UI/UX', icon: '🎨', color: 'bg-[#212121]/10 text-[#212121]' },
-  { name: 'Development', icon: '⚙️', color: 'bg-[#212121]/10 text-[#212121]' },
-  { name: 'Consulting', icon: '💡', color: 'bg-[#212121]/10 text-[#212121]' },
-  { name: 'Strategy', icon: '📊', color: 'bg-[#212121]/10 text-[#212121]' },
-  { name: 'Support', icon: '🤝', color: 'bg-[#212121]/10 text-[#212121]' }
+  { name: 'Web Design', icon: '💻', color: 'bg-black/10 text-black' },
+  { name: 'UI/UX', icon: '🎨', color: 'bg-black/10 text-black' },
+  { name: 'Development', icon: '⚙️', color: 'bg-black/10 text-black' },
+  { name: 'Consulting', icon: '💡', color: 'bg-black/10 text-black' },
+  { name: 'Strategy', icon: '📊', color: 'bg-black/10 text-black' },
+  { name: 'Support', icon: '🤝', color: 'bg-black/10 text-black' }
 ];
 
 const ContactUs = () => {
@@ -18,7 +24,7 @@ const ContactUs = () => {
     phone: '',
     email: '',
     date: '',
-    timing: '10:00 AM - 12:00 PM'
+    timing: 'Morning'
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -42,132 +48,71 @@ const ContactUs = () => {
     setStep(step - 1);
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitStatus(null);
 
-    try {
-      const response = await axios.post('http://localhost:5000/api/appointment', formData);
-      
-      if (response.status === 200) {
-        setSubmitStatus('success');
-        setFormData({ 
-          name: '', 
-          phone: '', 
-          email: '', 
-          date: '', 
-          timing: '10:00 AM - 12:00 PM' 
-        });
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
+  const serviceID = 'service_qfufxvi'; 
+  const templateID = 'template_rq7832o'; 
+  const userID = 'Oht2VZndlktWjLOQT'; 
+
+  const templateParams = {
+    name: formData.name,
+    email: formData.email,
+    phone: formData.phone,
+    date: formData.date,
+    timing: formData.timing
   };
 
+  try {
+    const res = await emailjs.send(serviceID, templateID, templateParams, userID);
+    console.log('Email sent successfully:', res.text);
+    setSubmitStatus('success');
+    setStep(step + 1);
+  } catch (error) {
+    console.error('Error sending email:', error);
+    setSubmitStatus('error');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
+
+
   const steps = [
-    { id: 1, name: 'Personal Info', icon: '👤', color: 'bg-[#c18b34]' },
-    { id: 2, name: 'Schedule', icon: '📅', color: 'bg-[#c18b34]' },
-    { id: 3, name: 'Confirm', icon: '✅', color: 'bg-[#c18b34]' }
+    { id: 1, name: 'Personal Info', icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-pen-icon lucide-user-round-pen"><path d="M2 21a8 8 0 0 1 10.821-7.487"/><path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/><circle cx="10" cy="8" r="5"/></svg>, color: 'bg-[#c18b34]' },
+    { id: 2, name: 'Schedule', icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days-icon lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>, color: 'bg-[#c18b34]' },
+    { id: 3, name: 'Confirm', icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-check-icon lucide-check-check"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>, color: 'bg-[#c18b34]' }
   ];
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-[#fffff0] p-4 md:p-8 lg:mt-20" aria-label="Contact section">
-      <div className="w-full max-w-5xl mx-auto">
+
+
+
+    <section className="min-h-screen flex flex-col justify-center items-center  p-4 md:p-8 lg:mt-20" aria-label="Contact section">
+<div className="w-full max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 relative">
-          <div className="absolute -top-8 -left-8 w-32 h-32 bg-[#c18b34]/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#212121]/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute top-20 right-20 w-32 h-32 bg-[#c18b34]/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-          
+
           <div className="relative z-10">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#212121] mb-4 tracking-tight">
-              <Typewriter
-                words={['Schedule a Consultation', 'Book Your Session', 'Let\'s Connect', 'Get Started']}
-                loop={0}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={2000}
-              />
+            <h1 className="text-4xl md:text-5xl font-mona-sans font-bold text-black mb-4 tracking-tight">
+<SparklesText colors={{first: "#fff3c4", second:"#c18b13"}}>
+  Drop us your need
+</SparklesText>
             </h1>
-            <p className="text-[#212121]/80 max-w-2xl mx-auto text-lg">
-              Complete the form below to schedule your personalized session with our team.
+            <p className="text-black/80 max-w-2xl mx-auto text-lg">
+                            Complete the form below to schedule your personalized session with our team.
+
             </p>
           </div>
         </div>
 
         {/* Main Card */}
-        <div className="bg-[#fffff0] rounded-2xl shadow-xl overflow-hidden transform transition-all hover:shadow-2xl border border-[#212121]/10">
+        <div className="bg-[#fffff0] rounded-2xl shadow-xl overflow-hidden transform transition-all hover:shadow-2xl border border-/10">
           <div className="flex flex-col md:flex-row">
             {/* Left side - Visual */}
-            <div className="w-full md:w-2/5 bg-gradient-to-br from-[#212121] to-[#212121]/90 p-8 flex flex-col justify-center items-center relative">
-              <div className="relative z-10 w-full text-center">
-                <div className="relative w-44 h-44 mx-auto mb-8">
-                  {/* Avatar */}
-                  <div className="absolute inset-0  rounded-full flex items-center justify-center overflow-hidden">
-                    <img src="/imgs/cookie_logo_web.jpeg" alt="Profile" className="object-contain" width={100} height={100}/>
-                  </div>
-                  
-                  {/* Floating skills */}
-                  {skills.map((skill, idx) => {
-                    const angle = (idx * 60) * (Math.PI / 180);
-                    const radius = 110;
-                    const x = radius * Math.cos(angle);
-                    const y = radius * Math.sin(angle);
-                    
-                    return (
-                      <div
-                        key={skill.name}
-                        className={`absolute w-12 h-12 flex items-center justify-center rounded-full ${skill.color} shadow-md transform -translate-x-1/2 -translate-y-1/2`}
-                        style={{
-                          left: `calc(50% + ${x}px)`,
-                          top: `calc(50% + ${y}px)`,
-                          animation: `orbit ${10 + idx * 2}s linear infinite`
-                        }}
-                        aria-label={skill.name}
-                        title={skill.name}
-                      >
-                        <span className="text-xl">{skill.icon}</span>
-                        <span className="sr-only">{skill.name}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-                
-                <h3 className="text-2xl font-bold mb-3 text-[#fffff0]">
-                  Step {step} of {steps.length}
-                </h3>
-                
-                {/* Step indicator */}
-                <div className="flex justify-center gap-4 mb-8">
-                  {steps.map((stepItem) => (
-                    <div 
-                      key={stepItem.id} 
-                      className={`flex flex-col items-center ${step >= stepItem.id ? 'opacity-100' : 'opacity-40'}`}
-                    >
-                      <div className={`w-12 h-12 rounded-full ${stepItem.color} flex items-center justify-center text-[#fffff0] text-xl mb-2 transition-all ${step === stepItem.id ? 'ring-4 ring-[#fffff0]/50' : ''}`}>
-                        {stepItem.icon}
-                      </div>
-                      <span className="text-[#fffff0] text-xs font-medium">{stepItem.name}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="bg-[#fffff0]/10 backdrop-blur-sm rounded-lg p-4 border border-[#fffff0]/20">
-                  <p className="text-[#fffff0]/90 text-sm">
-                    "Our team is excited to work with you. Let's create something amazing together!"
-                  </p>
-                </div>
-              </div>
-            </div>
-            
+<LeftVisualSection step={step} steps={steps}/>
             {/* Right side - Form */}
             <div className="w-full md:w-3/5 p-8 md:p-10">
               {submitStatus === 'success' ? (
@@ -177,23 +122,23 @@ const ContactUs = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                   </div>
-                  <h3 className="text-3xl font-bold text-[#212121] mb-3">Appointment Confirmed!</h3>
-                  <p className="text-[#212121]/80 mb-6 max-w-md mx-auto">
+                  <h3 className="text-3xl font-bold text-black mb-3">Appointment Confirmed!</h3>
+                  <p className="text-black/80 mb-6 mx-auto">
                     We've sent the details to <span className="font-medium text-[#c18b34]">{formData.email}</span>.
                     Our team will contact you to confirm.
                   </p>
-                  <div className="bg-[#212121]/5 rounded-lg p-4 mb-6 text-left max-w-md mx-auto border border-[#212121]/10 shadow-inner">
+                  <div className="bg-black/5 rounded-lg p-4 mb-6 text-left  mx-auto border border-black/10 shadow-inner">
                     <div className="flex items-center gap-3 mb-2">
                       <svg className="w-5 h-5 text-[#c18b34]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      <span className="font-medium text-[#212121]">{formData.date} • {formData.timing}</span>
+                      <span className="font-medium text-black">{formData.date} • {formData.timing}</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <svg className="w-5 h-5 text-[#c18b34]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                       </svg>
-                      <span className="font-medium text-[#212121]">+1 (555) 123-4567</span>
+                      <span className="font-medium text-black">+91 99623 13298</span>
                     </div>
                   </div>
                   <button 
@@ -201,7 +146,7 @@ const ContactUs = () => {
                       setStep(1);
                       setSubmitStatus(null);
                     }}
-                    className="px-8 py-3 bg-gradient-to-r from-[#212121] to-[#c18b34] text-[#fffff0] font-medium rounded-lg hover:from-[#212121]/90 hover:to-[#c18b34]/90 transition shadow-md hover:shadow-lg"
+                    className="px-8 py-3 bg-gradient-to-r from-dark-cream to-light-cream  text-[#fffff0] font-medium rounded-lg hover:from-dark-cream/90 hover:to-[#c18b34]/90 transition shadow-md hover:shadow-lg"
                   >
                     Schedule Another Meeting
                   </button>
@@ -218,15 +163,15 @@ const ContactUs = () => {
                               {steps[0].icon}
                             </div>
                             <div>
-                              <h3 className="text-2xl font-bold text-[#212121]">Tell us about yourself</h3>
-                              <p className="text-[#212121]/60">We'll use this information to contact you about your appointment</p>
+                              <h3 className="text-2xl font-bold text-black">Tell us about yourself</h3>
+                              <p className="text-black/60">We'll use this information to contact you about your appointment</p>
                             </div>
                           </div>
                         </div>
                         
                         <div className="space-y-5">
                           <div>
-                            <label htmlFor="name" className="block text-sm font-medium mb-2 text-[#212121]">Your Full Name*</label>
+                            <label htmlFor="name" className="block text-sm font-medium mb-2 text-black">Your Full Name*</label>
                             <div className="relative">
                               <input
                                 type="text"
@@ -237,10 +182,10 @@ const ContactUs = () => {
                                 required
                                 aria-required="true"
                                 placeholder="John Doe"
-                                className="w-full px-4 py-3 bg-[#fffff0] border border-[#212121]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition font-medium pl-12 shadow-sm"
+                                className="w-full px-4 py-3 bg-[#fffff0] border border-black/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition font-medium pl-12 shadow-sm"
                                 autoFocus
                               />
-                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#212121]/40">
+                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black/40">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                                 </svg>
@@ -249,7 +194,7 @@ const ContactUs = () => {
                           </div>
                           
                           <div>
-                            <label htmlFor="email" className="block text-sm font-medium mb-2 text-[#212121]">Email Address*</label>
+                            <label htmlFor="email" className="block text-sm font-medium mb-2 text-black">Email Address*</label>
                             <div className="relative">
                               <input
                                 type="email"
@@ -260,9 +205,9 @@ const ContactUs = () => {
                                 required
                                 aria-required="true"
                                 placeholder="john@example.com"
-                                className="w-full px-4 py-3 bg-[#fffff0] border border-[#212121]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition text-[#212121] pl-12 shadow-sm"
+                                className="w-full px-4 py-3 bg-[#fffff0] border border-black/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition text-black pl-12 shadow-sm"
                               />
-                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#212121]/40">
+                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black/40">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
@@ -271,7 +216,7 @@ const ContactUs = () => {
                           </div>
                           
                           <div>
-                            <label htmlFor="phone" className="block text-sm font-medium mb-2 text-[#212121]">Phone Number*</label>
+                            <label htmlFor="phone" className="block text-sm font-medium mb-2 text-black">Phone Number*</label>
                             <div className="relative">
                               <input
                                 type="tel"
@@ -282,9 +227,9 @@ const ContactUs = () => {
                                 required
                                 aria-required="true"
                                 placeholder="+1 (123) 456-7890"
-                                className="w-full px-4 py-3 bg-[#fffff0] border border-[#212121]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition text-[#212121] pl-12 shadow-sm"
+                                className="w-full px-4 py-3 bg-[#fffff0] border border-black/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition text-black pl-12 shadow-sm"
                               />
-                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#212121]/40">
+                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black/40">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                                 </svg>
@@ -297,7 +242,7 @@ const ContactUs = () => {
                               <svg className="w-5 h-5 text-[#c18b34] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                               </svg>
-                              <p className="text-sm text-[#212121]">
+                              <p className="text-sm text-black">
                                 Your information is secure with us. We'll only use it to communicate about your appointment.
                               </p>
                             </div>
@@ -315,15 +260,15 @@ const ContactUs = () => {
                               {steps[1].icon}
                             </div>
                             <div>
-                              <h3 className="text-2xl font-bold text-[#212121]">Schedule your session</h3>
-                              <p className="text-[#212121]/60">Choose a time that works best for you</p>
+                              <h3 className="text-2xl font-bold text-black">Schedule your session</h3>
+                              <p className="text-black/60">Choose a time that works best for you</p>
                             </div>
                           </div>
                         </div>
                         
                         <div className="space-y-5">
                           <div>
-                            <label htmlFor="date" className="block text-sm font-medium mb-2 text-[#212121]">Preferred Date*</label>
+                            <label htmlFor="date" className="block text-sm font-medium mb-2 text-black">Preferred Date*</label>
                             <div className="relative">
                               <input
                                 type="date"
@@ -334,10 +279,10 @@ const ContactUs = () => {
                                 required
                                 aria-required="true"
                                 min={new Date().toISOString().split('T')[0]}
-                                className="w-full px-4 py-3 bg-[#fffff0] border border-[#212121]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition text-[#212121] pl-12 shadow-sm"
+                                className="w-full px-4 py-3 bg-[#fffff0] border border-black/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition text-black pl-12 shadow-sm"
                                 autoFocus
                               />
-                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#212121]/40">
+                              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black/40">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                                 </svg>
@@ -346,24 +291,22 @@ const ContactUs = () => {
                           </div>
                           
                           <div>
-                            <label className="block text-sm font-medium mb-2 text-[#212121]">Available Time Slots*</label>
+                            <label className="block text-sm font-medium mb-2 text-black">Available Time Slots*</label>
                             <div className="grid grid-cols-2 gap-3">
                               {[
-                                { time: '10:00 AM - 12:00 PM', label: 'Morning' },
-                                { time: '12:00 PM - 02:00 PM', label: 'Midday' },
-                                { time: '02:00 PM - 04:00 PM', label: 'Afternoon' },
-                                { time: '04:00 PM - 06:00 PM', label: 'Evening' }
+                                { label: 'Morning' },
+                                { label: 'Afternoon' },
+                                {  label: 'Evening' }
                               ].map((slot) => (
                                 <button
                                   key={slot.time}
                                   type="button"
-                                  onClick={() => setFormData({...formData, timing: slot.time})}
-                                  className={`py-3 px-4 rounded-lg border transition-all ${formData.timing === slot.time ? 
+                                  onClick={() => setFormData({...formData, timing: slot.label})}
+                                  className={`py-3 px-4 rounded-lg border transition-all ${formData.timing === slot.label ? 
                                     'bg-[#c18b34] text-[#fffff0] border-[#c18b34] shadow-md' : 
-                                    'bg-[#fffff0] border-[#212121]/20 hover:border-[#c18b34]/50 shadow-sm hover:shadow-md'}`}
+                                    'bg-[#fffff0] border-black/20 hover:border-[#c18b34]/50 shadow-sm hover:shadow-md'}`}
                                 >
-                                  <span className="block font-medium">{slot.time}</span>
-                                  <span className="block text-xs opacity-80">{slot.label}</span>
+                                  <span className="block font-medium">{slot.label}</span>
                                 </button>
                               ))}
                             </div>
@@ -374,7 +317,7 @@ const ContactUs = () => {
                               <svg className="w-5 h-5 text-[#c18b34] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                               </svg>
-                              <p className="text-sm text-[#212121]">
+                              <p className="text-sm text-black">
                                 All times are in your local timezone. Need to reschedule? You can change your appointment anytime up to 24 hours before.
                               </p>
                             </div>
@@ -392,14 +335,14 @@ const ContactUs = () => {
                               {steps[2].icon}
                             </div>
                             <div>
-                              <h3 className="text-2xl font-bold text-[#212121]">Review your details</h3>
-                              <p className="text-[#212121]/60">Please confirm everything looks correct</p>
+                              <h3 className="text-2xl font-bold text-black">Review your details</h3>
+                              <p className="text-black/60">Please confirm everything looks correct</p>
                             </div>
                           </div>
                         </div>
                         
-                        <div className="bg-[#212121]/5 rounded-xl p-6 space-y-4 border border-[#212121]/10 shadow-inner">
-                          <div className="flex justify-between items-center pb-4 border-b border-[#212121]/10">
+                        <div className="bg-black/5 rounded-xl p-6 space-y-4 border border-black/10 shadow-inner">
+                          <div className="flex justify-between items-center pb-4 border-b border-black/10">
                             <div className="flex items-center gap-3">
                               <div className="w-10 h-10 rounded-full bg-[#c18b34]/10 text-[#c18b34] flex items-center justify-center border border-[#c18b34]/20">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -407,7 +350,7 @@ const ContactUs = () => {
                                 </svg>
                               </div>
                               <div>
-                                <h4 className="font-medium text-[#212121]">Personal Information</h4>
+                                <h4 className="font-medium text-black">Personal Information</h4>
                               </div>
                             </div>
                             <button 
@@ -420,21 +363,21 @@ const ContactUs = () => {
                           </div>
                           
                           <div className="flex justify-between">
-                            <span className="text-[#212121]/60">Full Name:</span>
-                            <span className="font-medium text-[#212121]">{formData.name}</span>
+                            <span className="text-black/60">Full Name:</span>
+                            <span className="font-medium text-black">{formData.name}</span>
                           </div>
                           
                           <div className="flex justify-between">
-                            <span className="text-[#212121]/60">Email:</span>
-                            <span className="font-medium text-[#212121]">{formData.email}</span>
+                            <span className="text-black/60">Email:</span>
+                            <span className="font-medium text-black">{formData.email}</span>
                           </div>
                           
                           <div className="flex justify-between">
-                            <span className="text-[#212121]/60">Phone:</span>
-                            <span className="font-medium text-[#212121]">{formData.phone}</span>
+                            <span className="text-black/60">Phone:</span>
+                            <span className="font-medium text-black">{formData.phone}</span>
                           </div>
                           
-                          <div className="flex justify-between pt-4 border-t border-[#212121]/10">
+                          <div className="flex justify-between pt-4 border-t border-black/10">
                             <div className="flex items-center gap-3">
                               <div className="w-10 h-10 rounded-full bg-[#c18b34]/10 text-[#c18b34] flex items-center justify-center border border-[#c18b34]/20">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -442,7 +385,7 @@ const ContactUs = () => {
                                 </svg>
                               </div>
                               <div>
-                                <h4 className="font-medium text-[#212121]">Appointment</h4>
+                                <h4 className="font-medium text-black">Appointment</h4>
                               </div>
                             </div>
                             <button 
@@ -455,13 +398,13 @@ const ContactUs = () => {
                           </div>
                           
                           <div className="flex justify-between">
-                            <span className="text-[#212121]/60">Date:</span>
-                            <span className="font-medium text-[#212121]">{formData.date || 'Not selected'}</span>
+                            <span className="text-black/60">Date:</span>
+                            <span className="font-medium text-black">{formData.date || 'Not selected'}</span>
                           </div>
                           
                           <div className="flex justify-between">
-                            <span className="text-[#212121]/60">Time:</span>
-                            <span className="font-medium text-[#212121]">{formData.timing}</span>
+                            <span className="text-black/60">Time:</span>
+                            <span className="font-medium text-black">{formData.timing}</span>
                           </div>
                         </div>
                         
@@ -485,7 +428,7 @@ const ContactUs = () => {
                       <button
                         type="button"
                         onClick={prevStep}
-                        className="px-6 py-3 border border-[#212121]/20 text-[#212121] rounded-lg hover:bg-[#212121]/5 transition flex items-center gap-2 shadow-sm hover:shadow-md"
+                        className="px-6 py-3 border border-black/20 text-black rounded-lg hover:bg-black/5 transition flex items-center gap-2 shadow-sm hover:shadow-md"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
@@ -499,7 +442,7 @@ const ContactUs = () => {
                     {step < steps.length ? (
                       <button
                         type="submit"
-                        className="px-8 py-3 bg-gradient-to-r from-[#212121] to-[#c18b34] text-[#fffff0] font-medium rounded-lg hover:from-[#212121]/90 hover:to-[#c18b34]/90 transition shadow-md hover:shadow-lg flex items-center gap-2 disabled:opacity-50"
+                        className="px-8 py-3 bg-gradient-to-r from-dark-cream to-light-cream text-[#fffff0] font-medium rounded-lg hover:from-light-cream/90 hover:to-[#c18b34]/90 transition shadow-md hover:shadow-lg flex items-center gap-2 disabled:opacity-50"
                         disabled={!formData.name || !formData.email || !formData.phone || (step === 2 && !formData.date)}
                       >
                         Continue
@@ -510,7 +453,7 @@ const ContactUs = () => {
                     ) : (
                       <button
                         type="submit"
-                        className="px-8 py-3 bg-gradient-to-r from-[#212121] to-[#c18b34] text-[#fffff0] font-medium rounded-lg hover:from-[#212121]/90 hover:to-[#c18b34]/90 transition shadow-lg hover:shadow-xl disabled:opacity-50 flex items-center gap-2"
+                        className="px-8 py-3 bg-gradient-to-r from-dark-cream to-light-cream text-[#fffff0] font-medium rounded-lg hover:from-light-cream/90 hover:to-[#c18b34]/90 transition shadow-lg hover:shadow-xl disabled:opacity-50 flex items-center gap-2"
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (
@@ -539,7 +482,7 @@ const ContactUs = () => {
         </div>
         
         {/* Footer Note */}
-        <div className="text-center mt-8 text-[#212121]/60 text-sm">
+        <div className="text-center mt-8 text-black/60 text-sm">
           <p>Have questions? Email us at <a href="mailto:hello@example.com" className="text-[#c18b34] hover:text-[#c18b34]/80 hover:underline">hello@example.com</a></p>
         </div>
       </div>
@@ -597,6 +540,7 @@ const ContactUs = () => {
         }
       `}</style>
     </section>
+
   );
 };
 

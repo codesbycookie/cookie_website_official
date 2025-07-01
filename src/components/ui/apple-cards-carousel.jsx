@@ -6,11 +6,13 @@ import React, {
   createContext,
   useContext,
 } from "react";
+
 import {
-  IconArrowNarrowLeft,
-  IconArrowNarrowRight,
-  IconX,
-} from "@tabler/icons-react";
+  TbArrowNarrowLeft,
+  TbArrowNarrowRight,
+  TbX,
+} from "react-icons/tb";
+
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
@@ -117,13 +119,13 @@ export const Carousel = ({
             className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}>
-            <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
+            <TbArrowNarrowLeft className="h-6 w-6 text-gray-500" />
           </button>
           <button
             className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}>
-            <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
+            <TbArrowNarrowRight className="h-6 w-6 text-gray-500" />
           </button>
         </div>
       </div>

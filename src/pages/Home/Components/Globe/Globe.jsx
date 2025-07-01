@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
 "use client";
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { motion } from "motion/react";
-import dynamic from "next/dynamic";
 import { AuroraText } from "@/components/magicui/aurora-text";
 
-const World = dynamic(() => import("@/components/ui/globe.jsx").then((m) => m.World), {
-  ssr: false,
-});
+
+const World = lazy(() => import("@/components/ui/globe.jsx").then(m => ({ default: m.World })));
+
 
 export function GlobeDemo() {
   const globeConfig = {
@@ -427,7 +426,10 @@ return (
 
       {/* Globe Container */}
       <div className="w-full mt-10 aspect-[3/2] sm:aspect-[16/9] relative z-10">
+       <Suspense fallback={<div>Loading Globe...</div>}>
         <World data={sampleArcs} globeConfig={globeConfig} />
+</Suspense>
+
       </div>
     </div>
   </div>

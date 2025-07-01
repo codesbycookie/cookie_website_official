@@ -3,11 +3,11 @@ import React from 'react';
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
+  TbClipboardCopy,
+  TbFileBroken,
+  TbSignature,
+  TbTableColumn,
+} from "react-icons/tb";
 
 export function BentoGridSecondDemo({items}) {
   return (
@@ -19,7 +19,7 @@ export function BentoGridSecondDemo({items}) {
           description={item.description}
           header={item.header}
           className={item.className}
-          icon={() => <IconClipboardCopy className="h-4 w-4 text-neutral-500" />} />
+          icon={() => <TbClipboardCopy className="h-4 w-4 text-neutral-500" />} />
       ))}
     </BentoGrid>
   );

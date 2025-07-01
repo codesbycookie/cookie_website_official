@@ -1,4 +1,9 @@
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import {
+  LuFacebook,
+  LuInstagram,
+  LuTwitter,
+  LuLinkedin,
+} from "react-icons/lu";
 
 
 export const homepage = {
@@ -696,7 +701,7 @@ export const   navbar = {
         link:'/about-us',
         name: 'About'
       },      {
-        link:'/services',
+        link:'/service',
         name: 'Services'
       },       {
         link:'/portfolio',
@@ -735,10 +740,10 @@ export const footer = {
     { name: "E-books", href: "#" },
   ],
   social: [
-    { name: "Facebook", icon: Facebook },
-    { name: "Instagram", icon: Instagram },
-    { name: "X", icon: Twitter },
-    { name: "LinkedIn", icon: Linkedin },
+    { name: "Facebook", icon: LuFacebook },
+    { name: "Instagram", icon: LuInstagram },
+    { name: "X", icon: LuTwitter },
+    { name: "LinkedIn", icon: LuLinkedin },
   ],
   policies: [
     { name: "Privacy Policy", href: "#" },
