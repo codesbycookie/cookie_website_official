@@ -8,7 +8,7 @@ const LeftVisualSection = ({ step, steps }) => {
   return (
     <div
       ref={dragBoundary}
-      className="w-full md:w-2/5 relative overflow-hidden bg-black"
+      className="w-full md:w-2/5 relative overflow-hidden bg-black h-full"
     >
       <BackgroundBeamsWithCollision className="bg-black h-full">
         <div className="relative bg-gradient-to-br h-full p-8 flex flex-col justify-center items-center">
