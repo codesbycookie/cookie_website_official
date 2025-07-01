@@ -58,6 +58,8 @@ const handleSubmit = async (e) => {
   const userID = 'Oht2VZndlktWjLOQT'; 
 
   const templateParams = {
+    from_name: 'Cookie Inc. – Appointments',
+    from_email: 'info@cookie.org.in',
     name: formData.name,
     email: formData.email,
     phone: formData.phone,
