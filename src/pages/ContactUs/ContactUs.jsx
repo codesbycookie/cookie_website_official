@@ -109,7 +109,7 @@ const handleSubmit = async (e) => {
         </div>
 
         {/* Main Card */}
-        <div className="bg-[#fffff0] rounded-2xl shadow-xl overflow-hidden transform transition-all hover:shadow-2xl border border-/10">
+        <div className=" rounded-2xl shadow-xl overflow-hidden transform transition-all hover:shadow-2xl border border-/10">
           <div className="flex flex-col md:flex-row">
             {/* Left side - Visual */}
 <LeftVisualSection step={step} steps={steps}/>
