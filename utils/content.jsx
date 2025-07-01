@@ -17,11 +17,13 @@ export const homepage = {
         title: "Web Development",
         content:
           "Tailored designs that connect your brand with your audience, professionally and effectively.",
+          img:"./imgs/web-development-icon.svg"
       },
       {
         title: "App Development",
         content:
           "Applications engineered to deliver seamless user experiences and drive measurable results.",
+          img:"./imgs/Mobile-dev.png"
       },
     ],
   },
@@ -77,41 +79,58 @@ export const homepage = {
         name: "Tharun ",
         username: "@jack",
         body: "Most responsible replies and affordable price.",
-        img: "https://avatar.vercel.sh/jack",
+        img: "/imgs/How_to_cook_logo.svg",
       },
       {
         name: "Karthikeyan",
         username: "@jill",
         body: "I don't know what to say. I'm speechless. This is amazing.",
-        img: "https://avatar.vercel.sh/jill",
+        img: "/imgs/Traffic-logo.jpg",
       },
       {
         name: "JothiLakshmi ",
         username: "@john",
         body: "Affordable price and quick response. I love it.",
-        img: "https://avatar.vercel.sh/john",
+        img: "/imgs/Tourist-logo.jpg",
       },
       {
         name: "Srinivas P",
         username: "@jane",
         body: " good work and affordable price.",
-        img: "https://avatar.vercel.sh/jane",
+        img: "/imgs/V&D-logo.png",
       },
       {
-        name: "Vishnu Vardhan S",
+        name: "Hitheeswar",
         username: "@jenny",
         body: "Innovative ideas and great execution. Highly recommend!",
-        img: "https://avatar.vercel.sh/jenny",
+        img: "/imgs/Audnex-logo.jpg",
       },
       {
-        name: "S Lakshman",
+        name: "Robin Sighla",
         username: "@james",
         body: "It was interactive and engaging. I loved the way they handled my project.",
-        img: "https://avatar.vercel.sh/james",
+        img: "/imgs/iq-bridge-logo.png",
       },
     ],
     title2: "Project Showcase",
-    projects: [1, 2, 3],
+    projects: [
+      
+      {
+      title: "Skill link - Connecting Minds, Bridging Gaps",
+      description: "personalized learning experiences by just sitting at home.",
+      img: "/imgs/Skill_link_mockup.svg"
+      },
+      {
+      title: "Elderly - Your Trusted Health Companion",
+      description: "My mom never forgets her tablets anymore. No ADs , No Confusion ",
+      img: "/imgs/Elderly-Mock-up.svg"
+      },
+      {
+      title: "Velu’s and Son’s – Taste Meets Tradition",
+      description: "Bringing their legacy to online with clean and cashew-focused design.",
+      img: "/imgs/Cashew_Mockup.svg"
+      }
+    ],
   },
   section7: {
     title: "Shaping Ideas Into Immersive Realities",
@@ -273,7 +292,7 @@ export const servicespage = {
       "Every Line with Purpose. Every Feature with Meaning.",
   },
   section2: {
-    title: "Behind every great project is a team that cares about results, not just delivery",
+    title: "Behind every project is a team that cares about results",
     subtitle: "From Startups To Scale–Ups, We've Baked Packages For Every Kind Of Brand, Choose The Flavor That Fits Your Vision.",
   packages: [
     {
@@ -330,25 +349,25 @@ export const servicespage = {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="/imgs/Research.webp"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
+              src="/imgs/Research-2.jpg"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/templates/startup-3.webp"
+              src="/imgs/Research-4.png"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/templates/startup-4.webp"
+              src="/imgs/Research-3.jpg"
               alt="startup template"
               width={500}
               height={500}
@@ -371,25 +390,25 @@ export const servicespage = {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="/imgs/Design-1.png"
               alt="hero template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/features-section.png"
+              src="/imgs/Design-2.png"
               alt="feature template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+              src="/imgs/Design-3.png"
               alt="bento template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/cards.png"
+              src="/imgs/Design-4.jpeg"
               alt="cards template"
               width={500}
               height={500}
@@ -434,25 +453,25 @@ export const servicespage = {
           </div> */}
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="/imgs/Development-1.jpeg"
               alt="hero template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/features-section.png"
+              src="/imgs/Development-2.jpg"
               alt="feature template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+              src="/imgs/Development-3.jpg"
               alt="bento template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/cards.png"
+              src="/imgs/Development-4.jpg"
               alt="cards template"
               width={500}
               height={500}
@@ -608,37 +627,49 @@ export const portfoliopage = {
       ],
     },
     images: [
-      "https://assets.aceternity.com/cloudinary_bkp/3d-card.png",
-      "https://assets.aceternity.com/animated-modal.png",
-      "https://assets.aceternity.com/animated-testimonials.webp",
-      "https://assets.aceternity.com/cloudinary_bkp/Tooltip_luwy44.png",
-      "https://assets.aceternity.com/github-globe.png",
-      "https://assets.aceternity.com/glare-card.png",
-      "https://assets.aceternity.com/layout-grid.png",
-      "https://assets.aceternity.com/flip-text.png",
-      "https://assets.aceternity.com/hero-highlight.png",
-      "https://assets.aceternity.com/carousel.webp",
-      "https://assets.aceternity.com/placeholders-and-vanish-input.png",
-      "https://assets.aceternity.com/shooting-stars-and-stars-background.png",
-      "https://assets.aceternity.com/signup-form.png",
-      "https://assets.aceternity.com/cloudinary_bkp/stars_sxle3d.png",
-      "https://assets.aceternity.com/spotlight-new.webp",
-      "https://assets.aceternity.com/cloudinary_bkp/Spotlight_ar5jpr.png",
-      "https://assets.aceternity.com/cloudinary_bkp/Parallax_Scroll_pzlatw_anfkh7.png",
-      "https://assets.aceternity.com/tabs.png",
-      "https://assets.aceternity.com/cloudinary_bkp/Tracing_Beam_npujte.png",
-      "https://assets.aceternity.com/cloudinary_bkp/typewriter-effect.png",
-      "https://assets.aceternity.com/glowing-effect.webp",
-      "https://assets.aceternity.com/hover-border-gradient.png",
-      "https://assets.aceternity.com/cloudinary_bkp/Infinite_Moving_Cards_evhzur.png",
-      "https://assets.aceternity.com/cloudinary_bkp/Lamp_hlq3ln.png",
+      "/imgs/Skill_link_mockup.svg",
+      "/imgs/Traffic-logo.jpg",
+      "/imgs/Project-1.png",
+      "/imgs/Project-2.png",
+      
+      "/imgs/V&D-logo.png",
+      "/imgs/Tourist-logo.jpg",
+      "/imgs/img1.jpeg",
+      "/imgs/img2.jpeg",
+      
+      "/imgs/Fashbridge-logo.png",
+      "/imgs/iq-bridge-logo.png",
+      "/imgs/Cashew_Mockup.svg",
+      "/imgs/Elderly-Mock-up.svg",
+
+      "/imgs/Skill_link_mockup.svg",
+      "/imgs/Traffic-logo.jpg",
+      "/imgs/Project-1.png",
+      "/imgs/Project-2.png",
+      
+      "/imgs/V&D-logo.jpg",
+      "/imgs/Tourist-logo.jpg",
+      "/imgs/img1.jpeg",
+      "/imgs/img2.jpeg",
+      
+     "/imgs/Skill_link_mockup.svg",
+      "/imgs/Traffic-logo.jpg",
+      "/imgs/Project-1.png",
+      "/imgs/Project-2.png",
+      
+      "/imgs/Fashbridge-logo.png",
+      "/imgs/iq-bridge-logo.png",
+      "/imgs/Cashew_Mockup.svg",
+      "/imgs/Elderly-Mock-up.svg",
+      
       "https://assets.aceternity.com/macbook-scroll.png",
       "https://assets.aceternity.com/cloudinary_bkp/Meteors_fye3ys.png",
       "https://assets.aceternity.com/cloudinary_bkp/Moving_Border_yn78lv.png",
-      "https://assets.aceternity.com/multi-step-loader.png",
-      "https://assets.aceternity.com/vortex.png",
-      "https://assets.aceternity.com/wobble-card.png",
-      "https://assets.aceternity.com/world-map.webp",
+      
+      
+      
+      
+      
     ],
   },
   section3: {
@@ -649,7 +680,7 @@ export const portfoliopage = {
     button: "Let’s Bake Something Together",
   },
   section4: {
-    title: "What our clients say",
+    title: "Meet Our Team",
     testimonials: [
       {
         quote:

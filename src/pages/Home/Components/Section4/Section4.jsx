@@ -3,9 +3,9 @@ import React from "react";
 
 export default function Section4({content}) {
   return (
-    <div className="bg-black  text-white py-16">
-      <div className="text-center md:px-section-lg px-section-sm">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold font-hahmlet max-w-4xl mx-auto">
+    <div className="bg-black  text-white ">
+      {/* <div className="text-center md:px-section-lg px-section-sm">
+        <h2 className="text-2xl sm:text-2xl md:text-4xl font-medium font-hahmlet max-w-4xl mx-auto tracking-wider leading-tight">
          {content.title}
         </h2>
       </div>
@@ -24,7 +24,7 @@ export default function Section4({content}) {
             <p className="text-base text-gray-600">{step.desc}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

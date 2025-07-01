@@ -37,10 +37,10 @@ export function TechStackMarquee() {
 
 export default function Section1({content}) {
   return (
-    <div className="bg-black text-white h-screen">
-      <div className="mx-auto max-w-7xl h-full px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <div className="bg-black text-white h-screen relative">
+      <div className="mx-auto max-w-7xl h-full px-4 py-10 sm:px-6 lg:px-8 lg:py-20 items-center lg:absolute lg:top-40 lg:left-90">
         <div className="pt-10 md:pt-20 flex flex-col justify-center items-center">
-          <h1 className="font-hahmlet font-semibold text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
+          <h1 className="font-hahmlet font-semibold text-center items-center text-4xl sm:text-5xl md:text-4xl lg:text-4xl xl:text-7xl leading-tight">
            {content.title[0]}
             <AuroraText
               className=" font-bold"

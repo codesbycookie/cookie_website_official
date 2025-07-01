@@ -16,8 +16,8 @@ const Section3 = ({content}) => {
     <section className="bg-black text-white py-20 px-4 sm:px-6">
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold">{content.title}</h2>
-        <p className="mt-4 text-gray-300 text-lg md:text-xl">
+        <h2 className="text-4xl md:text-5xl font-bold lg:mb-14">{content.title}</h2>
+        <p className="mt-4 text-gray-300 text-lg md:text-xl ">
         {content.subtitle}</p>
       </div>
 
