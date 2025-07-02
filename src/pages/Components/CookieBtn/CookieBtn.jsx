@@ -4,17 +4,23 @@ import './CookieBtn.css'
 
 export default function CookieBtn({ name }) {
   return (
-    <button className="group bg-black border-2 border-white text-white px-4 py-2 rounded-xl shadow-md transition-all duration-300 flex items-center gap-2 relative overflow-hidden hover:bg-white hover:text-black">
-      {/* Floating Cookie Icon */}
-      <img
-        src="/imgs/cookie_white.png"
+    <button
+  href="#"
+  class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-white text-black shadow hover:bg-white/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-black hover:ring-offset-2 "
+>
+  <span
+    class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-black opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"
+  ></span>
+  <img
+        src="/imgs/cookie-hd.png"
         alt="Cookie"
         className="h-5 w-5 cookie-float transition-transform duration-300"
       />
-      <span className="z-10 font-semibold">{name}</span>
-
-      {/* Subtle white glow on hover */}
-      <span className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-white rounded-xl blur-sm transition duration-500 pointer-events-none" />
-    </button>
+  
+    
+    <span class="ml-1 text-black">{name}</span>
+  
+  
+</button>
   );
 }
