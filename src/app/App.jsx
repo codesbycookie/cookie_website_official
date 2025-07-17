@@ -7,10 +7,13 @@ import Footer from "../pages/Components/Footer/Footer";
 import Navbar from "../pages/Components/Navbar/Navbar";
 import AssistiveBall from '../pages/Components/AssistiveBall/AssistiveBall'
 import CursorWithNamePrompt from "./CursorWithName";
+import ScrollToTop from "@/hooks/ScrollToTop";
+
 function App() {
   return (
     <Router className='cursor-none'>
-{/* <Pointer className="text-light-cream fixed z-9999 pointer-events-none" /> */}
+              <ScrollToTop/>
+
       <Navbar />
       <AssistiveBall/>
       <AppRoutes />

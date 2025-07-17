@@ -1,5 +1,7 @@
 "use client";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
+import { PinContainer } from "@/components/ui/3d-pin";
+
 
 export function ThreeDMarqueeDemo({images}) {
   return (
@@ -9,6 +11,11 @@ export function ThreeDMarqueeDemo({images}) {
     </div>
   );
 }
+
+
+
+
+
 
 
 const Section2 = ({content}) => {
@@ -25,7 +32,6 @@ const Section2 = ({content}) => {
       </div>
 
      <ThreeDMarqueeDemo images={content.images}/>
-
     </div>
   );
 };

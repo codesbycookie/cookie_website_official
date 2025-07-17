@@ -1,53 +1,49 @@
-import {
-  LuFacebook,
-  LuInstagram,
-  LuTwitter,
-  LuLinkedin,
-} from "react-icons/lu";
+import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 
 export const homepage = {
   section1: {
     globe_description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-    first_button: "Explore more",
-    second_button: "Contact Us",
+      "From modern websites to intelligent mobile apps, we help businesses scale with purpose-driven digital solutions.",
+    first_button: "Discover more",
+    second_button: "Start Your Project",
   },
   section2: {
-    heading: "Long heading is what you see here in this feature section",
+    heading: "Solutions Built for Business Growth",
     description:
-      "At Cookie, we specialize in crafting stunning websites and apps that captivate users. Our expert team combines creativity and technology to deliver exceptional digital solutions.",
+      "From modern websites to intelligent mobile apps, we help businesses scale with purpose-driven digital solutions.",
     feature_cards: [
       {
-        title: "Web Design",
+        title: "Web Development",
         content:
-          "Bespoke web solutions tailored to elevate your brand's online presence.",
+          "Tailored designs that connect your brand with your audience, professionally and effectively.",
+          img:"./imgs/web-development-icon.svg"
       },
       {
         title: "App Development",
         content:
-          "Innovative mobile applications designed to engage and retain your audience.",
+          "Applications engineered to deliver seamless user experiences and drive measurable results.",
+          img:"./imgs/Mobile-dev.png"
       },
     ],
   },
   section3: {
-    heading: "Long heading is what you see here in this feature section",
+    heading: "Discover additional services that elevate your digital journey beyond expectations.",
     cards: [
       {
-        title: "Stripe",
+        title: "Branding",
         description:
-          "A technology company that builds economic infrastructure for the internet.",
+          "Crafting unique brand identities that resonate with your audience and stand out in the market.",
       },
       {
-        title: "Netflix",
+        title: "Digital Marketing",
         description:
-          "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+          "Strategic marketing solutions that amplify your brand's reach and engagement across digital platforms.",
       },
       {
-        title: "Google",
-        subtitle: "hidfdfd",
+        title: "Tech Support",
         description:
-          "A multinational technology company that specializes in Internet-related services and products.",
+          "Help with deploying React, Node, Firebase, etc., and fixing bugs for student or client projects.",
       },
     ],
   },
@@ -57,21 +53,21 @@ export const homepage = {
     steps: [
       {
         title:
-          "Transforming Ideas into Digital Reality: Our Step-by-Step Approach",
-        desc: "We start with a consultation to understand your vision and goals.",
-        label: "Start",
+          "Transforming Ideas into Reality",
+        desc: "We start with understanding your vision and requirements to create a tailored solution.",
+        label: "Design",
       },
       {
         title:
-          "Design and Development: Crafting Your Unique Digital Experience",
-        desc: "Our team designs and develops tailored solutions that reflect your brand.",
-        label: "Build",
+          "Building with precision.",
+        desc: "we develop reliable applications that perform across devices and platforms.",
+        label: "Develop",
       },
       {
         title:
-          "Testing and Feedback: Ensuring Quality and Satisfaction in Every Step",
-        desc: "We conduct thorough testing and incorporate your feedback for optimal results.",
-        label: "Launch",
+          "On time. On point.",
+        desc: "We ensure your project is delivered on time, meeting all specifications and quality standards.",
+        label: "Deliver",
       },
     ],
   },
@@ -80,51 +76,68 @@ export const homepage = {
     title: "Customer Testimonials",
     reviews: [
       {
-        name: "Jack",
+        name: "Tharun ",
         username: "@jack",
-        body: "I've never seen anything like this before. It's amazing. I love it.",
-        img: "https://avatar.vercel.sh/jack",
+        body: "Most responsible replies and affordable price.",
+        img: "/imgs/How_to_cook_logo.svg",
       },
       {
-        name: "Jill",
+        name: "Karthikeyan",
         username: "@jill",
         body: "I don't know what to say. I'm speechless. This is amazing.",
-        img: "https://avatar.vercel.sh/jill",
+        img: "/imgs/Traffic-logo.jpg",
       },
       {
-        name: "John",
+        name: "JothiLakshmi ",
         username: "@john",
-        body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/john",
+        body: "Affordable price and quick response. I love it.",
+        img: "/imgs/Tourist-logo.jpg",
       },
       {
-        name: "Jane",
+        name: "Srinivas P",
         username: "@jane",
-        body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/jane",
+        body: " good work and affordable price.",
+        img: "/imgs/V&D-logo.png",
       },
       {
-        name: "Jenny",
+        name: "Hitheeswar",
         username: "@jenny",
-        body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/jenny",
+        body: "Innovative ideas and great execution. Highly recommend!",
+        img: "/imgs/Audnex-logo.jpg",
       },
       {
-        name: "James",
+        name: "Robin Sighla",
         username: "@james",
-        body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/james",
+        body: "It was interactive and engaging. I loved the way they handled my project.",
+        img: "/imgs/iq-bridge-logo.png",
       },
     ],
     title2: "Project Showcase",
-    projects: [1, 2, 3],
+    projects: [
+      
+      {
+      title: "Skill link - Connecting Minds, Bridging Gaps",
+      description: "personalized learning experiences by just sitting at home.",
+      img: "/imgs/Skill_link_mockup.svg"
+      },
+      {
+      title: "Elderly - Your Trusted Health Companion",
+      description: "My mom never forgets her tablets anymore. No ADs , No Confusion ",
+      img: "/imgs/Elderly-Mock-up.svg"
+      },
+      {
+      title: "Velu’s and Son’s – Taste Meets Tradition",
+      description: "Bringing their legacy to online with clean and cashew-focused design.",
+      img: "/imgs/Cashew_Mockup.svg"
+      }
+    ],
   },
   section7: {
-    title: "Medium length CTA heading goes here",
+    title: "Shaping Ideas Into Immersive Realities",
     description:
-      "Fusce at nisi eget dolor rhoncus facilisis. Mauris ante ligula, facilisis sed ornare eu.",
-    first_button: "Start",
-    second_button: "Contact",
+      "We craft with care, build with precision, and deliver with purpose",
+    first_button: "Build With Us",
+    second_button: "Talk to Our Experts",
   },
   section8: {
     title: "Frequently Asked Questions",
@@ -170,14 +183,14 @@ export const homepage = {
           "We’re here even after your project goes live. From bug fixes to enhancements and performance monitoring, we ensure your product stays optimized and updated.",
       },
     ],
-    description: "Still have questions?",
+    description: "Still Confused? Have a Chat !",
     button: "Contact Us",
   },
 };
 
 export const aboutpage = {
   section1: {
-    title: ["We're the makers behind", "the magic"], 
+    title: ["The Team Turning Ideas into ", "Impact"], 
     subtitle: "A bunch of creative minds stirring pixels, code, and caffeine to bring brands to life. Welcome to the COOKIE kitchen.",
  img: '/imgs/placeholder.png'
   },section2: {
@@ -236,7 +249,7 @@ export const aboutpage = {
   }, section3: {
     title: "Who Are We ?",
     
-    tagline: `"A Tech-Powered Creative Studio. Powered By Engineers. Inspired By Designers"`,
+    tagline: "At Cookie, we don’t just build—we build right",
     items: [
   {
     title: "The Dawn of Innovation",
@@ -274,12 +287,12 @@ export const contactpage = {};
 
 export const servicespage = {
   section1: {
-    title: ["We Bring ", " designs to life", " And Ideas To Screens"],
+    title: ["Our Execution is ", " Beyond ", " your Expectation"],
     subtitle:
-      " Every idea begins on a blank screen. Through thoughtful design and meticulous development, we turn that emptiness into seamless, intuitive experiences. Every click, every scroll, every pixel — crafted with care.",
+      "Every Line with Purpose. Every Feature with Meaning.",
   },
   section2: {
-    title: "One Studio. Three Flavors Of Service.",
+    title: "Behind every project is a team that cares about results",
     subtitle: "From Startups To Scale–Ups, We've Baked Packages For Every Kind Of Brand, Choose The Flavor That Fits Your Vision.",
   packages: [
     {
@@ -332,29 +345,29 @@ export const servicespage = {
         <div className='py-30'>
           <p
             className="mb-8 text-xs font-normal text-white-800 md:text-sm dark:text-white-200">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            We Dont just build, we build right. We start with understanding your vision and requirements to create a tailored solution.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="/imgs/Research.webp"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
+              src="/imgs/Research-2.jpg"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/templates/startup-3.webp"
+              src="/imgs/Research-4.png"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/templates/startup-4.webp"
+              src="/imgs/Research-3.jpg"
               alt="startup template"
               width={500}
               height={500}
@@ -369,35 +382,33 @@ export const servicespage = {
         <div className='py-30'>
           <p
             className="mb-8 text-xs font-normal text-white-800 md:text-sm dark:text-white-200">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+            We believe in the power of design to transform ideas into reality.
           </p>
           <p
             className="mb-8 text-xs font-normal text-white-800 md:text-sm dark:text-white-200">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            Our design process is a blend of creativity and strategy, ensuring that every pixel serves a purpose.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="/imgs/Design-1.png"
               alt="hero template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/features-section.png"
+              src="/imgs/Design-2.png"
               alt="feature template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+              src="/imgs/Design-3.png"
               alt="bento template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/cards.png"
+              src="/imgs/Design-4.jpeg"
               alt="cards template"
               width={500}
               height={500}
@@ -412,9 +423,13 @@ export const servicespage = {
         <div className='py-30'>
           <p
             className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
-            Deployed 5 new components on Aceternity today
+            We take pride in our development process, ensuring that every line of code is crafted with precision and care.
           </p>
-          <div className="mb-8">
+          <p
+            className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
+            Our team of skilled developers works tirelessly to bring your vision to life, using the latest technologies and best practices.
+          </p>
+          {/* <div className="mb-8">
             <div
               className="flex items-center gap-2 text-xs text-white-700 md:text-sm dark:text-white-300">
               ✅ Card grid component
@@ -435,28 +450,28 @@ export const servicespage = {
               className="flex items-center gap-2 text-xs text-white-700 md:text-sm dark:text-white-300">
               ✅ Salman Bhai Fan Club registrations open
             </div>
-          </div>
+          </div> */}
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="/imgs/Development-1.jpeg"
               alt="hero template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/features-section.png"
+              src="/imgs/Development-2.jpg"
               alt="feature template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+              src="/imgs/Development-3.jpg"
               alt="bento template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
             <img
-              src="https://assets.aceternity.com/cards.png"
+              src="/imgs/Development-4.jpg"
               alt="cards template"
               width={500}
               height={500}
@@ -470,9 +485,15 @@ export const servicespage = {
         <div className='py-30'>
           <p
             className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
-            Deployed 5 new components on Aceternity today
+            On time. On point.
+
           </p>
-          <div className="mb-8">
+          <p
+            className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
+            We launch only when we’re confident the solution meets your expectations and our standards—ensuring quality, functionality, and lasting value.
+
+          </p>
+          {/* <div className="mb-8">
             <div
               className="flex items-center gap-2 text-xs text-white-700 md:text-sm dark:text-white-300">
               ✅ Card grid component
@@ -493,7 +514,7 @@ export const servicespage = {
               className="flex items-center gap-2 text-xs text-white-700 md:text-sm dark:text-white-300">
               ✅ Salman Bhai Fan Club registrations open
             </div>
-          </div>
+          </div> */}
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -527,15 +548,15 @@ export const servicespage = {
   }
   ,
   section4: {
-    title: "What's On The Menu ?",
-    subtitle: "A Full-Stack Of Creative Services Cooked With Care.",
+    title: "What's we Cook ?",
+    subtitle: "From Websites To Apps, We Bake It All.",
     services: [
     {
       title: "Web Development",
       description: [
         "Building Websites And Web",
         "Applications That Work Well And",
-        "Meet Your Needs.",
+        "Responsive for every Device.",
       ],
     },
     {
@@ -571,10 +592,10 @@ export const servicespage = {
       ],
     },
     {
-      title: "Logo Design",
+      title: "Branding",
       description: [
-        "Crafting Intuitive Interfaces",
-        "That Delight Users And",
+        "Building Strong Brands",
+        "Brands That Resonate With Your Audience",
         "Drive Engagement.",
       ],
     },
@@ -584,12 +605,12 @@ export const servicespage = {
 
 export const portfoliopage = {
   section1: {
-    title: ["Cooked with, ", "creativity", "served with", "care"],
-    subtitle: "Not just a cookie-cutter work — It’s our custom creations.",
+    title: ["Our portfolio isn’t a ", "Gallery ", "But Stories of", "Entrepreneurs"],
+    subtitle: "Not Just Pretty Pixels. Purposeful, Powerful Products",
   },
   section2: {
     content: {
-      title: "Our Work Speaks. And It Says Cookie",
+      title: "Beyond Templates. Fully Tailored Digital Craft.",
       tagline: [
         "Designs that click. Code that sticks.",
         "Marketing, that’s magic",
@@ -606,48 +627,60 @@ export const portfoliopage = {
       ],
     },
     images: [
-      "https://assets.aceternity.com/cloudinary_bkp/3d-card.png",
-      "https://assets.aceternity.com/animated-modal.png",
-      "https://assets.aceternity.com/animated-testimonials.webp",
-      "https://assets.aceternity.com/cloudinary_bkp/Tooltip_luwy44.png",
-      "https://assets.aceternity.com/github-globe.png",
-      "https://assets.aceternity.com/glare-card.png",
-      "https://assets.aceternity.com/layout-grid.png",
-      "https://assets.aceternity.com/flip-text.png",
-      "https://assets.aceternity.com/hero-highlight.png",
-      "https://assets.aceternity.com/carousel.webp",
-      "https://assets.aceternity.com/placeholders-and-vanish-input.png",
-      "https://assets.aceternity.com/shooting-stars-and-stars-background.png",
-      "https://assets.aceternity.com/signup-form.png",
-      "https://assets.aceternity.com/cloudinary_bkp/stars_sxle3d.png",
-      "https://assets.aceternity.com/spotlight-new.webp",
-      "https://assets.aceternity.com/cloudinary_bkp/Spotlight_ar5jpr.png",
-      "https://assets.aceternity.com/cloudinary_bkp/Parallax_Scroll_pzlatw_anfkh7.png",
-      "https://assets.aceternity.com/tabs.png",
-      "https://assets.aceternity.com/cloudinary_bkp/Tracing_Beam_npujte.png",
-      "https://assets.aceternity.com/cloudinary_bkp/typewriter-effect.png",
-      "https://assets.aceternity.com/glowing-effect.webp",
-      "https://assets.aceternity.com/hover-border-gradient.png",
-      "https://assets.aceternity.com/cloudinary_bkp/Infinite_Moving_Cards_evhzur.png",
-      "https://assets.aceternity.com/cloudinary_bkp/Lamp_hlq3ln.png",
+      "/imgs/Skill_link_mockup.svg",
+      "/imgs/Traffic-logo.jpg",
+      "/imgs/Project-1.png",
+      "/imgs/Project-2.png",
+      
+      "/imgs/V&D-logo.png",
+      "/imgs/Tourist-logo.jpg",
+      "/imgs/img1.jpeg",
+      "/imgs/img2.jpeg",
+      
+      "/imgs/Fashbridge-logo.png",
+      "/imgs/iq-bridge-logo.png",
+      "/imgs/Cashew_Mockup.svg",
+      "/imgs/Elderly-Mock-up.svg",
+
+      "/imgs/Skill_link_mockup.svg",
+      "/imgs/Traffic-logo.jpg",
+      "/imgs/Project-1.png",
+      "/imgs/Project-2.png",
+      
+      "/imgs/V&D-logo.jpg",
+      "/imgs/Tourist-logo.jpg",
+      "/imgs/img1.jpeg",
+      "/imgs/img2.jpeg",
+      
+     "/imgs/Skill_link_mockup.svg",
+      "/imgs/Traffic-logo.jpg",
+      "/imgs/Project-1.png",
+      "/imgs/Project-2.png",
+      
+      "/imgs/Fashbridge-logo.png",
+      "/imgs/iq-bridge-logo.png",
+      "/imgs/Cashew_Mockup.svg",
+      "/imgs/Elderly-Mock-up.svg",
+      
       "https://assets.aceternity.com/macbook-scroll.png",
       "https://assets.aceternity.com/cloudinary_bkp/Meteors_fye3ys.png",
       "https://assets.aceternity.com/cloudinary_bkp/Moving_Border_yn78lv.png",
-      "https://assets.aceternity.com/multi-step-loader.png",
-      "https://assets.aceternity.com/vortex.png",
-      "https://assets.aceternity.com/wobble-card.png",
-      "https://assets.aceternity.com/world-map.webp",
+      
+      
+      
+      
+      
     ],
   },
   section3: {
-    count: 100,
-    title: "+ projects baked — and we’re just getting started",
+    count: 20,
+    title: "+ projects cooked — and we’re just getting started",
     subtitle:
       "We’ve turned visions into visuals, clicks into clients, and briefs into brands",
     button: "Let’s Bake Something Together",
   },
   section4: {
-    title: "What our clients say",
+    title: "Meet Our Team",
     testimonials: [
       {
         quote:
@@ -740,10 +773,10 @@ export const footer = {
     { name: "E-books", href: "#" },
   ],
   social: [
-    { name: "Facebook", icon: LuFacebook },
-    { name: "Instagram", icon: LuInstagram },
-    { name: "X", icon: LuTwitter },
-    { name: "LinkedIn", icon: LuLinkedin },
+    { name: "Facebook", icon: Facebook },
+    { name: "Instagram", icon: Instagram },
+    { name: "X", icon: Twitter },
+    { name: "LinkedIn", icon: Linkedin },
   ],
   policies: [
     { name: "Privacy Policy", href: "#" },
