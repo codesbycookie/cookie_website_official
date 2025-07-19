@@ -14,11 +14,10 @@ function App() {
   return (
     <Router className='cursor-none'>
               <ScrollToTop/>
-              <Greet/>
-     {/*  <Navbar />
-      <AssistiveBall/> */}
-      {/* <AppRoutes /> 
-      <Footer />*/}
+      <Navbar />
+     {/*  <AssistiveBall/> */}
+       <AppRoutes /> 
+      <Footer />
     </Router>
   );
 }
