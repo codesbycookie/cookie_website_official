@@ -38,7 +38,7 @@ export function EvervaultCard({ title, features }) {
           );
         })}
       </ul>
-      <button className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full  text-black dark:text-white px-5 py-3 mt-auto">
+      <button className="text-sm  font-medium bg-light-cream rounded-full  text-black  dark:text-white px-5 py-3 mt-auto hover:shadow-[0_10px_20px_rgba(0,0,0,0.5) transition-all duration-300 ease-in-out hover:scale-105">
         Quote Now
       </button>
     </div>

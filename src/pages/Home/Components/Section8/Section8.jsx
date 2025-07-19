@@ -24,7 +24,7 @@ export default function Section8({content}) {
         </div>
         <div className="text-center">
           <p className="mb-2">{content.description}</p>
-          <button className="border px-5 py-2 rounded">{content.button}</button>
+          <button className="border-2 border-black/50 px-5 py-2 rounded">{content.button}</button>
         </div>
       </div>
     </section>

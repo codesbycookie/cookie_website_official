@@ -3,7 +3,7 @@
     transform: translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateY(-6px) rotate(0deg);
+    transform: translateY(-3px) rotate(0deg);
   }
   100% {
     transform: translateY(0) rotate(360deg);

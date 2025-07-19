@@ -220,6 +220,7 @@ export default function Section2({content}) {
                   key={idx}
                   title={card.title}
                   content={card.content}
+                  img={card.img}
                 />
               );
             })}
