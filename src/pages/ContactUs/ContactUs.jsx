@@ -158,7 +158,7 @@ const handleSubmit = async (e) => {
                   <div className={`transition-all duration-300 ease-in-out ${animationDirection === 'forward' ? 'animate-fadeIn' : 'animate-fadeIn'}`}>
                     {/* Step 1: Combined Personal Info */}
                     {step === 1 && (
-                      <div className="space-y-8">
+                      <div className="space-y-10">
                         <div>
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-12 h-12 rounded-full bg-[#c18b34]/10 text-[#c18b34] flex items-center justify-center border-2 border-[#c18b34]/20 shadow-sm">
@@ -166,7 +166,7 @@ const handleSubmit = async (e) => {
                             </div>
                             <div>
                               <h3 className="text-2xl font-bold text-black">Tell us about yourself</h3>
-                              <p className="text-black/60">We'll use this information to contact you about your appointment</p>
+                              <p className="text-black/60">We'll use this information to contact you</p>
                             </div>
                           </div>
                         </div>
@@ -487,7 +487,7 @@ const handleSubmit = async (e) => {
         
         {/* Footer Note */}
         <div className="text-center mt-8 text-black/60 text-sm">
-          <p>Have questions? Email us at <a href="mailto:hello@example.com" className="text-[#c18b34] hover:text-[#c18b34]/80 hover:underline">hello@example.com</a></p>
+          <p>Have questions? Email us at <a href="mailto:info@cookie.org.in" className="text-[#c18b34] hover:text-[#c18b34]/80 hover:underline">info@cookie.org.in</a></p>
         </div>
       </div>
       

@@ -56,7 +56,13 @@ const LeftVisualSection = ({ step, steps }) => {
 
             {/* Step title */}
             <h3 className="text-2xl font-bold mb-3 text-[#fffff0]">
-              Step {step} of {steps.length}
+<p className="text-base sm:text-lg md:text-xl font-semibold text-center my-10">
+  {step === 4 ? (
+    <span className="text-green-500 ">Appointment Confirmed </span>
+  ) : (
+    <>Step {step} of {steps.length}</>
+  )}
+</p>
             </h3>
 
             {/* Step indicators */}

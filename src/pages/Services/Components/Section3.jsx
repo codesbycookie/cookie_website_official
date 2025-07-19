@@ -13,7 +13,7 @@ const Section3 = ({content}) => {
 
 
   return (
-    <section className="bg-black text-white py-20 px-4 sm:px-6">
+    <section className="bg-black text-white py-20 md:px-section-lg px-section-sm">
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h2 className="text-4xl md:text-5xl font-bold lg:mb-14">{content.title}</h2>

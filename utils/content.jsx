@@ -342,7 +342,7 @@ export const servicespage = {
     {
       title: "Research",
       content: (
-        <div className='py-30'>
+        <div className='py-10'>
           <p
             className="mb-8 text-xs font-normal text-white-800 md:text-sm dark:text-white-200">
             We Dont just build, we build right. We start with understanding your vision and requirements to create a tailored solution.
@@ -379,7 +379,7 @@ export const servicespage = {
     {
       title: "Design",
       content: (
-        <div className='py-30'>
+        <div className='py-10'>
           <p
             className="mb-8 text-xs font-normal text-white-800 md:text-sm dark:text-white-200">
             We believe in the power of design to transform ideas into reality.
@@ -420,7 +420,7 @@ export const servicespage = {
     {
       title: "Develop",
       content: (
-        <div className='py-30'>
+        <div className='py-10'>
           <p
             className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
             We take pride in our development process, ensuring that every line of code is crafted with precision and care.
@@ -482,7 +482,7 @@ export const servicespage = {
     },{
       title: "Delivery",
       content: (
-        <div className='py-30'>
+        <div className='py-10'>
           <p
             className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
             On time. On point.
@@ -782,7 +782,7 @@ export const footer = {
     { name: "Privacy Policy", href: "#" },
     { name: "Terms of Service", href: "#" },
   ],
-  copyright: "© 2025 Cookie. All rights reserved."
+  copyright: "© 2025 Cookie Inc.  All rights reserved."
 };
 
 

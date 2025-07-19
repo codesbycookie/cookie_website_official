@@ -8,13 +8,14 @@ const Section4 = ({content}) => {
       <div className="max-w-4xl mx-auto text-center">
 
         <div className="mb-4 md:mb-6 font-mona-sans">
-            <HyperText className={''}>
-              {content.hypertext}
-            </HyperText>
+            {/* <HyperText className={''}>
+            </HyperText>              */}
+ {content.hypertext}
         </div>
         
         <p className="text-lg md:text-xl font-medium font-mona-sans text-gray-600">
-            <FlipText>{content.fliptext}</FlipText>
+            {/* <FlipText></FlipText> */}
+            {content.fliptext}
          </p>
          
       </div>

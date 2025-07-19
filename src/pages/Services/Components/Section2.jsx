@@ -38,9 +38,11 @@ export function EvervaultCard({ title, features }) {
           );
         })}
       </ul>
-      <button className="text-sm  font-medium bg-light-cream rounded-full  text-black  dark:text-white px-5 py-3 mt-auto hover:shadow-[0_10px_20px_rgba(0,0,0,0.5) transition-all duration-300 ease-in-out hover:scale-105">
-        Quote Now
-      </button>
+<button className="text-sm md:text-base font-semibold rounded-full px-6 py-3 mt-auto transition-all duration-300 ease-in-out transform bg-light-cream text-black dark:text-white shadow-md hover:shadow-xl hover:scale-105 hover:bg-dark-cream hover:text-white dark:hover:bg-neutral-800 focus:outline-none focus:ring-4 focus:ring-yellow-400/50">
+  Quote Now
+</button>
+
+
     </div>
   );
 }
@@ -48,7 +50,7 @@ export function EvervaultCard({ title, features }) {
 const Section2 = ({content}) => {
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8" data-theme="light">
+    <div className="bg-white py-16 md:px-section-lg px-section-sm" data-theme="light">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

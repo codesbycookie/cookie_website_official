@@ -1,20 +1,13 @@
 import React from "react";
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 
-export function NeonGradientCardDemo() {
-  return (
-    <NeonGradientCard className="max-w-sm items-center justify-center text-center">
-      <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-        Neon Gradient Card
-      </span>
-    </NeonGradientCard>
-  );
-}
+
+
 
 const Section4 = ({ content }) => {
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-16 md:px-section-lg px-section-sm">
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -31,32 +24,35 @@ const Section4 = ({ content }) => {
               key={index}
               neonColors={{ firstColor: "#c18b13", secondColor: "#ffffff" }}
             >
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
                 {service.title}
               </h2>
               <div className="space-y-2 text-gray-700 w-full flex flex-col">
                 {service.description.map((line, i) => (
-                  <p
-                    key={i}
-                    className="text-lg leading-relaxed text-center flex items-start gap-3 px-5"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#c18b13"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-chevrons-right-icon lucide-chevrons-right"
-                    >
-                      <path d="m6 17 5-5-5-5" />
-                      <path d="m13 17 5-5-5-5" />
-                    </svg>
-                    {line}
-                  </p>
+<p
+  key={i}
+  className="flex items-start gap-3 px-4 sm:px-6 text-sm sm:text-base md:text-lg leading-relaxed text-center"
+>
+  <span className="flex-shrink-0 mt-1">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#c18b13"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-5 h-5"
+    >
+      <path d="m6 17 5-5-5-5" />
+      <path d="m13 17 5-5-5-5" />
+    </svg>
+  </span>
+  <span className="text-left w-full">{line}</span>
+</p>
+
                 ))}
               </div>
             </NeonGradientCard>

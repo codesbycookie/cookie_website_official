@@ -85,13 +85,13 @@ export default function Footer() {
 
       <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
         <p>{footer.copyright}</p>
-        <div className="flex gap-4">
+        {/* <div className="flex gap-4">
           {footer.policies.map((policy, i) => (
             <a key={i} href={policy.href} className="hover:text-white underline">
               {policy.name}
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </footer>
   );
