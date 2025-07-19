@@ -89,7 +89,7 @@ const secondRow = reviews.slice(reviews.length / 2);
 
 export default function Section6({content}) {
   return (
-    <section className="py-16 bg-white text-center">
+    <section className="pt-8 pb-20 bg-white text-center">
         
       <AuroraText
         className="text-5xl font-bold my-20"
@@ -103,7 +103,7 @@ export default function Section6({content}) {
       >
         {content.title2}
       </AuroraText>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 w-8/10 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 w-9/10 mx-auto">
         {content.projects.map((idx) => (
           <CardContainer className="inter-var" key={idx}>
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border  ">

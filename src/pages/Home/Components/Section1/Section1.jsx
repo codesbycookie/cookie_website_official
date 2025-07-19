@@ -13,11 +13,11 @@ export default function Section1({content}) {
       <div className="mx-auto px-section-sm md:px-section-lg py-20">
         <div className="flex flex-col justify-center items-center text-center">
           <GlobeDemo/>
-          <p className="mt-10 text-lg sm:text-xl md:text-2xl max-w-3xl">
+          <p className="mt-10 text-lg sm:text-sm md:text-2xl max-w-3xl">
            {content.globe_description}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-10">
+          <div className="flex flex-row gap-4 mt-10">
             {/* <button className="btn px-10 py-10 bg-white text-black font-bold rounded-xl">
               {content.first_button}
             </button>

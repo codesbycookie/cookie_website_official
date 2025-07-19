@@ -30,14 +30,15 @@ export default function Section7({content}) {
         <p className="mb-6 text-gray-300">
           {content.description}
         </p>
-        <div className="space-x-4">
-          <button className="bg-white text-black font-medium px-6 py-2 rounded shadow">
-            {content.first_button}
-          </button>
-          <button className="border border-white px-6 py-2 rounded text-white">
-            {content.second_button}
-          </button>
-        </div>
+<div className="flex flex-row gap-3 sm:flex-row sm:justify-center sm:gap-6">
+  <button className="bg-white text-black font-medium px-5 py-4 text-sm md:text-base lg:text-lg rounded shadow">
+    {content.first_button}
+  </button>
+  <button className="border border-white text-white px-5 py-4 text-sm md:text-base lg:text-lg rounded">
+    {content.second_button}
+  </button>
+</div>
+
       </div>
       <ScrollBasedVelocityDemo is_reverse={true} />
     </section>

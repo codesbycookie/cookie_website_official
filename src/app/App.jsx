@@ -15,7 +15,7 @@ function App() {
               <ScrollToTop/>
 
       <Navbar />
-      <AssistiveBall/>
+      {/* <AssistiveBall/> */}
       <AppRoutes />
       <Footer />
     </Router>

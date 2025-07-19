@@ -26,7 +26,7 @@ export default function Footer() {
             <img src={footer.company.logo} alt="Cookie logo" className="h-8 w-8 mr-3" />
             <h2 className="text-2xl font-bold">
               {footer.company.name}
-              <span className="text-yellow-200">{footer.company.highlight}</span>
+              <span className="text-light-cream ms-1">{footer.company.highlight}</span>
             </h2>
           </div>
           <div className="flex items-center bg-[#1e1e1e] rounded w-full h-[44px] mb-2">
@@ -42,7 +42,7 @@ export default function Footer() {
           <p className="text-xs text-gray-400 mt-1">{footer.company.description}</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 flex-1 mt-10 lg:mt-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1 mt-10 lg:mt-0">
 
           <div>
             <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
@@ -55,7 +55,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-3">Resources</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               {footer.resources.map((res, i) => (
@@ -64,14 +64,15 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           <div>
-            <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
+            <h3 className="text-lg font-semibold mb-3">Follow Us On</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               {footer.social.map(({ name, icon: Icon }, i) => (
                 <li className="flex items-center gap-2" key={i}>
-                  <Icon size={16} /> {name}
+                  {/* <Icon size={16} />  */}
+                  {name}
                 </li>
               ))}
             </ul>

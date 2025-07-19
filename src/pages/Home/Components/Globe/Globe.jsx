@@ -405,7 +405,7 @@ return (
         transition={{ duration: 1 }}
         className="px-4 md:px-8 text-center"
       >
-        <h2 className="text-xl sm:text-2xl md:text-4xl font-hahmlet font-bold text-white">
+        {/* <h2 className="text-xl sm:text-2xl md:text-4xl font-hahmlet font-bold text-white">
           We sell cookies worldwide, contact us to get your <AuroraText
               className=""
               colors={[
@@ -418,14 +418,14 @@ return (
             >
               cookies
             </AuroraText> now
-        </h2>
+        </h2> */}
       </motion.div>
 
       {/* Gradient Overlay */}
       <div className="absolute inset-x-0 bottom-0 pointer-events-none select-none from-transparent  z-40 h-32 sm:h-40 md:h-60" />
 
       {/* Globe Container */}
-      <div className="w-full mt-10 aspect-[3/2] sm:aspect-[16/9] relative z-10">
+      <div className="w-full  aspect-[3/2] sm:aspect-[16/9] relative z-10">
        <Suspense fallback={<div>Loading Globe...</div>}>
         <World data={sampleArcs} globeConfig={globeConfig} />
 </Suspense>

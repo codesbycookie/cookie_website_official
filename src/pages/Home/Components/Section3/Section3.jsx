@@ -11,7 +11,7 @@ export default function Section3({content}) {
         </h1>
       </div>
 
-      <div className="px-6 sm:px-10 md:px-20 mt-16">
+      <div className=" sm:px-10 md:px-20 mt-16">
         <CardHoverEffectDemo contents={content.cards}/>
       </div>
     </div>
