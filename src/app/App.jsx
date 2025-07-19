@@ -19,6 +19,7 @@ function App() {
       <AssistiveBall/> */}
       {/* <AppRoutes /> 
       <Footer />*/}
+
     </Router>
   );
 }
