@@ -8,16 +8,17 @@ import Navbar from "../pages/Components/Navbar/Navbar";
 import AssistiveBall from '../pages/Components/AssistiveBall/AssistiveBall'
 import CursorWithNamePrompt from "./CursorWithName";
 import ScrollToTop from "@/hooks/ScrollToTop";
+import Greet from "@/pages/greet/Greet";
 
 function App() {
   return (
     <Router className='cursor-none'>
               <ScrollToTop/>
-
-      <Navbar />
-      {/* <AssistiveBall/> */}
-      <AppRoutes />
-      <Footer />
+              <Greet/>
+     {/*  <Navbar />
+      <AssistiveBall/> */}
+      {/* <AppRoutes /> 
+      <Footer />*/}
     </Router>
   );
 }
