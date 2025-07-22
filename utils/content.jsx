@@ -755,9 +755,9 @@ export const footer = {
     name: "Cookie Inc",
     logo: "/imgs/cookie_white.png",
     highlight: ".",
-    description: "By getting a quote, you agree to our Privacy Policy and consent to receive updates.",
+    description: "By requesting this brochure, you consent to receive updates from Cookie Inc.",
     email_placeholder: "Your Email Here",
-    email_button: "Get a Quote"
+    email_button: "Get Brochure"
   },
   quickLinks: [
     { name: "Home", href: "#" },

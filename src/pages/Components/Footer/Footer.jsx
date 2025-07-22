@@ -1,20 +1,56 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, {useState} from "react";
 import { SpinningText } from "@/components/magicui/spinning-text";
 import { footer } from "../../../../utils/content"; // adjust path if needed
+import emailjs from "emailjs-com";
+
 
 function SpinningTextBasic() {
   return (
-    <SpinningText className="md:text-3xl text-lg tracking-widest font-bold text-light-cream" radius={6}>
+    <SpinningText
+      className="md:text-3xl text-lg tracking-widest font-bold text-light-cream"
+      radius={6}
+    >
       Creativity • Care • Commitment •
     </SpinningText>
   );
 }
 
 export default function Footer() {
+  const [mail, setMail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    const serviceID = "service_vjze6ur";
+    const templateID = "template_dw2mabs";
+    const userID = "Oht2VZndlktWjLOQT";
+
+    const templateParams = {
+      from_name: "Cookie Inc. – Appointments",
+      from_email: "info@cookie.org.in",
+      email: mail,
+    };
+
+    try {
+      const res = await emailjs.send(serviceID, templateID, templateParams, userID);
+      console.log("Email sent successfully:", res.text);
+      setSubmitStatus("success");
+      setMail(""); 
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <footer className="bg-black text-white px-6 md:px-20 py-12 relative">
-      
       <div className="absolute top-0 md:end-35 end-20">
         <SpinningTextBasic />
       </div>
@@ -23,33 +59,61 @@ export default function Footer() {
         {/* Left: Logo + Email */}
         <div className="flex-1 w-full">
           <div className="flex items-center mb-4">
-            <img src={footer.company.logo} alt="Cookie logo" className="h-8 w-8 mr-3" />
+            <img
+              src={footer.company.logo}
+              alt="Cookie logo"
+              className="h-8 w-8 mr-3"
+            />
             <h2 className="text-2xl font-bold">
               {footer.company.name}
-              <span className="text-light-cream ms-1">{footer.company.highlight}</span>
+              <span className="text-light-cream ms-1">
+                {footer.company.highlight}
+              </span>
             </h2>
           </div>
-          <div className="flex items-center bg-[#1e1e1e] rounded w-full h-[44px] mb-2">
-            <input
-              type="text"
-              placeholder={footer.company.email_placeholder}
-              className="flex-1 bg-transparent px-4 text-sm text-white placeholder-white focus:outline-none"
-            />
-            <button className="hover:bg-gray-400 bg-white text-black text-sm rounded font-semibold px-4 h-full">
-              {footer.company.email_button}
-            </button>
-          </div>
-          <p className="text-xs text-gray-400 mt-1">{footer.company.description}</p>
+<div className="bg-[#1e1e1e] rounded w-full mb-2 px-3 py-2">
+  <form onSubmit={handleSubmit} className="flex w-full items-center gap-2">
+    <input
+      type="email"
+      value={mail}
+      onChange={(e) => setMail(e.target.value)}
+      placeholder={footer.company.email_placeholder}
+      className="flex-1 bg-transparent border border-white text-white placeholder-white px-4 py-2 text-sm rounded focus:outline-none"
+      required
+    />
+
+    <button
+      type="submit"
+      disabled={isSubmitting}
+      className="whitespace-nowrap hover:bg-gray-400 bg-white text-black text-sm font-semibold px-4 py-2 rounded disabled:opacity-60"
+    >
+      {isSubmitting ? "Sending..." : footer.company.email_button}
+    </button>
+  </form>
+
+  {/* Status messages below the form */}
+  {submitStatus === "success" && (
+    <p className="text-green-400 text-sm mt-2">✅ Sent successfully!</p>
+  )}
+  {submitStatus === "error" && (
+    <p className="text-red-400 text-sm mt-2">❌ Failed to send.</p>
+  )}
+</div>
+
+          <p className="text-xs text-gray-400 mt-1">
+            {footer.company.description}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1 mt-10 lg:mt-0">
-
           <div>
             <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               {footer.quickLinks.map((link, i) => (
                 <li key={i}>
-                  <a href={link.href} className="hover:text-white">{link.name}</a>
+                  <a href={link.href} className="hover:text-white">
+                    {link.name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -77,7 +141,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
         </div>
       </div>
 
