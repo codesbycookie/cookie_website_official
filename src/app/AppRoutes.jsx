@@ -6,6 +6,7 @@ import AboutUs from "../pages/AboutUs/AboutUs";
 import Service from "../pages/Services/Services";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import CursorWithNamePrompt from "./CursorWithName";
+import NotFoundPage from "@/pages/NotFound/NotFound";
 
 export default function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ export default function AppRoutes() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path='*' element={<NotFoundPage/>} />
       </Routes>
   );
 }

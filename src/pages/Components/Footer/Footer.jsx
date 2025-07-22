@@ -78,7 +78,7 @@ export default function Footer() {
       value={mail}
       onChange={(e) => setMail(e.target.value)}
       placeholder={footer.company.email_placeholder}
-      className="flex-1 bg-transparent border border-white text-white placeholder-white px-4 py-2 text-sm rounded focus:outline-none"
+      className="flex-1 bg-transparent  text-white placeholder-white px-4 py-2 text-sm rounded focus:outline-none"
       required
     />
 

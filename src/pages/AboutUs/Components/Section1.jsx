@@ -30,14 +30,14 @@ export default function Section1({ content }) {
             </p>
           )}
 
-          {/* Image */}
+          {/* Image 
           <div className="mt-8 sm:mt-12 md:mt-16 w-full max-w-6xl">
             <img
               src={content.img}
               alt={content.imgAlt || "Creative team working"}
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] object-cover rounded-lg"
             />
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>

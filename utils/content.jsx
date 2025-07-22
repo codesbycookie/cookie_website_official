@@ -190,8 +190,8 @@ export const homepage = {
 
 export const aboutpage = {
   section1: {
-    title: ["The Team Turning Ideas into ", "Impact"], 
-    subtitle: "A bunch of creative minds stirring pixels, code, and caffeine to bring brands to life. Welcome to the COOKIE kitchen.",
+    title: ["Turning Bold Ideas into Real Experiences That Make a "," Difference"], 
+description: "A creative team blending design, code, and collaboration to turn simple ideas into powerful brand experiences.",
  img: '/imgs/placeholder.png'
   },section2: {
     title: 'Thats how our cookie made with love',
@@ -680,43 +680,24 @@ export const portfoliopage = {
     button: "Let’s Bake Something Together",
   },
   section4: {
-    title: "Meet Our Team",
-    testimonials: [
+    title: "Project Showcase",
+    projects: [
+      
       {
-        quote:
-          "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-        name: "Sarah Chen",
-        designation: "Product Manager at TechFlow",
-        src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Skill link - Connecting Minds, Bridging Gaps",
+      description: "personalized learning experiences by just sitting at home.",
+      img: "/imgs/Skill_link_mockup.svg"
       },
       {
-        quote:
-          "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-        name: "Michael Rodriguez",
-        designation: "CTO at InnovateSphere",
-        src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Elderly - Your Trusted Health Companion",
+      description: "My mom never forgets her tablets anymore. No ADs , No Confusion ",
+      img: "/imgs/Elderly-Mock-up.svg"
       },
       {
-        quote:
-          "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-        name: "Emily Watson",
-        designation: "Operations Director at CloudScale",
-        src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        quote:
-          "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-        name: "James Kim",
-        designation: "Engineering Lead at DataPro",
-        src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        quote:
-          "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-        name: "Lisa Thompson",
-        designation: "VP of Technology at FutureNet",
-        src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
+      title: "Velu’s and Son’s – Taste Meets Tradition",
+      description: "Bringing their legacy to online with clean and cashew-focused design.",
+      img: "/imgs/Cashew_Mockup.svg"
+      }
     ],
   },
 

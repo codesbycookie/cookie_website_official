@@ -24,8 +24,8 @@ export default function Section1({content}) {
             <button className="btn px-10 py-10 border-t-1 border-3 border-muted rounded-xl bg-black text-white">
                {content.second_button}
             </button> */}
-            <HomeButton name={content.first_button} />
-            <HomeButton name={content.second_button} />
+            <HomeButton name={content.first_button} to={'/portfolio'}/>
+            <HomeButton name={content.second_button} to={'/contact-us'}/>
           </div>
 
 
