@@ -91,7 +91,7 @@ export default function Section6({content}) {
   return (
     <section className="pt-8 pb-20 bg-white text-center">
         
-      <AuroraText
+      {/* <AuroraText
         className="text-5xl font-bold my-20"
         colors={[
           "#fff3c4", 
@@ -132,7 +132,7 @@ export default function Section6({content}) {
             </CardBody>
           </CardContainer>
         ))}
-      </div>
+      </div> */}
       <AuroraText
         className="text-5xl font-bold my-20"
         colors={[
