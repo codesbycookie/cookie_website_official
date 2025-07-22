@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import CookieBtn from "../CookieBtn/CookieBtn";
 import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { navbar } from "../../../../utils/content";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +16,10 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
 
   return (
     <div
