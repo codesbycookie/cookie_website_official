@@ -84,7 +84,7 @@ export function ExpandableCardDemo({cards}) {
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 text-start dark:text-neutral-400">
+                      className="text-neutral-600 text-start mt-1 text-md dark:text-neutral-400">
                       {active.description}
                     </motion.p>
                   </div>
@@ -103,7 +103,7 @@ export function ExpandableCardDemo({cards}) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-start text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
+                    className="text-neutral-600 text-xs text-start md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
                     {typeof active.content === "function"
                       ? active.content()
                       : active.content}
@@ -120,25 +120,25 @@ export function ExpandableCardDemo({cards}) {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center  dark:hover:bg-neutral-800 rounded-xl cursor-pointer">
-            <div className="flex gap-4 flex-col md:flex-row ">
+            className="p-4 flex flex-col md:flex-row justify-between items-center dark:hover:bg-neutral-800 rounded-xl cursor-pointer">
+            <div className="flex gap-4 flex-col md:flex-row items-center">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <img
                   width={100}
                   height={100}
                   src={card.src}
                   alt={card.title}
-                  className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top" />
+                  className="h-40 w-full md:h-14 md:w-14 rounded-lg object-cover object-top" />
               </motion.div>
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-end md:text-left">
+                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left">
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className=" text-neutral-600 dark:text-neutral-400 text-start md:text-left">
+                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left">
                   {card.description}
                 </motion.p>
               </div>
