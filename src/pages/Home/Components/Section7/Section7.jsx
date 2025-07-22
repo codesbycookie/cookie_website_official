@@ -1,5 +1,6 @@
 import React from "react";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import HomeButton from "../HomeButton/HomeButton";
 
 export function ScrollBasedVelocityDemo({ is_reverse = false }) {
   return (
@@ -30,11 +31,11 @@ export default function Section7({content}) {
         <p className="mb-6 text-gray-300">
           {content.description}
         </p>
-<div className="flex flex-row gap-3 sm:flex-row sm:justify-center sm:gap-6">
-  <button className="bg-white text-black font-medium px-5 py-4 text-sm md:text-base lg:text-lg rounded shadow">
+<div className="flex flex-row gap-3 sm:flex-row justify-center sm:gap-6">
+  <button className="bg-white text-black font-medium px-5 py-4 text-sm md:text-base lg:text-lg rounded-xl shadow">
     {content.first_button}
   </button>
-  <button className="border border-white text-white px-5 py-4 text-sm md:text-base lg:text-lg rounded">
+  <button className="border border-white text-white px-5 py-4 text-sm md:text-base lg:text-lg rounded-xl">
     {content.second_button}
   </button>
 </div>

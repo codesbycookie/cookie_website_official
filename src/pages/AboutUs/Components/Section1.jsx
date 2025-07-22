@@ -11,7 +11,7 @@ export function AuroraTextDemo() {
 export default function Section1({ content }) {
   return (
     <section className="bg-black text-white">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-20 min-h-screen flex items-center justify-center">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-20 min-h-screen flex items-center justify-center lg:mt-8">
         <div className="flex flex-col items-center text-center">
           {/* Title */}
           <h2 className="font-hahmlet font-semibold leading-tight text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
