@@ -24,7 +24,8 @@ const ContactUs = () => {
     phone: '',
     email: '',
     date: '',
-    timing: 'Morning'
+    timing: 'Morning',
+    source: 'Google'
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -64,7 +65,8 @@ const handleSubmit = async (e) => {
     email: formData.email,
     phone: formData.phone,
     date: formData.date,
-    timing: formData.timing
+    timing: formData.timing,
+    source: formData.source
   };
 
   try {
@@ -183,7 +185,7 @@ const handleSubmit = async (e) => {
                                 onChange={handleChange}
                                 required
                                 aria-required="true"
-                                placeholder="John Doe"
+                                placeholder="Your name here"
                                 className="w-full px-4 py-3 bg-[#fffff0] border border-black/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition font-medium pl-12 shadow-sm"
                                 autoFocus
                               />
@@ -206,7 +208,7 @@ const handleSubmit = async (e) => {
                                 onChange={handleChange}
                                 required
                                 aria-required="true"
-                                placeholder="john@example.com"
+                                placeholder="Your email here"
                                 className="w-full px-4 py-3 bg-[#fffff0] border border-black/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition text-black pl-12 shadow-sm"
                               />
                               <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black/40">
@@ -229,7 +231,7 @@ const handleSubmit = async (e) => {
                                 required
                                 aria-required="true"
                                 maxLength={10}
-                                placeholder="+1 (123) 456-7890"
+                                placeholder="+91 12345 67890"
                                 className="w-full px-4 py-3 bg-[#fffff0] border border-black/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c18b34] focus:border-[#c18b34] transition text-black pl-12 shadow-sm"
                               />
                               <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black/40">
@@ -314,6 +316,32 @@ const handleSubmit = async (e) => {
                               ))}
                             </div>
                           </div>
+<div>
+  <label className="block text-sm font-medium mb-2 text-black">How did you hear about us?*</label>
+  <div className="grid grid-cols-2 gap-3">
+    {[
+      'Google',
+      'Instagram',
+      'WhatsApp',
+      'Friend / Referral',
+      'Other',
+    ].map((sourceOption) => (
+      <button
+        key={sourceOption}
+        type="button"
+        onClick={() => setFormData({ ...formData, source: sourceOption })}
+        className={`py-3 px-4 rounded-lg border transition-all ${
+          formData.source === sourceOption
+            ? 'bg-[#c18b34] text-[#fffff0] border-[#c18b34] shadow-md'
+            : 'bg-[#fffff0] border-black/20 hover:border-[#c18b34]/50 shadow-sm hover:shadow-md'
+        }`}
+      >
+        <span className="block font-medium">{sourceOption}</span>
+      </button>
+    ))}
+  </div>
+</div>
+
                           
                           <div className="bg-[#c18b34]/10 rounded-lg p-4 border border-[#c18b34]/20">
                             <div className="flex items-start gap-3">
