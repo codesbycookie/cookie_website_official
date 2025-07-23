@@ -10,7 +10,7 @@ import { ExpandableCardDemo } from "@/components/ui/expandable-card-demo-grid";
 
 export default function Section6({content}) {
   return (
-    <section className="pt-8 pb-20 bg-white text-center">
+    <section className="pt-8 pb-20 px-section-sm lg:px-section-lg bg-white text-center">
         
       <AuroraText
         className="text-5xl font-bold my-20"

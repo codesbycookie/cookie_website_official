@@ -72,23 +72,24 @@ export default function Footer() {
             </h2>
           </div>
 <div className="bg-[#1e1e1e] rounded w-full mb-2 px-3 py-2">
-  <form onSubmit={handleSubmit} className="flex w-full items-center gap-2">
+  <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row w-full  gap-2">
     <input
       type="email"
       value={mail}
       onChange={(e) => setMail(e.target.value)}
       placeholder={footer.company.email_placeholder}
-      className="flex-1 bg-transparent  text-white placeholder-white px-4 py-2 text-sm rounded focus:outline-none"
+      className="flex-1 bg-transparent underline  text-white placeholder-white px-4 py-2 text-sm rounded focus:outline-none"
       required
     />
-
-    <button
+  {submitStatus !== "success" && (
+<button
       type="submit"
       disabled={isSubmitting}
       className="whitespace-nowrap hover:bg-gray-400 bg-white text-black text-sm font-semibold px-4 py-2 rounded disabled:opacity-60"
     >
       {isSubmitting ? "Sending..." : footer.company.email_button}
-    </button>
+    </button>  )}
+    
   </form>
 
   {/* Status messages below the form */}
@@ -133,10 +134,12 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-3">Follow Us On</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              {footer.social.map(({ name, icon: Icon }, i) => (
-                <li className="flex items-center gap-2" key={i}>
-                  {/* <Icon size={16} />  */}
-                  {name}
+              {footer.social.map((link, i) => (
+                <li key={i}>
+                  <a href={'https://' + link.href} target="_blank"
+  rel="noopener noreferrer" className="hover:text-white">
+                    {link.name}
+                  </a>
                 </li>
               ))}
             </ul>

@@ -32,12 +32,22 @@ export default function Section7({content}) {
           {content.description}
         </p>
 <div className="flex flex-row gap-3 sm:flex-row justify-center sm:gap-6">
-  <button className="bg-white text-black font-medium px-5 py-4 text-sm md:text-base lg:text-lg rounded-xl shadow">
-    {content.first_button}
-  </button>
-  <button className="border border-white text-white px-5 py-4 text-sm md:text-base lg:text-lg rounded-xl">
-    {content.second_button}
-  </button>
+<a
+  href="/contact-us"
+  className="bg-white text-black font-medium px-5 py-4 text-sm md:text-base lg:text-lg rounded-xl shadow transition duration-300 ease-in-out hover:bg-gray-200 hover:shadow-md"
+>
+  {content.first_button}
+</a>
+
+<a
+  href={`https://wa.me/918610663178?text=${encodeURIComponent("Hi Cookie Inc, I'd like to talk to your experts about a project.")}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="border border-white text-white px-5 py-4 text-sm md:text-base lg:text-lg rounded-xl transition duration-300 ease-in-out hover:font-bold hover:shadow-md"
+>
+  {content.second_button}
+</a>
+
 </div>
 
       </div>

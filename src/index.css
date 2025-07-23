@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin 'tailwind-scrollbar';
 
 @custom-variant dark (&:is(.dark *));
 @plugin "daisyui";
@@ -58,6 +59,34 @@ body, html, #root {
     font-family: "Mona Sans", sans-serif !important;
     overflow-x: hidden !important;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+}
+
+/* WebKit scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+
+
 
 /* html, body, * {
   cursor: none !important;

@@ -425,7 +425,7 @@ return (
       <div className="absolute inset-x-0 bottom-0 pointer-events-none select-none from-transparent  z-40 h-32 sm:h-40 md:h-60" />
 
       {/* Globe Container */}
-      <div className="w-full  aspect-[3/2] sm:aspect-[16/9] relative z-10">
+      <div className="w-full aspect-[3/2] sm:aspect-[16/9] relative z-10">
        <Suspense fallback={<div>Loading Globe...</div>}>
         <World data={sampleArcs} globeConfig={globeConfig} />
 </Suspense>

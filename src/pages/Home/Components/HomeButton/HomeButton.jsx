@@ -14,7 +14,7 @@ export default function HomeButton({ name, to }) {
 
   return (
     <div className="w-full  mx-auto" onClick={handleClick}>
-      <button className="relative cursor-pointer py-3 px-4 sm:py-4 sm:px-8 w-full text-center font-barlow inline-flex justify-center text-xs sm:text-base md:text-md uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden">
+      <button className="relative cursor-pointer py-3 px-4 sm:py-4 sm:px-8 w-full text-center font-barlow inline-flex justify-center text-xs sm:text-base md:text-md uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4   overflow-hidden">
         <span className="relative z-20 whitespace-nowrap">{name}</span>
 
         <span className="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"></span>

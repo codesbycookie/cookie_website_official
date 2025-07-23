@@ -58,7 +58,7 @@ export const NeonGradientCard = ({
           "--after-blur": `${dimensions.width / 3}px`
         }
       }
-      className={cn("relative z-10 size-full rounded-[var(--border-radius)]", className)}
+      className={cn("relative z-0 size-full rounded-[var(--border-radius)]", className)}
       {...props}>
       <div
         className={cn(

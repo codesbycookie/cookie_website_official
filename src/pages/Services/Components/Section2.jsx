@@ -38,9 +38,15 @@ export function EvervaultCard({ title, features }) {
           );
         })}
       </ul>
-<button className="text-sm md:text-base font-semibold rounded-full px-6 py-3 mt-auto transition-all duration-300 ease-in-out transform bg-light-cream text-black dark:text-white shadow-md hover:shadow-xl hover:scale-105 hover:bg-dark-cream hover:text-white dark:hover:bg-neutral-800 focus:outline-none focus:ring-4 focus:ring-yellow-400/50">
-  Quote Now
-</button>
+<a
+      href={`https://wa.me/918610663178?text=${encodeURIComponent(`Hi Cookie Inc, I'm interested in the ${title} package. Can you provide more details?`)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm md:text-base font-semibold rounded-full px-6 py-3 mt-auto transition-all duration-300 ease-in-out transform bg-light-cream text-black dark:text-white shadow-md hover:shadow-xl hover:scale-105 hover:bg-dark-cream hover:text-white dark:hover:bg-neutral-800 focus:outline-none focus:ring-4 focus:ring-yellow-400/50"
+    >
+      Quote Now
+    </a>
+
 
 
     </div>

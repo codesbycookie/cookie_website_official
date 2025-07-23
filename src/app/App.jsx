@@ -9,13 +9,15 @@ import AssistiveBall from '../pages/Components/AssistiveBall/AssistiveBall'
 import CursorWithNamePrompt from "./CursorWithName";
 import ScrollToTop from "@/hooks/ScrollToTop";
 import Greet from "@/pages/greet/Greet";
+import ScrollBack from "./ScrollBack";
 
 function App() {
   return (
-    <Router className='cursor-none'>
+    <Router className='cursor-none '>
               <ScrollToTop/>
       <Navbar />
      {/*  <AssistiveBall/> */}
+     <ScrollBack/>
        <AppRoutes /> 
       <Footer />
     </Router>
