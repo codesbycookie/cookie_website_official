@@ -10,12 +10,21 @@ import CursorWithNamePrompt from "./CursorWithName";
 import ScrollToTop from "@/hooks/ScrollToTop";
 import Greet from "@/pages/greet/Greet";
 import ScrollBack from "./ScrollBack";
+import AnimatedCursor from "@/hooks/AnimatedCursor";
 
 function App() {
   return (
     <Router className='cursor-none '>
               <ScrollToTop/>
       <Navbar />
+              <AnimatedCursor
+          innerSize={15}
+          outerSize={15}
+          color="193, 139, 19"
+          outerAlpha={0.4}
+          innerScale={0.7}
+          outerScale={5}
+        />
      {/*  <AssistiveBall/> */}
      <ScrollBack/>
        <AppRoutes /> 
