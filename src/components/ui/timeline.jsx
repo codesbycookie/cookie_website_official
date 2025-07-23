@@ -51,7 +51,7 @@ export const Timeline = ({ data }) => {
               </h3>
             </div>
 
-            <div className="relative ml-20 pr-4 w-full">
+            <div className="relative pl-20 pr-4 w-full">
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                <AuroraText
                              colors={["#fff3c4", "#c18b13", "#86602c", "#ffe29a", "#e0b352"]}
