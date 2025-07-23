@@ -69,7 +69,7 @@ const Section2 = ({content}) => {
 
         <div className="border-t border-gray-200 w-20 mx-auto mb-16"></div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {content.packages.map((pkg, index) => (
             <EvervaultCard
               title={pkg.title}

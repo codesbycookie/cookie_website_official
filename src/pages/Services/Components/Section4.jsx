@@ -18,7 +18,7 @@ const Section4 = ({ content }) => {
         </p>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 place-items-center">
           {content.services.map((service, index) => (
             <NeonGradientCard
               key={index}
