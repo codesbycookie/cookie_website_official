@@ -696,7 +696,49 @@ export const portfoliopage = {
   section4: {
     title: "Project Case Studies",
     cards: [
+      
       {
+        title: "IQ Bridge – An Edu Tech Portfolio Website",
+        description:
+          "A sleek portfolio website for an emerging edtech company, IQ Bridge. Showcases their offerings in AI-based assessments and learning tools.",
+        src: "/imgs/iqbridge_cs.jpg",
+        ctaText: "View Case Study",
+        ctaLink: "/case-studies/iq-bridge",
+        content: () => {
+          return (
+            <p>
+
+              <br /> <strong>Project Type:</strong> Portfolio Website
+              <br />
+              <br />
+               IQ Bridge partnered with us to build a modern portfolio website that showcases their edtech offerings. The site highlights their student-focused courses, learning approach, and growing impact in the education space.
+            </p>
+          );
+        },
+      },
+      {
+        title: "Audnex – Portfolio Website for Creative Agency",
+        description:
+          "Portfolio website for Audnex with motion visuals and interactive case studies. Built to elevate their presence in the competitive creative industry.",
+        src: "imgs/audnex_website.jpg",
+        ctaText: "View Case Study",
+        ctaLink: "imgs/audnex_website.jpg",
+        content: () => {
+          return (
+            <p>
+              <br /> <strong>Duration:</strong> March 2025 – April 2025
+              <br /> <strong>Project Type:</strong> Portfolio Website
+              <br />
+              <br />
+               Audnex needed a striking digital presence to showcase their
+              creative work. We built an immersive portfolio with
+              scroll-triggered animations, video backgrounds, and CMS-driven
+              case study management. The site improved client conversion rates
+              and helped the team pitch better to international clients.
+            </p>
+          );
+        },
+      },{
         title: "SAP Checklist Portal",
         description:
           "A centralized checklist platform for SAP consultants to manage tasks across project phases. Simplifies tracking during config, testing, deployment, and go-live.",
@@ -741,48 +783,6 @@ export const portfoliopage = {
               inventory sync, polished product visuals, multilingual support,
               and WhatsApp-integrated order placing. This transformed their B2B
               and retail sales model in under 6 weeks.
-            </p>
-          );
-        },
-      },
-      {
-        title: "IQ Bridge – An Edu Tech Portfolio Website",
-        description:
-          "A sleek portfolio website for an emerging edtech company, IQ Bridge. Showcases their offerings in AI-based assessments and learning tools.",
-        src: "/imgs/iqbridge_cs.jpg",
-        ctaText: "View Case Study",
-        ctaLink: "/case-studies/iq-bridge",
-        content: () => {
-          return (
-            <p>
-
-              <br /> <strong>Project Type:</strong> Portfolio Website
-              <br />
-              <br />
-               IQ Bridge partnered with us to build a modern portfolio website that showcases their edtech offerings. The site highlights their student-focused courses, learning approach, and growing impact in the education space.
-            </p>
-          );
-        },
-      },
-      {
-        title: "Audnex – Portfolio Website for Creative Agency",
-        description:
-          "Portfolio website for Audnex with motion visuals and interactive case studies. Built to elevate their presence in the competitive creative industry.",
-        src: "imgs/audnex_website.jpg",
-        ctaText: "View Case Study",
-        ctaLink: "imgs/audnex_website.jpg",
-        content: () => {
-          return (
-            <p>
-              <br /> <strong>Duration:</strong> March 2025 – April 2025
-              <br /> <strong>Project Type:</strong> Portfolio Website
-              <br />
-              <br />
-               Audnex needed a striking digital presence to showcase their
-              creative work. We built an immersive portfolio with
-              scroll-triggered animations, video backgrounds, and CMS-driven
-              case study management. The site improved client conversion rates
-              and helped the team pitch better to international clients.
             </p>
           );
         },
