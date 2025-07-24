@@ -85,6 +85,10 @@ body, html, #root {
   width: 0;
 }
 
+::selection {
+  background-color: rgba(193, 139, 19, 0.6); /* Yellow-400 */
+  color: white; /* Gray-800 */
+}
 
 
 
