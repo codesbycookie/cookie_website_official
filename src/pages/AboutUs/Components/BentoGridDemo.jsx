@@ -318,7 +318,7 @@ const SkeletonOne = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black">
         <img
           src="/imgs/cookie-hd.png"
-          alt="Cookie Inc"
+          alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
           className="h-6 w-6 rounded-full object-cover shrink-0"
         />
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
@@ -330,7 +330,7 @@ const SkeletonOne = () => {
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
         <img
           src="/imgs/cookie-hd.png"
-          alt="Cookie Inc"
+          alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
           className="h-6 w-6 rounded-full object-cover shrink-0"
         />
       </motion.div>
@@ -340,7 +340,7 @@ const SkeletonOne = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black">
         <img
           src="/imgs/cookie-hd.png"
-          alt="Cookie Inc"
+          alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
           className="h-6 w-6 rounded-full object-cover shrink-0"
         />
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
@@ -371,7 +371,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <img
           src="/imgs/cookie-hd.png"
-          alt="Team"
+          alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
           className="rounded-full h-10 w-10 object-cover"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
@@ -386,7 +386,7 @@ const SkeletonFour = () => {
         className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <img
           src="/imgs/cookie-hd.png"
-          alt="Team"
+          alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
           className="rounded-full h-10 w-10 object-cover"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
@@ -402,7 +402,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <img
           src="/imgs/cookie-hd.png"
-          alt="Team"
+          alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
           className="rounded-full h-10 w-10 object-cover"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
@@ -477,7 +477,7 @@ const SkeletonThree = () => {
       }}>
       <img
         src="/imgs/cookie-hd.png"
-        alt="Cookie Logo"
+        alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
         className="h-10 w-10 object-contain opacity-70"
       />
       <p className="text-xs text-white font-medium mt-2">Innovating at Cookie Inc</p>
@@ -514,7 +514,7 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-3 items-start space-x-3 bg-white dark:bg-black">
         <img
           src="/imgs/cookie-hd.png"
-          alt="Cookie Inc"
+          alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
           className="rounded-full h-10 w-10 object-cover"
         />
         <p className="text-xs text-neutral-600 dark:text-neutral-300">
@@ -531,7 +531,7 @@ const SkeletonFive = () => {
         </p>
         <img
           src="/imgs/cookie-hd.png"
-          alt="Logo"
+          alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
           className="h-6 w-6 rounded-full object-cover"
         />
       </motion.div>

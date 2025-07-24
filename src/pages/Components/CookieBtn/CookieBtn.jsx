@@ -21,7 +21,7 @@ export default function CookieBtn({ name }) {
   ></span>
   <img
         src="/imgs/cookie-hd.png"
-        alt="Cookie"
+        alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
         className="h-5 w-5 cookie-float transition-transform duration-300"
       />
   

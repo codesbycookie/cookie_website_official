@@ -61,7 +61,7 @@ export default function Footer() {
           <div className="flex items-center mb-4">
             <img
               src={footer.company.logo}
-              alt="Cookie logo"
+              alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
               className="h-8 w-8 mr-3"
             />
             <h2 className="text-2xl font-bold">

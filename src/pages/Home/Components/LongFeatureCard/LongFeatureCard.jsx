@@ -21,7 +21,7 @@ export default function LongFeatureCard() {
       <figure className="px-6 pt-6">
         <img
           src="/imgs/placeholder.png"
-          alt="Feature"
+          alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
           className="rounded-xl w-full h-52 sm:h-64 object-cover"
         />
       </figure>

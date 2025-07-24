@@ -72,7 +72,7 @@ export const AnimatedTestimonials = ({
                   className="absolute inset-0 origin-bottom flex flex-col items-center">
                   <img
                     src={testimonial.src}
-                    alt={testimonial.name}
+                    alt={'Cookie Inc – Creative tech studio building web, mobile, and branding solutions'}
                     height={500}
                     draggable={false}
                     className="h-full w-full w-sm-80 rounded-3xl object-cover object-center" />

@@ -41,7 +41,7 @@ const LeftVisualSection = ({ step, steps }) => {
               {/* ✅ Avatar Image inside the draggable wrapper */}
               <motion.img
                 src="/imgs/cookie_logo_web.jpeg"
-                alt="Profile"
+                alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 className="object-contain"
                 width={150}
                 height={150}

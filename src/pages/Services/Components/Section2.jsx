@@ -9,7 +9,7 @@ export function EvervaultCard({ title, features }) {
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
       <h2 className="dark:text-white inline-flex gap-3 justify-center items-center text-black mt-4 font-bold text-center text-2xl pb-5">
-        <img src="/imgs/cookie-hd.png" className="ms-2 h-10 w-10" alt="" />{" "}
+        <img src="/imgs/cookie-hd.png" className="ms-2 h-10 w-10" alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions" />{" "}
         {title}
       </h2>
       <ul className="pb-10">
