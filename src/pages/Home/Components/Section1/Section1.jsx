@@ -1,7 +1,7 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import { TextAnimate } from "@/components/magicui/text-animate";
-import { GlobeDemo } from "../Globe/Globe";
 import HomeButton from "../HomeButton/HomeButton";
+const { GlobeDemo } = lazy(() => import("../Globe/Globe"));
 
 export default function Section1({content}) {
 
@@ -12,7 +12,10 @@ export default function Section1({content}) {
     <div className="bg-black text-white h-full flex items-center justify-center">
       <div className="mx-auto py-20">
         <div className="flex flex-col justify-center items-center text-center">
-          <GlobeDemo/>
+          <Suspense fallback={<div className="h-96" />}>
+  <GlobeDemo />
+</Suspense>
+
           <p className="mt-10 text-lg sm:text-sm md:text-2xl w-9/10 md:max-w-3xl">
            {content.globe_description}
           </p>

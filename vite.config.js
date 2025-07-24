@@ -17,4 +17,9 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['clsx', 'tailwind-merge'],
   },
+  build: {
+  cssCodeSplit: true,
+  minify: 'esbuild',
+},
+
 });
