@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+
 import Section1 from "./Components/Section1";
 import Section3 from "./Components/Section3";
 import Section4 from "./Components/Section4";
@@ -7,7 +9,9 @@ import {aboutpage} from '../../../utils/content'
 export default function AboutUs() {
 
   const {section1, section2, section3, section4} = aboutpage;
-
+  useEffect(() => {
+    document.title = "Cookie Inc.  |  About Us";
+  }, []);
   return (
     <>
       <Section1 content = {section1}/>

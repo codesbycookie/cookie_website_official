@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { SparklesText } from "@/components/magicui/sparkles-text";
 import { BackgroundLines } from "@/components/ui/background-lines";
@@ -90,6 +90,14 @@ const handleSubmit = async (e) => {
     { id: 3, name: 'Confirm', icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-check-icon lucide-check-check"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>, color: 'bg-[#c18b34]' }
   ];
 
+
+    useEffect(() => {
+      document.title = "Cookie Inc.  |  Contact Us";
+    }, []);
+
+
+
+
   return (
 
 
@@ -121,7 +129,7 @@ const handleSubmit = async (e) => {
             <div className="w-full md:w-3/5 p-4 md:p-10">
               {submitStatus === 'success' ? (
                 <div className="text-center py-12">
-                  <div className="w-24 h-24 bg-[#c18b34]/10 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner border border-[#c18b34]/20">
+                  <div className="w-24 h-24  rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner border border-[#c18b34]/20">
                     <svg className="w-12 h-12 text-[#c18b34]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>

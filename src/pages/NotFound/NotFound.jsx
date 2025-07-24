@@ -1,12 +1,21 @@
-// app/components/NotFound.jsx
-"use client";
-
+import React, { useEffect } from "react";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 
+
+
+
+
+
 export default function NotFound() {
+
+    useEffect(() => {
+    document.title = "Cookie Inc.  |  Not Found";
+  }, []);
+
+
   return (
     <AuroraBackground className="relative flex items-center justify-center h-screen bg-black text-white overflow-hidden px-4">
       <div className="text-center space-y-6 z-10">

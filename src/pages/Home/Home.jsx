@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Section1 from "./Components/Section1/Section1";
 import Section2 from "./Components/Section2/Section2";
 import Section3 from "./Components/Section3/Section3";
@@ -21,7 +21,9 @@ export default function Home() {
     section8,
   } = homepage;
 
-  console.log(section5)
+  useEffect(() => {
+    document.title = "Cookie Inc.  |  Home";
+  }, []);
 
   return (
     <>

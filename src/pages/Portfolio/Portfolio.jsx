@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Section1 from "./Components/Section1";
 import Section2 from "./Components/Section2";
 import Section3 from "./Components/Section3";
@@ -6,6 +7,12 @@ import {portfoliopage} from '../../../utils/content'
 export default function AboutUs() {
 
   const {section1, section2, section3, section4} = portfoliopage;
+
+
+    useEffect(() => {
+      document.title = "Cookie Inc.  |  Portfolio";
+    }, []);
+
 
   return (
     <>

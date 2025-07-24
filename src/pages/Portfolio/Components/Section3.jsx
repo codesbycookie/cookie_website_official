@@ -19,7 +19,7 @@ const Section3 = ({content}) => {
         <p className="text-lg md:text-xl">
          </p>
 
-<a href="#" className="group">
+<a href="/contact-us" className="group">
   <p className="text-base sm:text-lg md:text-xl font-semibold mt-10 flex items-center justify-center gap-2 text-center">
     {content.button}
     <span className="text-light-cream text-xl transition-transform duration-300 group-hover:translate-x-1">

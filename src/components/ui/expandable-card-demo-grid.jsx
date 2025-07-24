@@ -114,43 +114,47 @@ export function ExpandableCardDemo({cards}) {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full gap-4">
-        {cards.map((card, index) => (
-          <motion.div
-            layoutId={`card-${card.title}-${id}`}
-            key={`card-${card.title}-${id}`}
-            onClick={() => setActive(card)}
-            className="p-4 mt-10 flex flex-col md:flex-row justify-between items-center dark:hover:bg-neutral-800 rounded-xl cursor-pointer">
-            <div className="flex gap-4 flex-col md:flex-row items-center">
-              <motion.div layoutId={`image-${card.title}-${id}`}>
-                <img
-                  width={100}
-                  height={100}
-                  src={card.src}
-                  alt={card.title}
-                  className="h-40 w-full md:h-14 md:w-14 rounded-lg object-cover object-top" />
-              </motion.div>
-              <div className="">
-                <motion.h3
-                  layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left">
-                  {card.title}
-                </motion.h3>
-                <motion.p
-                  layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left">
-                  {card.description}
-                </motion.p>
-              </div>
-            </div>
-            <motion.button
-              layoutId={`button-${card.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0">
-              {card.ctaText}
-            </motion.button>
-          </motion.div>
-        ))}
-      </ul>
+<ul className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+  {cards.map((card, index) => (
+    <motion.div
+      layoutId={`card-${card.title}-${id}`}
+      key={`card-${card.title}-${id}`}
+      onClick={() => setActive(card)}
+      className="p-5 flex flex-col items-center justify-around dark:hover:bg-neutral-800 rounded-xl cursor-pointer hover:shadow-lg shadow dark:border-neutral-700 bg-white dark:bg-neutral-900 transition"
+    >
+      <motion.div layoutId={`image-${card.title}-${id}`} className="w-full h-full mb-4">
+        <img
+          src={card.src}
+          alt={card.title}
+          className="w-full h-full rounded-lg object-cover object-top"
+        />
+      </motion.div>
+
+      <div className="text-center">
+        <motion.h3
+          layoutId={`title-${card.title}-${id}`}
+          className="font-semibold text-neutral-800 dark:text-neutral-100 text-lg"
+        >
+          {card.title}
+        </motion.h3>
+        <motion.p
+          layoutId={`description-${card.description}-${id}`}
+          className="text-sm text-neutral-600 dark:text-neutral-400 mt-2"
+        >
+          {card.description}
+        </motion.p>
+      </div>
+
+      <motion.button
+        layoutId={`button-${card.title}-${id}`}
+        className="mt-5 px-4 py-2 text-sm rounded-full font-bold bg-white hover:bg-green-500 hover:text-white text-black dark:bg-neutral-800 dark:text-white dark:hover:bg-green-600"
+      >
+        {card.ctaText}
+      </motion.button>
+    </motion.div>
+  ))}
+</ul>
+
     </>
   );
 }
