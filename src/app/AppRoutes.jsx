@@ -55,7 +55,7 @@ export default function AppRoutes() {
           }
         />
         <Route
-          path="/services"
+          path="/service"
           element={
             <MainLayout>
               <Service />
