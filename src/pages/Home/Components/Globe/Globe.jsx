@@ -8,7 +8,7 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 const World = lazy(() => import("@/components/ui/globe.jsx").then(m => ({ default: m.World })));
 
 
-export function GlobeDemo() {
+export default function GlobeDemo() {
   const globeConfig = {
     pointSize: 4,
     globeColor: "#ffffff",

@@ -1,7 +1,7 @@
 import React, {lazy, Suspense} from "react";
 import { TextAnimate } from "@/components/magicui/text-animate";
 import HomeButton from "../HomeButton/HomeButton";
-const { GlobeDemo } = lazy(() => import("../Globe/Globe"));
+const GlobeDemo = lazy(() => import("../Globe/Globe"));
 
 export default function Section1({content}) {
 
