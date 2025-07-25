@@ -16,13 +16,13 @@ export const homepage = {
         title: "Web Development",
         content:
           "Tailored designs that connect your brand with your audience, professionally and effectively.",
-        img: "./imgs/web-development-icon.svg",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423542/web-development-icon_fierbz.svg",
       },
       {
         title: "App Development",
         content:
           "Applications engineered to deliver seamless user experiences and drive measurable results.",
-        img: "./imgs/Mobile-dev.png",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423538/Mobile-dev_eradqn.png",
       },
     ],
   },
@@ -76,37 +76,37 @@ export const homepage = {
         name: "Tharun ",
         username: "@jack",
         body: "Most responsible replies and affordable price.",
-        img: "/imgs/How_to_cook_logo.svg",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423536/How_to_cook_logo_qrkmrs.svg",
       },
       {
         name: "Karthikeyan",
         username: "@jill",
         body: "I don't know what to say. I'm speechless. This is amazing.",
-        img: "/imgs/Traffic-logo.jpg",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
       },
       {
         name: "JothiLakshmi ",
         username: "@john",
         body: "Affordable price and quick response. I love it.",
-        img: "/imgs/Tourist-logo.jpg",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Tourist-logo_btoqmx.jpg",
       },
       {
         name: "Srinivas P",
         username: "@jane",
         body: " good work and affordable price.",
-        img: "/imgs/V&D-logo.png",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423542/V_D-logo_o8ymsl.png",
       },
       {
         name: "Hitheeswar",
         username: "@jenny",
         body: "Innovative ideas and great execution. Highly recommend!",
-        img: "/imgs/Audnex-logo.jpg",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423530/Audnex-logo_svfzrn.jpg",
       },
       {
         name: "Robin Sighla",
         username: "@james",
         body: "It was interactive and engaging. I loved the way they handled my project.",
-        img: "/imgs/iq-bridge-logo.png",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423538/iq-bridge-logo_vofs2x.png",
       },
     ],
     title2: "Project Showcase",
@@ -115,19 +115,19 @@ export const homepage = {
         title: "Skill link - Connecting Minds, Bridging Gaps",
         description:
           "personalized learning experiences by just sitting at home.",
-        img: "/imgs/Skill_link_mockup.svg",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Skill_link_mockup_x1inr1.svg",
       },
       {
         title: "Elderly - Your Trusted Health Companion",
         description:
           "My mom never forgets her tablets anymore. No ADs , No Confusion ",
-        img: "/imgs/Elderly-Mock-up.svg",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423535/Elderly-Mock-up_puepmx.svg",
       },
       {
         title: "Velu’s and Son’s – Taste Meets Tradition",
         description:
           "Bringing their legacy to online with clean and cashew-focused design.",
-        img: "/imgs/Cashew_Mockup.svg",
+        img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423531/Cashew_Mockup_nwx1va.svg",
       },
     ],
   },
@@ -195,7 +195,7 @@ export const aboutpage = {
     ],
     description:
       "A creative team blending design, code, and collaboration to turn simple ideas into powerful brand experiences.",
-    img: "/imgs/placeholder.png",
+    img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423532/cookie_white_logo_y3twyu.png",
   },
   section2: {
     title: "Thats how our cookie made with love",
@@ -350,28 +350,28 @@ export const servicespage = {
             </p>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/imgs/Research.webp"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423540/Research_iqrj0y.webp"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
               />
               <img
-                src="/imgs/Research-2.jpg"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423540/Research-2_yyhh6g.jpg"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
               />
               <img
-                src="/imgs/Research-4.png"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Research-4_bqb8tb.png"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
               />
               <img
-                src="/imgs/Research-3.jpg"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423540/Research-3_jlh9zd.jpg"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
@@ -394,28 +394,28 @@ export const servicespage = {
             </p>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/imgs/Design-1.png"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423532/Design-1_ewv4z7.png"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
               />
               <img
-                src="/imgs/Design-2.png"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423532/Design-2_qemszw.png"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
               />
               <img
-                src="/imgs/Design-3.png"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423533/Design-3_snawmz.png"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
               />
               <img
-                src="/imgs/Design-4.jpeg"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423534/Design-4_aqu9ib.jpg"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
@@ -461,28 +461,28 @@ export const servicespage = {
           </div> */}
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/imgs/Development-1.jpeg"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423533/Development-1_vqbh7m.jpg"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
               />
               <img
-                src="/imgs/Development-2.jpg"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423533/Development-2_kjniff.jpg"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
               />
               <img
-                src="/imgs/Development-3.jpg"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423534/Development-3_tzustu.jpg"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
                 className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
               />
               <img
-                src="/imgs/Development-4.jpg"
+                src="https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423534/Development-4_o570d0.jpg"
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 width={500}
                 height={500}
@@ -640,46 +640,42 @@ export const portfoliopage = {
         "Name of the project 2",
         "Description of the project 2 in one or two lines (should include the stack or the tool used in it)",
       ],
-      images: [
-        "/imgs/placeholder.png", // First image (left)
-        "/imgs/placeholder.png", // Second image (right)
-      ],
     },
     images: [
-      "/imgs/Skill_link_mockup.svg",
-      "/imgs/Traffic-logo.jpg",
-      "/imgs/Project-1.png",
-      "/imgs/Project-2.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Skill_link_mockup_x1inr1.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423539/Project-1_wo8me2.png",
 
-      "/imgs/V&D-logo.png",
-      "/imgs/Tourist-logo.jpg",
-      "/imgs/img1.jpeg",
-      "/imgs/img2.jpeg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423542/V_D-logo_o8ymsl.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Tourist-logo_btoqmx.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423536/img1_sfqwvy.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423537/img2_gei37r.jpg",
 
-      "/imgs/Fashbridge-logo.png",
-      "/imgs/iq-bridge-logo.png",
-      "/imgs/Cashew_Mockup.svg",
-      "/imgs/Elderly-Mock-up.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423534/Fashbridge-logo_rw4fue.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423538/iq-bridge-logo_vofs2x.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423531/Cashew_Mockup_nwx1va.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423535/Elderly-Mock-up_puepmx.svg",
 
-      "/imgs/Skill_link_mockup.svg",
-      "/imgs/Traffic-logo.jpg",
-      "/imgs/Project-1.png",
-      "/imgs/Project-2.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Skill_link_mockup_x1inr1.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423539/Project-1_wo8me2.png",
 
-      "/imgs/V&D-logo.jpg",
-      "/imgs/Tourist-logo.jpg",
-      "/imgs/img1.jpeg",
-      "/imgs/img2.jpeg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423542/V_D-logo_o8ymsl.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Tourist-logo_btoqmx.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423536/img1_sfqwvy.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423537/img2_gei37r.jpg",
 
-      "/imgs/Skill_link_mockup.svg",
-      "/imgs/Traffic-logo.jpg",
-      "/imgs/Project-1.png",
-      "/imgs/Project-2.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Skill_link_mockup_x1inr1.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423539/Project-1_wo8me2.png",
 
-      "/imgs/Fashbridge-logo.png",
-      "/imgs/iq-bridge-logo.png",
-      "/imgs/Cashew_Mockup.svg",
-      "/imgs/Elderly-Mock-up.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423534/Fashbridge-logo_rw4fue.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423538/iq-bridge-logo_vofs2x.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423531/Cashew_Mockup_nwx1va.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423535/Elderly-Mock-up_puepmx.svg",
 
       "https://assets.aceternity.com/macbook-scroll.png",
       "https://assets.aceternity.com/cloudinary_bkp/Meteors_fye3ys.png",
@@ -701,7 +697,7 @@ export const portfoliopage = {
         title: "IQ Bridge – An Edu Tech Portfolio Website",
         description:
           "A sleek portfolio website for an emerging edtech company, IQ Bridge. Showcases their offerings in AI-based assessments and learning tools.",
-        src: "/imgs/iqbridge_cs.jpg",
+        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423538/iqbridge_cs_bubzkk.jpg",
         ctaText: "View Case Study",
         ctaLink: "/case-studies/iq-bridge",
         content: () => {
@@ -720,9 +716,9 @@ export const portfoliopage = {
         title: "Audnex – Portfolio Website for Creative Agency",
         description:
           "Portfolio website for Audnex with motion visuals and interactive case studies. Built to elevate their presence in the competitive creative industry.",
-        src: "imgs/audnex_website.jpg",
+        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423530/audnex_website_kr9xn2.jpg",
         ctaText: "View Case Study",
-        ctaLink: "imgs/audnex_website.jpg",
+        ctaLink: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423530/audnex_website_kr9xn2.jpg",
         content: () => {
           return (
             <p>
@@ -742,7 +738,7 @@ export const portfoliopage = {
         title: "SAP Checklist Portal",
         description:
           "A centralized checklist platform for SAP consultants to manage tasks across project phases. Simplifies tracking during config, testing, deployment, and go-live.",
-        src: "/imgs/sap_checklist.jpg",
+        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/sap_checklist_jzbsbf.jpg",
         ctaText: "View Case Study",
         ctaLink: "/case-studies/sap-checklist-portal",
         content: () => {
@@ -767,7 +763,7 @@ export const portfoliopage = {
         title: "V&D Granite — E-Commerce Mobile App",
         description:
           "Mobile app to digitize granite and marble sales for V&D Granite. Enables browsing, live stock checks, and seamless order placement.",
-        src: "/imgs/marble.png",
+        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423538/marble_eggk0n.png",
         ctaText: "View Case Study",
         ctaLink: "/case-studies/vd-granite",
         content: () => {
@@ -788,26 +784,26 @@ export const portfoliopage = {
         },
       },
     ],
-    projects: [
-      {
-        title: "Skill link - Connecting Minds, Bridging Gaps",
-        description:
-          "personalized learning experiences by just sitting at home.",
-        img: "/imgs/Skill_link_mockup.svg",
-      },
-      {
-        title: "Elderly - Your Trusted Health Companion",
-        description:
-          "My mom never forgets her tablets anymore. No ADs , No Confusion ",
-        img: "/imgs/Elderly-Mock-up.svg",
-      },
-      {
-        title: "Velu’s and Son’s – Taste Meets Tradition",
-        description:
-          "Bringing their legacy to online with clean and cashew-focused design.",
-        img: "/imgs/Cashew_Mockup.svg",
-      },
-    ],
+    // projects: [
+    //   {
+    //     title: "Skill link - Connecting Minds, Bridging Gaps",
+    //     description:
+    //       "personalized learning experiences by just sitting at home.",
+    //     img: "/imgs/Skill_link_mockup.svg",
+    //   },
+    //   {
+    //     title: "Elderly - Your Trusted Health Companion",
+    //     description:
+    //       "My mom never forgets her tablets anymore. No ADs , No Confusion ",
+    //     img: "/imgs/Elderly-Mock-up.svg",
+    //   },
+    //   {
+    //     title: "Velu’s and Son’s – Taste Meets Tradition",
+    //     description:
+    //       "Bringing their legacy to online with clean and cashew-focused design.",
+    //     img: "/imgs/Cashew_Mockup.svg",
+    //   },
+    // ],
   },
 };
 
@@ -840,7 +836,7 @@ export const navbar = {
 export const footer = {
   company: {
     name: "Cookie Inc",
-    logo: "/imgs/cookie_white.png",
+    logo: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423532/cookie_white_logo_y3twyu.png",
     highlight: ".",
     description:
       "By requesting this brochure, you consent to receive updates from Cookie Inc.",
