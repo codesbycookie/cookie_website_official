@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { AuroraText } from "@/components/magicui/aurora-text";
 
 
-const World = lazy(() => import("@/components/ui/globe.jsx").then(m => ({ default: m.World })));
+const World = lazy(() => import("./World.jsx").then(m => ({ default: m.World })));
 
 
 export default function GlobeDemo() {

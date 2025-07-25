@@ -1,5 +1,16 @@
 import React from "react";
-import LongFeatureCard, { CardHoverEffectDemo } from "../LongFeatureCard/LongFeatureCard";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
+
+
+
+export function CardHoverEffectDemo({contents}) {
+  return (
+    <div className="mx-auto px-8 z-1">
+      <HoverEffect items={contents} />
+    </div>
+  );
+}
+
 
 export default function Section3({content}) {
   

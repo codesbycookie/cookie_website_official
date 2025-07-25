@@ -5,7 +5,7 @@ import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
 import { useThree, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import countries from "./globe.json";
+import countries from "../../../../data/globe.json";
 
 extend({ ThreeGlobe: ThreeGlobe });
 
@@ -98,7 +98,7 @@ export function Globe({
 
     globeRef.current
       .hexPolygonsData(countries.features)
-      .hexPolygonResolution(2)
+      .hexPolygonResolution(3)
       .hexPolygonMargin(0.7)
       .showAtmosphere(defaultProps.showAtmosphere)
       .atmosphereColor(defaultProps.atmosphereColor)
@@ -171,7 +171,7 @@ export function Globe({
     };
   }, [isInitialized, data]);
 
-  return <group ref={groupRef} scale={[0.6, 0.6, 0.6]} />
+  return <group ref={groupRef}  />
 ;
 }
 
