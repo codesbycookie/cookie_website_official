@@ -33,7 +33,7 @@ useEffect(() => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a className="text-white lg:text-2xl text-lg font-bold cursor-pointer inline-flex">
+            <a href='/' className="text-white lg:text-2xl text-lg font-bold cursor-pointer inline-flex">
               {navbar.title[0]}{" "}
               <span className="text-light-cream ms-2">{navbar.title[1]}</span>
             </a>

@@ -645,7 +645,7 @@ export const portfoliopage = {
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Skill_link_mockup_x1inr1.svg",
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
-      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423539/Project-1_wo8me2.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423530/audnex_website_kr9xn2.jpg",
 
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423542/V_D-logo_o8ymsl.png",
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Tourist-logo_btoqmx.jpg",
@@ -659,7 +659,6 @@ export const portfoliopage = {
 
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Skill_link_mockup_x1inr1.svg",
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
-      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423539/Project-1_wo8me2.png",
 
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423542/V_D-logo_o8ymsl.png",
@@ -668,10 +667,9 @@ export const portfoliopage = {
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423537/img2_gei37r.jpg",
 
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Skill_link_mockup_x1inr1.svg",
-      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
-      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/Traffic-logo_cn2och.jpg",
-      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423539/Project-1_wo8me2.png",
-
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423531/Cashew_Mockup_nwx1va.svg",
+            "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423538/iq-bridge-logo_vofs2x.png",
+"https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423541/sap_checklist_jzbsbf.jpg",
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423534/Fashbridge-logo_rw4fue.png",
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423538/iq-bridge-logo_vofs2x.png",
       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1753423531/Cashew_Mockup_nwx1va.svg",

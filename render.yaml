@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cookie
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: dist
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
