@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="flex-1 w-full">
           <div className="flex items-center mb-4">
             <img
-              src={footer.company.logo}
+              src={footer.company.logo} loading="lazy"
               alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
               className="h-8 w-8 mr-3"
             />

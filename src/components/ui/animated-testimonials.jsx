@@ -74,6 +74,7 @@ export const AnimatedTestimonials = ({
                     src={testimonial.src}
                     alt={'Cookie Inc – Creative tech studio building web, mobile, and branding solutions'}
                     height={500}
+                    loading="lazy"
                     draggable={false}
                     className="h-full w-full w-sm-80 rounded-3xl object-cover object-center" />
                 </motion.div>

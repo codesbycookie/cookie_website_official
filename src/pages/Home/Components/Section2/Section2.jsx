@@ -177,7 +177,7 @@ export function OrbitingCirclesDemo() {
   return (
     <div className="relative flex h-[800px] w-full flex-col items-center justify-center overflow-hidden">
       <OrbitingCircles iconSize={40} radius={250} speed={4}>
-        <img src="/imgs/cookie_white.png" alt="" />
+        <img src="/imgs/cookie_white.png" loading="lazy" alt="" />
         <Icons.notion />
         <Icons.openai />
         <Icons.googleDrive />

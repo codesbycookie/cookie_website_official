@@ -23,7 +23,7 @@ const ReviewCard = ({ img, name, username, body }) => {
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions" src={img} />
+        <img className="rounded-full" loading="lazy" width="32" height="32" alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions" src={img} loading="lazy" />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}

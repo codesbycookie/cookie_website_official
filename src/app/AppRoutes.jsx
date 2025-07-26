@@ -19,6 +19,7 @@ function MainLayout({ children }) {
     <>
       <Navbar />
       {children}
+
       <Footer />
     </>
   );

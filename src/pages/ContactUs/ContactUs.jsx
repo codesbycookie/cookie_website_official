@@ -60,7 +60,7 @@ const handleSubmit = async (e) => {
 
   const templateParams = {
     from_name: 'Cookie Inc. – Appointments',
-    from_email: 'info@cookie.org.in',
+    from_email: 'info@cookieinc.in',
     name: formData.name,
     email: formData.email,
     phone: formData.phone,
@@ -524,10 +524,10 @@ const handleSubmit = async (e) => {
         {/* Footer Note */}
         <div className="text-center mt-8 text-black/60 text-sm">
           <p>Have questions? Email us at <a
-  href={`mailto:info@cookie.org.in?subject=${encodeURIComponent("Project Inquiry")}&body=${encodeURIComponent("Hello Cookie Inc,\n\nI have a project idea and would like to discuss further. Please get back to me.\n\nThanks!")}`}
+  href={`mailto:info@cookieinc.in?subject=${encodeURIComponent("Project Inquiry")}&body=${encodeURIComponent("Hello Cookie Inc,\n\nI have a project idea and would like to discuss further. Please get back to me.\n\nThanks!")}`}
   className="text-[#c18b34] hover:text-[#c18b34]/80 hover:underline"
 >
-  info@cookie.org.in
+  info@cookieinc.in
 </a>
 </p>
         </div>

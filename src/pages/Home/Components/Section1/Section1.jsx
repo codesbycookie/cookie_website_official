@@ -22,7 +22,7 @@ export default function Section1({ content }) {
           className="text-3xl md:text-5xl font-bold leading-relaxed lg:leading-snug"
         >
           Crafting experiences that feel real. Even when
-          <Highlight className="text-white"> everything is unreal.</Highlight>
+          <Highlight className="text-white "> everything is unreal.</Highlight>
         </motion.h1>
 
         <motion.p

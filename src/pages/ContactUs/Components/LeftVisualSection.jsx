@@ -44,6 +44,7 @@ const LeftVisualSection = ({ step, steps }) => {
                 alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 className="object-contain"
                 width={150}
+                loading="lazy"
                 height={150}
                 draggable={false}
                 initial={{ scale: 0.95 }}

@@ -245,6 +245,7 @@ export const BlurImage = ({
         isLoading ? "blur-sm" : "blur-0",
         className
       )}
+      
       onLoad={() => setLoading(false)}
       src={src}
       width={width}

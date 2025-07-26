@@ -69,6 +69,7 @@ export function ExpandableCardDemo({cards}) {
                 <img
                   width={200}
                   height={200}
+                  loading="lazy"
                   src={active.src}
                   alt={'Cookie Inc – Creative tech studio building web, mobile, and branding solutions'}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top" />
@@ -125,6 +126,7 @@ export function ExpandableCardDemo({cards}) {
       <motion.div layoutId={`image-${card.title}-${id}`} className="w-full h-full mb-4">
         <img
           src={card.src}
+          loading="lazy"
           alt={'Cookie Inc – Creative tech studio building web, mobile, and branding solutions'}
           className="w-full h-full rounded-lg object-cover object-top"
         />

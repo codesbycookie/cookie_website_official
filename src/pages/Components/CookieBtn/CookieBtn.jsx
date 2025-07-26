@@ -20,7 +20,7 @@ export default function CookieBtn({ name }) {
     class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-black opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"
   ></span>
   <img
-        src="/imgs/cookie-hd.png"
+        src="/imgs/cookie-hd.png" loading="lazy"
         alt="Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
         className="h-5 w-5 cookie-float transition-transform duration-300"
       />

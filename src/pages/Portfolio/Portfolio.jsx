@@ -1,25 +1,36 @@
-import React, { useEffect } from "react";
-import Section1 from "./Components/Section1";
-import Section2 from "./Components/Section2";
-import Section3 from "./Components/Section3";
-import Section4 from "./Components/Section4";
-import {portfoliopage} from '../../../utils/content'
-export default function AboutUs() {
+import React, { useEffect, lazy, Suspense } from "react";
+import { portfoliopage } from "../../../utils/content";
 
-  const {section1, section2, section3, section4} = portfoliopage;
+// ✅ Lazy imports for sections
+const Section1 = lazy(() => import("./Components/Section1"));
+const Section2 = lazy(() => import("./Components/Section2"));
+const Section3 = lazy(() => import("./Components/Section3"));
+const Section4 = lazy(() => import("./Components/Section4"));
 
+export default function Portfolio() {
+  const { section1, section2, section3, section4 } = portfoliopage;
 
-    useEffect(() => {
-      document.title = "Cookie Inc.  |  Portfolio";
-    }, []);
-
+  useEffect(() => {
+    document.title = "Cookie Inc.  |  Portfolio";
+  }, []);
 
   return (
     <>
-      <Section1 content={section1}/>
-      <Section2 content={section2}/>
-      <Section3 content={section3}/>
-      <Section4 content={section4}/>
+      <Suspense fallback={<div>Loading Section 1...</div>}>
+        <Section1 content={section1} />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Section 2...</div>}>
+        <Section2 content={section2} />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Section 3...</div>}>
+        <Section3 content={section3} />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Section 4...</div>}>
+        <Section4 content={section4} />
+      </Suspense>
     </>
   );
 }
