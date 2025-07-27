@@ -64,7 +64,7 @@ export default function Home() {
       </Suspense>
              <StickyBanner hideOnScroll className="bg-black text-white">
         <p className="text-sm font-medium">
-          ⚡️ Special Offer: Get 20% off your first project! <a href="https://forms.gle/q6oKGqRJbfwTmqZx9" target="_blank" rel="noopener noreferrer" className="underline">
+          <a href="https://forms.gle/q6oKGqRJbfwTmqZx9" target="_blank" rel="noopener noreferrer" className="underline">⚡️ Special Offer: Get 20% off your first project! 
   Contact us now
 </a>.
         </p>
