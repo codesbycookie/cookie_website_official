@@ -15,7 +15,7 @@ const Section4 = ({content}) => {
         }
         className="h-[40rem] rounded-md  text-white dark:text-black"
       >
-Built by <span className="text-light-cream">founders</span>, for founders. We’re not an agency watching from the outside. We’ve launched, pivoted, and pushed through. That’s why everything we create is rooted in empathy, clarity, and execution. Whether you're just starting or scaling, we’re here to build with you — because we’ve been where you are.
+Built by <span className="text-light-cream">founders</span>, for founders.
       </MaskContainer>
 
          

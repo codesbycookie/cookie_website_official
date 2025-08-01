@@ -5,7 +5,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 export function CardHoverEffectDemo({contents}) {
   return (
-    <div className="mx-auto px-8 z-1">
+    <div className="mx-auto z-1">
       <HoverEffect items={contents} />
     </div>
   );

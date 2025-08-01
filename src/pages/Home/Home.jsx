@@ -6,7 +6,7 @@ const Section1 = lazy(() => import("./Components/Section1/Section1"));
 const Section2 = lazy(() => import("./Components/Section2/Section2"));
 const Section3 = lazy(() => import("./Components/Section3/Section3"));
 const Section4 = lazy(() => import("./Components/Section4/Section4"));
-const Section5 = lazy(() => import("./Components/Section5/Section5")); // included even if not used
+// const Section5 = lazy(() => import("./Components/Section5/Section5")); // included even if not used
 const Section6 = lazy(() => import("./Components/Section6/Section6"));
 const Section7 = lazy(() => import("./Components/Section7/Section7"));
 const Section8 = lazy(() => import("./Components/Section8/Section8"));
