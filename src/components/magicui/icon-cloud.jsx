@@ -41,6 +41,7 @@ export function IconCloud({
           const img = new Image();
           img.crossOrigin = "anonymous";
           img.src = items[index];
+          img.loading = "lazy";
           img.onload = () => {
             offCtx.clearRect(0, 0, offscreen.width, offscreen.height);
 

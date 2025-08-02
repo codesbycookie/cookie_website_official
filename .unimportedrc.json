@@ -1,0 +1,36 @@
+{
+  "ignoreUnresolved": [
+    [
+      "@emotion/is-prop-valid",
+      [
+        "node_modules\\framer-motion\\dist\\cjs\\feature-bundle-DrbfNaqu.js"
+      ]
+    ]
+  ],
+  "ignoreUnused": [
+    "tailwindcss",
+    "three"
+  ],
+  "ignoreUnimported": [
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/components/magicui/flip-text.jsx",
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/components/magicui/globe.jsx",
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/components/magicui/hyper-text.jsx",
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/components/magicui/text-animate.jsx",
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/components/ui/animated-testimonials.jsx",
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/components/ui/button.jsx",
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/components/ui/card.jsx",
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/pages/Home/Components/Globe/Globe.jsx",
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/pages/Home/Components/Globe/World.jsx",
+    "D:/Studies/projects/cookie_projects/cookie_website_official/src/pages/Home/Components/Section5/Section5.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\components\\magicui\\flip-text.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\components\\magicui\\globe.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\components\\magicui\\hyper-text.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\components\\magicui\\text-animate.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\components\\ui\\animated-testimonials.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\components\\ui\\button.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\components\\ui\\card.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\pages\\Home\\Components\\Globe\\Globe.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\pages\\Home\\Components\\Globe\\World.jsx",
+    "D:\\Studies\\projects\\cookie_projects\\cookie_website_official\\src\\pages\\Home\\Components\\Section5\\Section5.jsx"
+  ]
+}
