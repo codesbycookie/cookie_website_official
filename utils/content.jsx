@@ -491,7 +491,7 @@ export const servicespage = {
           </p>
           <p
             className="mb-4 text-xs font-normal text-white md:text-sm dark:text-white-200">
-            We launch only when we’re confident the solution meets your expectations and our standards—ensuring quality, functionality, and lasting value.
+           {'We launch only when we’re confident the solution meets your expectations and our standards—ensuring quality, functionality, and lasting value.'}
 
           </p>
           {/* <div className="mb-8">
@@ -681,44 +681,101 @@ export const portfoliopage = {
     button: "Let’s Bake Something Together",
   },
   section4: {
-    title: "Meet Our Team",
-    testimonials: [
+    title: "Project Case Studies",
+    cards: [
+      
       {
-        quote:
-          "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-        name: "Sarah Chen",
-        designation: "Product Manager at TechFlow",
-        src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "IQ Bridge – An Edu Tech Portfolio Website",
+        description:
+          "A sleek portfolio website for an emerging edtech company, IQ Bridge. Showcases their offerings in AI-based assessments and learning tools.",
+        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/q_auto,f_auto/v1753423538/iqbridge_cs_bubzkk.jpg",
+        ctaText: "View Case Study",
+        ctaLink: "/case-studies/iq-bridge",
+        content: () => {
+          return (
+            <p>
+
+              <br /> <strong>Project Type:</strong> Portfolio Website
+              <br />
+              <br />
+               IQ Bridge partnered with us to build a modern portfolio website that showcases their edtech offerings. The site highlights their student-focused courses, learning approach, and growing impact in the education space.
+            </p>
+          );
+        },
       },
       {
-        quote:
-          "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-        name: "Michael Rodriguez",
-        designation: "CTO at InnovateSphere",
-        src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Audnex – Portfolio Website for Creative Agency",
+        description:
+          "Portfolio website for Audnex with motion visuals and interactive case studies. Built to elevate their presence in the competitive creative industry.",
+        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/q_auto,f_auto/v1753423530/audnex_website_kr9xn2.jpg",
+        ctaText: "View Case Study",
+        ctaLink: "https://res.cloudinary.com/dh8zo1lan/image/upload/q_auto,f_auto/v1753423530/audnex_website_kr9xn2.jpg",
+        content: () => {
+          return (
+            <p>
+              <br /> <strong>Duration:</strong> March 2025 – April 2025
+              <br /> <strong>Project Type:</strong> Portfolio Website
+              <br />
+              <br />
+               Audnex needed a striking digital presence to showcase their
+              creative work. We built an immersive portfolio with
+              scroll-triggered animations, video backgrounds, and CMS-driven
+              case study management. The site improved client conversion rates
+              and helped the team pitch better to international clients.
+            </p>
+          );
+        },
+      },{
+        title: "SAP Checklist Portal",
+        description:
+          "A centralized checklist platform for SAP consultants to manage tasks across project phases. Simplifies tracking during config, testing, deployment, and go-live.",
+        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/q_auto,f_auto/v1753423541/sap_checklist_jzbsbf.jpg",
+        ctaText: "View Case Study",
+        ctaLink: "/case-studies/sap-checklist-portal",
+        content: () => {
+          return (
+            <p>
+              
+              <br /> <strong>Project Type:</strong> Web App – Checklist
+              Management
+            
+              <br />
+              <br />
+              SAP implementations are often complex and involve multiple
+              checkpoints across modules. Our client wanted a centralized
+              web-based SAP Checklist Portal to track, manage, and verify
+              essential steps during project phases like configuration, testing,
+              deployment, and post-go-live support. 
+            </p>
+          );
+        },
       },
       {
-        quote:
-          "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-        name: "Emily Watson",
-        designation: "Operations Director at CloudScale",
-        src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        quote:
-          "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-        name: "James Kim",
-        designation: "Engineering Lead at DataPro",
-        src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        quote:
-          "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-        name: "Lisa Thompson",
-        designation: "VP of Technology at FutureNet",
-        src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "V&D Granite — E-Commerce Mobile App",
+        description:
+          "Mobile app to digitize granite and marble sales for V&D Granite. Enables browsing, live stock checks, and seamless order placement.",
+        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/q_auto,f_auto/v1753423538/marble_eggk0n.png",
+        ctaText: "View Case Study",
+        ctaLink: "/case-studies/vd-granite",
+        content: () => {
+          return (
+            <p>
+
+              <br /> <strong>Project Type:</strong> Mobile E-Commerce
+              Application, Website
+              <br />
+              <br />
+              We helped V&D Granite digitize their entire product catalog by
+              building a mobile-first shopping platform. The app includes live
+              inventory sync, polished product visuals, multilingual support,
+              and WhatsApp-integrated order placing. This transformed their B2B
+              and retail sales model in under 6 weeks.
+            </p>
+          );
+        },
       },
     ],
+   
   },
 
 
