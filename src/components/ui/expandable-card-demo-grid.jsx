@@ -1,10 +1,9 @@
-"use client";
 
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "../../hooks/use-outside-click";
 
-export function ExpandableCardDemo({cards}) {
+export function ExpandableCardDemo({ cards }) {
   const [active, setActive] = useState(null);
   const ref = useRef(null);
   const id = useId();
@@ -36,7 +35,8 @@ export function ExpandableCardDemo({cards}) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/20 h-full w-full z-10" />
+            className="fixed inset-0 bg-black/20 h-full w-full z-10"
+          />
         )}
       </AnimatePresence>
       <AnimatePresence>
@@ -58,21 +58,26 @@ export function ExpandableCardDemo({cards}) {
                 },
               }}
               className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
-              onClick={() => setActive(null)}>
+              onClick={() => setActive(null)}
+            >
               <CloseIcon />
             </motion.button>
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden">
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+            >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <img
                   width={200}
                   height={200}
                   loading="lazy"
                   src={active.src}
-                  alt={'Cookie Inc – Creative tech studio building web, mobile, and branding solutions'}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top" />
+                  alt={
+                    "Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
+                  }
+                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                />
               </motion.div>
 
               <div>
@@ -80,12 +85,14 @@ export function ExpandableCardDemo({cards}) {
                   <div className="">
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
-                      className="font-bold text-neutral-700 dark:text-neutral-200">
+                      className="font-bold text-neutral-700 dark:text-neutral-200"
+                    >
                       {active.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 text-start mt-1 text-md dark:text-neutral-400">
+                      className="text-neutral-600 text-start mt-1 text-md dark:text-neutral-400"
+                    >
                       {active.description}
                     </motion.p>
                   </div>
@@ -104,7 +111,8 @@ export function ExpandableCardDemo({cards}) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs text-start md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
+                    className="text-neutral-600 text-xs text-start md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                  >
                     {typeof active.content === "function"
                       ? active.content()
                       : active.content}
@@ -115,48 +123,52 @@ export function ExpandableCardDemo({cards}) {
           </div>
         ) : null}
       </AnimatePresence>
-<ul className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
-  {cards.map((card, index) => (
-    <motion.div
-      layoutId={`card-${card.title}-${id}`}
-      key={`card-${card.title}-${id}`}
-      onClick={() => setActive(card)}
-      className="p-5 flex flex-col items-center justify-around dark:hover:bg-neutral-800 rounded-xl cursor-pointer hover:shadow-lg shadow dark:border-neutral-700 bg-white dark:bg-neutral-900 transition"
-    >
-      <motion.div layoutId={`image-${card.title}-${id}`} className="w-full h-full mb-4">
-        <img
-          src={card.src}
-          loading="lazy"
-          alt={'Cookie Inc – Creative tech studio building web, mobile, and branding solutions'}
-          className="w-full h-full rounded-lg object-cover object-top"
-        />
-      </motion.div>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+        {cards.map((card, id) => (
+          <motion.div
+            layoutId={`card-${card.title}-${id}`}
+            key={`card-${card.title}-${id}`}
+            onClick={() => setActive(card)}
+            className="p-5 flex flex-col items-center justify-around dark:hover:bg-neutral-800 rounded-xl cursor-pointer hover:shadow-lg shadow dark:border-neutral-700 bg-white dark:bg-neutral-900 transition"
+          >
+            <motion.div
+              layoutId={`image-${card.title}-${id}`}
+              className="w-full h-full mb-4"
+            >
+              <img
+                src={card.src}
+                loading="lazy"
+                alt={
+                  "Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
+                }
+                className="w-full h-full rounded-lg object-cover object-top"
+              />
+            </motion.div>
 
-      <div className="text-center">
-        <motion.h3
-          layoutId={`title-${card.title}-${id}`}
-          className="font-semibold text-neutral-800 dark:text-neutral-100 text-lg"
-        >
-          {card.title}
-        </motion.h3>
-        <motion.p
-          layoutId={`description-${card.description}-${id}`}
-          className="text-sm text-neutral-600 dark:text-neutral-400 mt-2"
-        >
-          {card.description}
-        </motion.p>
-      </div>
+            <div className="text-center">
+              <motion.h3
+                layoutId={`title-${card.title}-${id}`}
+                className="font-semibold text-neutral-800 dark:text-neutral-100 text-lg"
+              >
+                {card.title}
+              </motion.h3>
+              <motion.p
+                layoutId={`description-${card.description}-${id}`}
+                className="text-sm text-neutral-600 dark:text-neutral-400 mt-2"
+              >
+                {card.description}
+              </motion.p>
+            </div>
 
-      <motion.button
-        layoutId={`button-${card.title}-${id}`}
-        className="mt-5 px-4 py-2 text-sm rounded-full font-bold bg-white hover:bg-green-500 hover:text-white text-black dark:bg-neutral-800 dark:text-white dark:hover:bg-green-600"
-      >
-        {card.ctaText}
-      </motion.button>
-    </motion.div>
-  ))}
-</ul>
-
+            <motion.button
+              layoutId={`button-${card.title}-${id}`}
+              className="mt-5 px-4 py-2 text-sm rounded-full font-bold bg-white hover:bg-green-500 hover:text-white text-black dark:bg-neutral-800 dark:text-white dark:hover:bg-green-600"
+            >
+              {card.ctaText}
+            </motion.button>
+          </motion.div>
+        ))}
+      </ul>
     </>
   );
 }
@@ -185,12 +197,11 @@ export const CloseIcon = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="h-4 w-4 text-black">
+      className="h-4 w-4 text-black"
+    >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 6l-12 12" />
       <path d="M6 6l12 12" />
     </motion.svg>
   );
 };
-
-

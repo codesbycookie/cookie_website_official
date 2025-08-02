@@ -1,5 +1,4 @@
 import React from "react";
-import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { AuroraText } from "@/components/magicui/aurora-text";
@@ -8,7 +7,7 @@ import { ExpandableCardDemo } from "@/components/ui/expandable-card-demo-grid";
 
 
 
-export default function Section6({content}) {
+export default function Section4({content}) {
   return (
     <section className="pt-8 pb-20 px-section-sm lg:px-section-lg bg-white text-center">
         
