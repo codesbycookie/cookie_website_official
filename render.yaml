@@ -2,6 +2,7 @@ services:
   - type: web
     name: cookie
     env: static
+    serviceId: srv-d10ivv63jp1c7391ni30
     buildCommand: npm run build
     staticPublishPath: dist
     headers:
