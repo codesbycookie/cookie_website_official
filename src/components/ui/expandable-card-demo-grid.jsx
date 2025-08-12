@@ -65,7 +65,7 @@ export function ExpandableCardDemo({ cards }) {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[800px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <img
@@ -76,7 +76,7 @@ export function ExpandableCardDemo({ cards }) {
                   alt={
                     "Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                   }
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="w-full sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                 />
               </motion.div>
 
@@ -141,7 +141,7 @@ export function ExpandableCardDemo({ cards }) {
                 alt={
                   "Cookie Inc – Creative tech studio building web, mobile, and branding solutions"
                 }
-                className="w-full h-full rounded-lg object-cover object-top"
+                className="w-full h-full rounded-lg object-contain object-top"
               />
             </motion.div>
 
