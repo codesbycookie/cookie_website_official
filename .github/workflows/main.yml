@@ -3,16 +3,14 @@ name: Deploy to Render
 on:
   push:
     branches:
-      - main
+      - master  # or your deploy branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: production
-      url: https://cookieinc.in  # This will show as "View deployment"
     steps:
       - name: Trigger Render Deployment
-        run: curl "https://api.render.com/deploy/srv-d10ivv63jp1c7391ni30?key=qfE3m4SzytM"
+        run: |
+          curl "https://api.render.com/deploy/srv-d10ivv63jp1c7391ni30?key=qfE3m4SzytM"
         env:
           RENDER_DEPLOY_HOOK: "https://api.render.com/deploy/srv-d10ivv63jp1c7391ni30?key=qfE3m4SzytM"
