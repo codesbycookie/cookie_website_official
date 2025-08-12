@@ -24,25 +24,14 @@ The website showcases our services, portfolio, and contact details with a **clea
 ---
 
 ## 🚀 Tech Stack  
-- **Frontend:** HTML5, CSS3, JavaScript, TailwindCSS  
-- **Backend:** Node.js / Express *(if applicable)*  
+- **Frontend:** React.js, TailwindCSS  
 - **Hosting:** Render  
 - **Version Control:** Git & GitHub  
 - **Deployment:** GitHub Actions → Render Deploy Hook  
 
 ---
 
-## 📂 Project Structure  
-cookie-website-official/
-├── public/ # Static assets (images, icons, fonts)
-├── src/ # Source code
-│ ├── components/ # UI Components
-│ ├── pages/ # Page files (Home, About, Services, etc.)
-│ ├── styles/ # Global and page-specific styles
-│ └── scripts/ # JavaScript logic
-├── .github/workflows/ # GitHub Actions CI/CD files
-├── package.json # Dependencies and scripts
-└── README.md # Project documentation
+
 
 
 ## 📞 Contact  
