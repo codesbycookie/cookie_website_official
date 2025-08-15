@@ -198,49 +198,49 @@ export const aboutpage = {
     items:  [
     {
       title: "Chapter 1",
-      description: 'Our major milestones and achievements along the journey. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eum eaque! Tempore sit neque error sed, labore ex voluptatibus recusandae molestiae eos explicabo, vel ea sequi officia? Dolorum, repellendus ipsum?',
+      description: 'Before Cookie existed, we were just a group of passionate developers and designers learning the ropes.Our journey began at Altruisty, where we worked on a full-scale E-learning platform using the MERN stack and Figma. That experience taught us the importance of quality, deadlines, and understanding what a client truly needs.',
       image:
         "https://images.unsplash.com/photo-1732310216648-603c0255c000?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       className: "absolute bottom-80 left-[20%] rotate-[-5deg]",
     },
     {
       title: "Chapter 2",
-      description: 'Our major milestones and achievements along the journey. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eum eaque! Tempore sit neque error sed, labore ex voluptatibus recusandae molestiae eos explicabo, vel ea sequi officia? Dolorum, repellendus ipsum?',
+      description: 'After that, we didn’t stop experimenting. We built apps, websites, and UI/UX designs — from traffic rule apps to expense trackers, QR code generators, and even fashion showcase platforms. These projects weren’t just practice — they were our way of refining our skills so we could deliver nothing but the best.',
       image:
         "https://images.unsplash.com/photo-1697909623564-3dae17f6c20b?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       className: "absolute top-40 left-[25%] rotate-[-7deg]",
     },
     {
       title: "Chapter 3",
-      description: 'Our major milestones and achievements along the journey. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eum eaque! Tempore sit neque error sed, labore ex voluptatibus recusandae molestiae eos explicabo, vel ea sequi officia? Dolorum, repellendus ipsum?',
+      description: 'We took on internships at Codsoft, Octanet, and Prodigy Infotech, working on live projects like Todo Apps, Weather Apps, Tic Tac Toe games, and interactive UI designs. Each role taught us how to adapt to different industries, work styles, and most importantly — how to deliver solutions that make clients happy.',
       image:
         "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       className: "absolute top-5 left-[40%] rotate-[8deg]",
     },
     {
       title: "Chapter 4",
-      description: 'Our major milestones and achievements along the journey. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eum eaque! Tempore sit neque error sed, labore ex voluptatibus recusandae molestiae eos explicabo, vel ea sequi officia? Dolorum, repellendus ipsum?',
+      description: 'At one point, we asked ourselves: Why limit ourselves to working for one company when we can create solutions for businesses everywhere? That’s when Cookie was born — a team dedicated to building websites, apps, and branding for businesses of all sizes."',
       image:
         "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=3648&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       className: "absolute top-32 left-[55%] rotate-[10deg]",
     },
     {
       title: "Chapter 5",
-      description: 'Our major milestones and achievements along the journey. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eum eaque! Tempore sit neque error sed, labore ex voluptatibus recusandae molestiae eos explicabo, vel ea sequi officia? Dolorum, repellendus ipsum?',
+      description: 'Our first big project? IQ Bridge, an e-learning organization portfolio for a client in the UAE. From there, we took on multiple final-year projects and business websites — proving that we could handle both professional and academic requirements with equal precision.',
       image:
         "https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       className: "absolute top-20 right-[35%] rotate-[2deg]",
     },
     {
       title: "Chapter 6",
-      description: 'Our major milestones and achievements along the journey. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eum eaque! Tempore sit neque error sed, labore ex voluptatibus recusandae molestiae eos explicabo, vel ea sequi officia? Dolorum, repellendus ipsum?',
+      description: 'We started collaborating with other companies, like MyndVault, to bring in more clients while retaining complete ownership of our products. Now, we not only develop apps, websites, and brand designs, but also create cinematic promotional videos and marketing creatives that help our clients stand out.',
       image:
         "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       className: "absolute top-24 left-[45%] rotate-[-7deg]",
     },
     {
       title: "Chapter 7",
-      description: 'Our major milestones and achievements along the journey. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eum eaque! Tempore sit neque error sed, labore ex voluptatibus recusandae molestiae eos explicabo, vel ea sequi officia? Dolorum, repellendus ipsum?',
+      description: 'Today, Cookie is more than just a team — we’re your creative and tech partner. Every project we take on is personal to us. We don’t just deliver a product; we deliver an experience, making sure your business has the perfect digital presence to connect with your customers and grow. And our journey? It’s just getting started.',
       image:
         "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       className: "absolute top-8 left-[30%] rotate-[4deg]",
