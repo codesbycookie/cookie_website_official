@@ -19,7 +19,7 @@ export function DraggableCardDemo({items, title}) {
 
   <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-7xl">
     {items.map((item, index) => (
-      <DraggableCardBody key={index} className={`p-6 rounded-xl shadow-md ${item.className}`}>
+      <DraggableCardBody key={index} className={`p-6 rounded-xl max-h-250px shadow-md ${item.className}`}>
         <p className="text-sm md:text-lg text-neutral-700 dark:text-neutral-200">
           {item.description}
         </p>
