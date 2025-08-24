@@ -21,7 +21,7 @@ export function checkQuota(formKey, max = 3, days = 3) {
   const timeLeft = Math.max(0, resetAt - now); // ms remaining
 
   return {
-    remainingCount:parseInt(remainingCount),
+    remainingCount:parseInt(remainingCount) - 1,
     max,
     resetAt,
     timeLeft,

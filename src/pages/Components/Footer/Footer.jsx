@@ -118,7 +118,7 @@ export default function Footer() {
             {/* Status messages below the form */}
             {submitStatus === "success" && (
               <p className="text-green-400 text-sm mt-2">
-                ✅ Sent successfully! You have {quota.remainingCount - 1} quotas left for enquiring brochure.
+                ✅ Sent successfully! You have {quota.remainingCount} quotas left for enquiring brochure.
               </p>
             )}
             {submitStatus === "error" && (
