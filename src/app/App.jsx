@@ -13,6 +13,7 @@ import Greet from "@/pages/greet/Greet";
 import ScrollBack from "./ScrollBack";
 import AnimatedCursor from "@/hooks/AnimatedCursor";
 import { StickyBanner } from "@/components/ui/sticky-banner";
+import CookChat from "@/pages/Components/Cook/Cook";
 
 
 
@@ -112,7 +113,7 @@ function App() {
         outerScale={5}
       />
       <ScrollBack />
-
+<CookChat/>
       {/* Move Navbar & Footer inside AppRoutes */}
       <AppRoutes />
 

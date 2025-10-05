@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, lazy, Suspense } from "react";
 import { homepage } from "../../../utils/content";
 
@@ -62,13 +63,13 @@ export default function Home() {
       <Suspense fallback={<div>Loading Section 8...</div>}>
         <Section8 content={section8} />
       </Suspense>
-             <StickyBanner hideOnScroll className="bg-black text-white">
+             {/* <StickyBanner hideOnScroll className="bg-black text-white">
         <p className="text-sm font-medium">
           <a href="https://forms.gle/q6oKGqRJbfwTmqZx9" target="_blank" rel="noopener noreferrer" className="underline">⚡️ Special Offer: Get 20% off your first project! 
   Contact us now
 </a>.
         </p>
-      </StickyBanner>
+      </StickyBanner> */}
     </>
   );
 }
