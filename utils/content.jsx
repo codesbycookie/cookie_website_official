@@ -726,26 +726,25 @@ export const portfoliopage = {
           );
         },
       },{
-        title: "SAP Checklist Portal",
+        title: "Torque Toyzz",
         description:
-          "A centralized checklist platform for SAP consultants to manage tasks across project phases. Simplifies tracking during config, testing, deployment, and go-live.",
-        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/q_auto,f_auto/v1753423541/sap_checklist_jzbsbf.jpg",
+          "E-commerce website for Torque Toyzz, a toy store in Chennai. Features product catalog, shopping cart, secure checkout with whatsapp order integration.",
+        src: "/Torque-Toyzz.png",
         ctaText: "View Case Study",
         ctaLink: "/case-studies/sap-checklist-portal",
         content: () => {
           return (
             <p>
               
-              <br /> <strong>Project Type:</strong> Web App – Checklist
-              Management
+              <br /> <strong>Project Type:</strong> E Commerce Website
             
               <br />
               <br />
-              SAP implementations are often complex and involve multiple
-              checkpoints across modules. Our client wanted a centralized
-              web-based SAP Checklist Portal to track, manage, and verify
-              essential steps during project phases like configuration, testing,
-              deployment, and post-go-live support. 
+                Torque Toyzz wanted to expand their toy store business online. We developed a full-featured e-commerce website with a
+              product catalog, shopping cart, and secure checkout. The site
+              integrated WhatsApp for order placements, making it easy for
+              customers to shop and connect. Within 2 months of launch, Torque
+              Toyzz saw a 40% increase in sales through the website. 
             </p>
           );
         },
