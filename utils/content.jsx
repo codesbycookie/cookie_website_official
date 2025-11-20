@@ -750,25 +750,21 @@ export const portfoliopage = {
         },
       },
       {
-        title: "V&D Granite — E-Commerce Mobile App",
+        title: "Task List App – Productivity Mobile Application",
         description:
-          "Mobile app to digitize granite and marble sales for V&D Granite. Enables browsing, live stock checks, and seamless order placement.",
-        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/q_auto,f_auto/v1753423538/marble_eggk0n.png",
+          "A sleek mobile and web app for managing tasks for Employees and to-dos. Features include task categorization, reminders, progress tracking, and cloud sync across devices.",
+        src: "/Checklist.png",
         ctaText: "View Case Study",
         ctaLink: "/case-studies/vd-granite",
         content: () => {
           return (
             <p>
 
-              <br /> <strong>Project Type:</strong> Mobile E-Commerce
+              <br /> <strong>Project Type:</strong>Employee Task Management
               Application, Website
               <br />
               <br />
-              We helped V&D Granite digitize their entire product catalog by
-              building a mobile-first shopping platform. The app includes live
-              inventory sync, polished product visuals, multilingual support,
-              and WhatsApp-integrated order placing. This transformed their B2B
-              and retail sales model in under 6 weeks.
+                We built a cross-platform task management app to help employees organize their work and personal to-dos. The app features task categorization, priority levels, reminders, and progress tracking. Cloud sync ensures tasks are accessible across devices. After launch, the app improved employee productivity by 50% within the first month.
             </p>
           );
         },
