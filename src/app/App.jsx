@@ -113,7 +113,7 @@ function App() {
         outerScale={5}
       />
       <ScrollBack />
-<CookChat/>
+{/* <CookChat/> */}
       {/* Move Navbar & Footer inside AppRoutes */}
       <AppRoutes />
 

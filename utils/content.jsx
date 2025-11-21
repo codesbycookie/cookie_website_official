@@ -123,7 +123,7 @@ export const homepage = {
       {
       title: "Elderly - Your Trusted Health Companion",
       description: "My mom never forgets her tablets anymore. No ADs , No Confusion ",
-      img: "/imgs/Elderly-Mock-up.svg"
+      img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763748256/Screenshot_2025-11-21_233345_wnodom.png"
       },
       {
       title: "Velu’s and Son’s – Taste Meets Tradition",
@@ -622,40 +622,42 @@ export const portfoliopage = {
       ],
     },
     images: [
-      "/imgs/Skill_link_mockup.svg",
-      "/imgs/Traffic-logo.jpg",
-      "/imgs/Project-1.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747072/abe746ee-6199-4b2f-bfe1-653722e87a31.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747210/f0feb4d9-fe85-4ce7-b567-0fa979167c80.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747158/9b496f2a-06ca-490d-8d47-587b75da95b1.png",
       "/imgs/Project-2.png",
       
-      "/imgs/V&D-logo.png",
-      "/imgs/Tourist-logo.jpg",
-      "/imgs/img1.jpeg",
-      "/imgs/img2.jpeg",
+       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747072/abe746ee-6199-4b2f-bfe1-653722e87a31.png",
+       "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747951/Screenshot_2025-11-21_232834_y9yogu.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747210/f0feb4d9-fe85-4ce7-b567-0fa979167c80.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747158/9b496f2a-06ca-490d-8d47-587b75da95b1.png",
+      "/imgs/Fashbridge-logo.png",
       
       "/imgs/Fashbridge-logo.png",
       "/imgs/iq-bridge-logo.png",
       "/imgs/Cashew_Mockup.svg",
-      "/imgs/Elderly-Mock-up.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763748256/Screenshot_2025-11-21_233345_wnodom.png",
 
-      "/imgs/Skill_link_mockup.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763748113/Screenshot_2025-11-21_233129_nbsiii.png",
       "/imgs/Traffic-logo.jpg",
-      "/imgs/Project-1.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747608/77a9bb23-3601-46ee-b370-f33bfe566586.png",
       "/imgs/Project-2.png",
       
       "/imgs/V&D-logo.jpg",
       "/imgs/Tourist-logo.jpg",
-      "/imgs/img1.jpeg",
-      "/imgs/img2.jpeg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747850/Screenshot_2025-11-21_232650_yzvags.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747210/f0feb4d9-fe85-4ce7-b567-0fa979167c80.png",
       
-     "/imgs/Skill_link_mockup.svg",
+      
+     "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763748113/Screenshot_2025-11-21_233129_nbsiii.png",
       "/imgs/Traffic-logo.jpg",
-      "/imgs/Project-1.png",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763747608/77a9bb23-3601-46ee-b370-f33bfe566586.png",
       "/imgs/Project-2.png",
       
       "/imgs/Fashbridge-logo.png",
       "/imgs/iq-bridge-logo.png",
       "/imgs/Cashew_Mockup.svg",
-      "/imgs/Elderly-Mock-up.svg",
+      "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763748256/Screenshot_2025-11-21_233345_wnodom.png",
       
       "https://assets.aceternity.com/macbook-scroll.png",
       "https://assets.aceternity.com/cloudinary_bkp/Meteors_fye3ys.png",

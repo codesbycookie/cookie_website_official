@@ -6,7 +6,7 @@ import { PinContainer } from "@/components/ui/3d-pin";
 export function ThreeDMarqueeDemo({images}) {
   return (
     <div
-      className="mx-auto my-10  rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800">
+      className="mx-auto my-10  bg-white p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800">
       <ThreeDMarquee images={images} />
     </div>
   );
