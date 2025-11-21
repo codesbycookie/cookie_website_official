@@ -21,8 +21,8 @@ export default function Section1({ content }) {
           transition={{ duration: 0.8, ease: [0.4, 0.0, 0.2, 1] }}
           className="text-3xl md:text-5xl font-bold leading-relaxed lg:leading-snug"
         >
-          Crafting experiences that feel real. Even when
-          <Highlight className="text-white "> everything is unreal.</Highlight>
+          Crafting experiences that feel real. Even when &nbsp;
+          <Highlight className="text-white ">Everything is unreal.</Highlight>
         </motion.h1>
 
         <motion.p

@@ -745,25 +745,23 @@ export const portfoliopage = {
         },
       },
       {
-        title: "V&D Granite — E-Commerce Mobile App",
+        title: "Torque Toyzz — E-Commerce Website",
         description:
-          "Mobile app to digitize granite and marble sales for V&D Granite. Enables browsing, live stock checks, and seamless order placement.",
-        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/q_auto,f_auto/v1753423538/marble_eggk0n.png",
+          " Torque toyzz is a leading retailer of remote-controlled cars and drones in the Chennai",
+        src: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763730491/Torque_Toyzz_1_1_ulc32t.png",
         ctaText: "View Case Study",
         ctaLink: "/case-studies/vd-granite",
         content: () => {
           return (
             <p>
 
-              <br /> <strong>Project Type:</strong> Mobile E-Commerce
-              Application, Website
+              <br /> <strong>Project Type:</strong> E-Commerce Website
               <br />
               <br />
-              We helped V&D Granite digitize their entire product catalog by
-              building a mobile-first shopping platform. The app includes live
-              inventory sync, polished product visuals, multilingual support,
-              and WhatsApp-integrated order placing. This transformed their B2B
-              and retail sales model in under 6 weeks.
+              Torque toyzz is a leading retailer of remote-controlled cars and
+              drones in the Chennai. They wanted to expand their reach by launching
+              an e-commerce website that could showcase their extensive product
+              range and facilitate online sales. and Seamless Whatsapp Integration.
             </p>
           );
         },
