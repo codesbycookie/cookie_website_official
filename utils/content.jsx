@@ -123,7 +123,7 @@ export const homepage = {
       {
       title: "Elderly - Your Trusted Health Companion",
       description: "My mom never forgets her tablets anymore. No ADs , No Confusion ",
-      img: "https://res.cloudinary.com/dh8zo1lan/image/upload/v1763748256/Screenshot_2025-11-21_233345_wnodom.png"
+      img: "/imgs/Elderly-Mock-up.svg"
       },
       {
       title: "Velu’s and Son’s – Taste Meets Tradition",
