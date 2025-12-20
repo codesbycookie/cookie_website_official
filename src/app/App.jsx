@@ -14,6 +14,7 @@ import ScrollBack from "./ScrollBack";
 import AnimatedCursor from "@/hooks/AnimatedCursor";
 import { StickyBanner } from "@/components/ui/sticky-banner";
 import CookChat from "@/pages/Components/Cook/Cook";
+import Snowfall from "react-snowfall";
 
 
 
@@ -103,6 +104,16 @@ function App() {
 
   return (
     <Router>
+       <Snowfall
+        snowflakeCount={120}
+        style={{
+          position: "fixed",
+          width: "100vw",
+          height: "100vh",
+          zIndex: 9999,
+          pointerEvents: "none", // 👈 important
+        }}
+      />
       <ScrollToTop />
       <AnimatedCursor
         innerSize={15}
